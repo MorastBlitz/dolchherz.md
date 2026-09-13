@@ -1,0 +1,247 @@
+{
+    "meta": {
+        "description": "Dolchherz Rüstungen - Migration aus 4 CSV-Dateien",
+        "total": 34,
+        "generated": "2026-08-05T09:15:23Z"
+    },
+    "ruestungen": [
+        {
+            "name": "Textilrüstung",
+            "basisschwellen": "5 / 11",
+            "basiswert": 3,
+            "merkmal": "Flexibel: +1 auf Ausweichen",
+            "rang": 1
+        },
+        {
+            "name": "Lederrüstung",
+            "basisschwellen": "6 / 13",
+            "basiswert": 3,
+            "merkmal": "-",
+            "rang": 1
+        },
+        {
+            "name": "Kettenpanzer",
+            "basisschwellen": "7 / 15",
+            "basiswert": 4,
+            "merkmal": "Schwer: -1 auf Ausweichen",
+            "rang": 1
+        },
+        {
+            "name": "Metallrüstung",
+            "basisschwellen": "8 / 17",
+            "basiswert": 4,
+            "merkmal": "Sehr schwer: -2 auf Ausweichen, -1 auf Agilität",
+            "rang": 1
+        },
+        {
+            "name": "Verbesserte Textilrüstung",
+            "basisschwellen": "7 / 16",
+            "basiswert": 4,
+            "merkmal": "Flexibel: +1 auf Ausweichen",
+            "rang": 2
+        },
+        {
+            "name": "Verbesserte Lederrüstung",
+            "basisschwellen": "9 / 20",
+            "basiswert": 4,
+            "merkmal": "-",
+            "rang": 2
+        },
+        {
+            "name": "Verbesserter Kettenpanzer",
+            "basisschwellen": "11 / 24",
+            "basiswert": 5,
+            "merkmal": "Schwer: -1 auf Ausweichen",
+            "rang": 2
+        },
+        {
+            "name": "Verbesserte Metallrüstung",
+            "basisschwellen": "13 / 28",
+            "basiswert": 5,
+            "merkmal": "Sehr schwer: -2 auf Ausweichen, -1 auf Agilität",
+            "rang": 2
+        },
+        {
+            "name": "Elundrian-Kettenrüstung",
+            "basisschwellen": "9 / 21",
+            "basiswert": 4,
+            "merkmal": "Beschützt: Du reduzierst erlittenen magischen Schaden um deinen Rüstungswert, bevor du ihn auf deine Schadensschwellen anwendest.",
+            "rang": 2
+        },
+        {
+            "name": "Hartknochenrüstung",
+            "basisschwellen": "9 / 21",
+            "basiswert": 4,
+            "merkmal": "Widerstandsfähig: Bevor du dein letztes Rüstungsfeld markierst, würfle einen W6. Senke bei einer 6 die Schwere des Schadens um 1 Schwelle, ohne ein Rüstungsfeld zu markieren.",
+            "rang": 2
+        },
+        {
+            "name": "Eisenstamm-Brustplattenrüstung",
+            "basisschwellen": "9 / 20",
+            "basiswert": 4,
+            "merkmal": "Verstärkt: Wenn du dein letztes Rüstungsfeld markierst, erhöhe deine Schadensschwellen um +2, bis du mindestens 1 Rüstungsfeld gelöscht hast.",
+            "rang": 2
+        },
+        {
+            "name": "Runetan-Schweberüstung",
+            "basisschwellen": "9 / 20",
+            "basiswert": 4,
+            "merkmal": "Veränderlich: Wenn du Ziel eines Angriffs wirst, kannst du ein Rüstungsfeld markieren, um dem Angriffswurf gegen dich einen Nachteil zu verschaffen.",
+            "rang": 2
+        },
+        {
+            "name": "Tyris-Weichpanzer",
+            "basisschwellen": "8 / 18",
+            "basiswert": 5,
+            "merkmal": "Leise: Du erhältst einen +2 Bonus auf Würfe, mit denen du dich leise bewegen willst.",
+            "rang": 2
+        },
+        {
+            "name": "Rosdorn-Rüstung",
+            "basisschwellen": "11 / 23",
+            "basiswert": 5,
+            "merkmal": "Hoffnungsvoll: Wenn du 1 Hoffnung einsetzen müsstest, kannst du stattdessen 1 Rüstungsfeld markieren.",
+            "rang": 2
+        },
+        {
+            "name": "Meisterliche Textilrüstung",
+            "basisschwellen": "9 / 23",
+            "basiswert": 5,
+            "merkmal": "Flexibel: +1 auf Ausweichen",
+            "rang": 3
+        },
+        {
+            "name": "Meisterliche Lederrüstung",
+            "basisschwellen": "11 / 27",
+            "basiswert": 5,
+            "merkmal": "-",
+            "rang": 3
+        },
+        {
+            "name": "Meisterlicher Kettenpanzer",
+            "basisschwellen": "13 / 31",
+            "basiswert": 6,
+            "merkmal": "Schwer: -1 auf Ausweichen",
+            "rang": 3
+        },
+        {
+            "name": "Meisterliche Metallrüstung",
+            "basisschwellen": "15 / 35",
+            "basiswert": 6,
+            "merkmal": "Sehr schwer: -2 auf Ausweichen, -1 auf Agilität",
+            "rang": 3
+        },
+        {
+            "name": "Bellamoi-Rüstung",
+            "basisschwellen": "11 / 27",
+            "basiswert": 5,
+            "merkmal": "Vergoldet: +1 auf Präsenz",
+            "rang": 3
+        },
+        {
+            "name": "Drachenschuppenpanzer",
+            "basisschwellen": "11 / 27",
+            "basiswert": 5,
+            "merkmal": "Undurchdringlich: Einmal pro kurzer Rast kannst du, wenn du deinen letzten Trefferpunkt markieren müsstest, stattdessen 1 Stress markieren.",
+            "rang": 3
+        },
+        {
+            "name": "Metall-Dornenrüstung",
+            "basisschwellen": "10 / 25",
+            "basiswert": 5,
+            "merkmal": "Spitz: Bei einem erfolgreichen Angriff gegen ein Ziel innerhalb unmittelbarer Distanz kannst du einen W4 zum Schadenswurf hinzufügen.",
+            "rang": 3
+        },
+        {
+            "name": "Bladefare-Rüstung",
+            "basisschwellen": "16 / 39",
+            "basiswert": 6,
+            "merkmal": "Physisch: Du kannst kein Rüstungsfeld markieren, um magischen Schaden zu reduzieren.",
+            "rang": 3
+        },
+        {
+            "name": "Monetts Umhang",
+            "basisschwellen": "16 / 39",
+            "basiswert": 6,
+            "merkmal": "Magisch: Du kannst kein Rüstungsfeld markieren, um physischen Schaden zu reduzieren.",
+            "rang": 3
+        },
+        {
+            "name": "Runen der Festung",
+            "basisschwellen": "17 / 43",
+            "basiswert": 6,
+            "merkmal": "Schmerzhaft: Jedes Mal, wenn du Rüstungsfeld markierst, musst du 1 Stress markieren.",
+            "rang": 3
+        },
+        {
+            "name": "Legendäre Textilrüstung",
+            "basisschwellen": "11 / 32",
+            "basiswert": 6,
+            "merkmal": "Flexibel: +1 auf Ausweichen",
+            "rang": 4
+        },
+        {
+            "name": "Legendäre Lederrüstung",
+            "basisschwellen": "13 / 36",
+            "basiswert": 6,
+            "merkmal": "-",
+            "rang": 4
+        },
+        {
+            "name": "Legendärer Kettenpanzer",
+            "basisschwellen": "15 / 40",
+            "basiswert": 7,
+            "merkmal": "Schwer: -1 auf Ausweichen",
+            "rang": 4
+        },
+        {
+            "name": "Legendäre Metallrüstung",
+            "basisschwellen": "17 / 44",
+            "basiswert": 7,
+            "merkmal": "Sehr schwer: -2 auf Ausweichen, -1 auf Agilität",
+            "rang": 4
+        },
+        {
+            "name": "Dunamis-Seidenrüstung",
+            "basisschwellen": "13 / 36",
+            "basiswert": 7,
+            "merkmal": "Zeitverzögernd: Markiere ein Rüstungsfeld, um einen W4 zu würfeln und das Ergebnis als Bonus zu deinem Ausweichen gegen einen Angriff zu erhalten.",
+            "rang": 4
+        },
+        {
+            "name": "Zauberrüstung",
+            "basisschwellen": "13 / 36",
+            "basiswert": 5,
+            "merkmal": "Magieverstärkend: +1 auf Zauberwürfe",
+            "rang": 4
+        },
+        {
+            "name": "Feuerrüstung",
+            "basisschwellen": "13 / 36",
+            "basiswert": 6,
+            "merkmal": "Verbrennend: Gegnerische Charaktere, die dich in unmittelbarer Distanz angreifen, müssen 1 Stress markieren.",
+            "rang": 4
+        },
+        {
+            "name": "Verstärkte Rüstung",
+            "basisschwellen": "15 / 40",
+            "basiswert": 4,
+            "merkmal": "Gepanzert: Wenn du ein Rüstungsfeld markierst, reduzierst du die Schwere eines Angriffs um zwei Schwellen statt um eine.",
+            "rang": 4
+        },
+        {
+            "name": "Veritas-Opalrüstung",
+            "basisschwellen": "13 / 36",
+            "basiswert": 6,
+            "merkmal": "Wahrheitssuchend: Diese Rüstung leuchtet, wenn eine andere Kreatur innerhalb kurzer Entfernung eine Lüge erzählt.",
+            "rang": 4
+        },
+        {
+            "name": "Vollpanzer",
+            "basisschwellen": "18 / 48",
+            "basiswert": 8,
+            "merkmal": "Schwierig: -1 auf alle Charakterattribute und auf Ausweichen",
+            "rang": 4
+        }
+    ]
+}

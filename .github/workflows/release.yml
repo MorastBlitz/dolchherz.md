@@ -12,17 +12,12 @@ jobs:
       contents: write
     steps:
       - uses: actions/checkout@v5
-      - uses: pnpm/action-setup@v4
-        with:
-          version: 10.18.2
       - uses: actions/setup-node@v6
         with:
           node-version: lts/Jod
-          cache: pnpm
+          cache: npm
 
       - name: Check versions
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           tag="${GITHUB_REF#refs/tags/}"
           test "$tag" = "$(jq -r .version package.json)"
@@ -31,8 +26,8 @@ jobs:
 
       - name: Build plugin
         run: |
-          pnpm install -r --frozen-lockfile
-          pnpm build
+          npm ci
+          npm run build
 
       - name: Create release
         env:

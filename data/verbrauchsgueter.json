@@ -1,0 +1,309 @@
+{
+    "meta": {
+        "description": "Dolchherz Verbrauchsgüter",
+        "total": 60,
+        "generated": "2026-08-05T09:18:49Z"
+    },
+    "items": [
+        {
+            "wurf": "01",
+            "name": "Gewandtheitstrank",
+            "beschreibung": "Du erhältst einen Bonus von +1 für deinen nächsten Wurf auf Agilität."
+        },
+        {
+            "wurf": "02",
+            "name": "Stärkungstrank",
+            "beschreibung": "Du erhältst einen Bonus von +1 für deinen nächsten Wurf auf Stärke."
+        },
+        {
+            "wurf": "03",
+            "name": "Kontrolltrank",
+            "beschreibung": "Du erhältst einen Bonus von +1 für deinen nächsten Wurf auf Geschick."
+        },
+        {
+            "wurf": "04",
+            "name": "Einstimmungstrank",
+            "beschreibung": "Du erhältst einen Bonus von +1 für deinen nächsten Wurf auf Instinkt."
+        },
+        {
+            "wurf": "05",
+            "name": "Charmetrank",
+            "beschreibung": "Du erhältst einen Bonus von +1 für deinen nächsten Wurf auf Präsenz."
+        },
+        {
+            "wurf": "06",
+            "name": "Erleuchtungstrank",
+            "beschreibung": "Du erhältst einen Bonus von +1 für deinen nächsten Wurf auf Wissen."
+        },
+        {
+            "wurf": "07",
+            "name": "Leichter Lebenstrank",
+            "beschreibung": "Lösche 1W4 Trefferpunkte."
+        },
+        {
+            "wurf": "08",
+            "name": "Leichter Ausdauertrank",
+            "beschreibung": "Lösche 1W4 Stress."
+        },
+        {
+            "wurf": "09",
+            "name": "Grindelzahngift",
+            "beschreibung": "Wenn du dieses Gift auf eine Waffe aufträgst, die physischen Schaden zufügt, addierst du einen W6 zu dem nächsten Schadenswurf mit dieser Waffe."
+        },
+        {
+            "wurf": "10",
+            "name": "Varikblätter",
+            "beschreibung": "Du kannst diese Blätter essen, um sofort 2 Hoffnung zu bekommen."
+        },
+        {
+            "wurf": "11",
+            "name": "Phiole mit Mondtröpfchen",
+            "beschreibung": "Wenn du den Inhalt dieser Phiole trinkst, kannst du bist zu deiner nächsten Rast auch bei völliger Dunkelheit sehen."
+        },
+        {
+            "wurf": "12",
+            "name": "Instabile arkane Scherbe",
+            "beschreibung": "Du kannst auf Geschick würfeln, um diese Scherbe auf eine Gruppe feindlicher Charaktere innerhalb weiter Distanz zu werfen. Ziele, gegen die dein Angriff erfolgreich ist, erleiden 1W20 magischen Schaden."
+        },
+        {
+            "wurf": "13",
+            "name": "Trank der Stabilität",
+            "beschreibung": "Wenn du diesen Trank trinkst, kannst du einen zusätzlichen Auszeit-Zug ausführen."
+        },
+        {
+            "wurf": "14",
+            "name": "Verstärktes Grindelzahngift",
+            "beschreibung": "Wenn du dieses Gift auf eine Waffe aufträgst, die physischen Schaden zufügt, addierst du einen W8 zu dem nächsten Schadenswurf mit dieser Waffe."
+        },
+        {
+            "wurf": "15",
+            "name": "Verwandlungslehm",
+            "beschreibung": "Du kannst 1 Hoffnung einsetzen, um mit diesem Lehm dein Gesicht so zu verändern, dass du bis zu deiner nächsten Rast nicht wiederzuerkennen bist."
+        },
+        {
+            "wurf": "16",
+            "name": "Phiole mit Dunkelrauch",
+            "beschreibung": "Bei einem gegnerischen Angriff kannst du den Inhalt dieser Phiole trinken und eine Anzahl W6 in Höhe deiner Agilität würfeln. Addiere das höchste Ergebnis zu deinem Ausweichen gegen diesen Angriff."
+        },
+        {
+            "wurf": "17",
+            "name": "Springwurz",
+            "beschreibung": "Wenn du diese Wurzel isst, kannst du einmal bis in weite Distanz springen, ohne würfeln zu müssen."
+        },
+        {
+            "wurf": "18",
+            "name": "Aufputschpulver",
+            "beschreibung": "Markiere 1 Stress und lösche 1 Trefferpunkt."
+        },
+        {
+            "wurf": "19",
+            "name": "Lebenstrank",
+            "beschreibung": "Lösche 1W4+1 Trefferpunkte."
+        },
+        {
+            "wurf": "20",
+            "name": "Ausdauertrank",
+            "beschreibung": "Lösche 1W4+1 Stress."
+        },
+        {
+            "wurf": "21",
+            "name": "Rüstungsstopfer",
+            "beschreibung": "Hiermit kannst du eine beliebige Anzahl Hoffnung einsetzen und eine entsprechende Anzahl an Rüstungsfeldern löschen."
+        },
+        {
+            "wurf": "22",
+            "name": "Kiemensalbe",
+            "beschreibung": "Wenn du diese Salbe auf deinen Hals aufträgst, kannst du unter Wasser so viele Minuten atmen, wie es deiner Stufe entspricht."
+        },
+        {
+            "wurf": "23",
+            "name": "Kopierpergament",
+            "beschreibung": "Indem du mit diesem Pergament ein anderes berührst, kannst du eine exakte Kopie des Inhaltes des zweiten Pergaments erstellen. Nach Benutzung wird das Kopierpergament zu einem ganz normalen Pergament."
+        },
+        {
+            "wurf": "24",
+            "name": "Verbesserte arkane Scherbe",
+            "beschreibung": "Du kannst auf Geschick würfeln, um diese Scherbe auf eine Gruppe feindlicher Charaktere innerhalb weiter Distanz zu werfen. Ziele, gegen die dein Angriff erfolgreich ist, erleiden 2W20 magischen Schaden."
+        },
+        {
+            "wurf": "25",
+            "name": "Starker Gewandtheitstrank",
+            "beschreibung": "Du erhältst bis zu deiner nächsten Rast einen +1 Bonus auf deine Agilität."
+        },
+        {
+            "wurf": "26",
+            "name": "Starker Stärkungstrank",
+            "beschreibung": "Du erhältst bis zu deiner nächsten Rast einen +1 Bonus auf deine Stärke."
+        },
+        {
+            "wurf": "27",
+            "name": "Starker Kontrolltrank",
+            "beschreibung": "Du erhältst bis zu deiner nächsten Rast einen +1 Bonus auf dein Geschick."
+        },
+        {
+            "wurf": "28",
+            "name": "Starker Einstimmungstrank",
+            "beschreibung": "Du erhältst bis zu deiner nächsten Rast einen +1 Bonus auf deinen Instinkt."
+        },
+        {
+            "wurf": "29",
+            "name": "Starker Charmetrank",
+            "beschreibung": "Du erhältst bis zu deiner nächsten Rast einen +1 Bonus auf deine Präsenz."
+        },
+        {
+            "wurf": "30",
+            "name": "Starker Erleuchtungstrank",
+            "beschreibung": "Du erhältst bis zu deiner nächsten Rast einen +1 Bonus auf dein Wissen."
+        },
+        {
+            "wurf": "31",
+            "name": "Blut des Yorgi",
+            "beschreibung": "Wenn du dieses Blut trinkst, verschwindest du von deinem Standort und tauchst sofort an einem Punkt innerhalb sehr weiter Distanz, den du sehen kannst, wieder auf."
+        },
+        {
+            "wurf": "32",
+            "name": "Homers geheimer Trank",
+            "beschreibung": "Nachdem du diesen Trank getrunken hast, ist dein nächster erfolgreicher Angriff ein kritischer Erfolg."
+        },
+        {
+            "wurf": "33",
+            "name": "Rotdornspeichel",
+            "beschreibung": "Wenn du diesen Speichel auf eine Waffe aufträgst, die physischen Schaden zufügt, addierst du einen W12 zu deinem nächsten Schadenswurf mit dieser Waffe."
+        },
+        {
+            "wurf": "34",
+            "name": "Zauberstein",
+            "beschreibung": "Du kannst diesen Stein einsetzen, um einen Zauber oder ein Zauberbuch aus deiner Reserve zu nehmen, einmal anzuwenden und wieder in die Reserve zurückzulegen."
+        },
+        {
+            "wurf": "35",
+            "name": "Mythischer Staub",
+            "beschreibung": "Wenn du diesen Staub auf eine Waffe aufträgst, die magischen Schaden zufügt, addierst du einen W12 zu deinem nächsten Schadenswurf mit dieser Waffe."
+        },
+        {
+            "wurf": "36",
+            "name": "Säurepaste",
+            "beschreibung": "Diese Paste zerfrisst Wände und andere Oberflächen unter großen Blitzen."
+        },
+        {
+            "wurf": "37",
+            "name": "Hoffnungsfackel",
+            "beschreibung": "Solange diese Fackel brennt, werfen verbündete Charaktere innerhalb kurzer Distanz einen W6, wenn sie 1 Hoffnung einsetzen. Bei einer 6 erhalten sie den Effekt der Hoffnung, ohne sie einsetzen zu müssen. Die Fackel brennt bis zum Ende der Szene."
+        },
+        {
+            "wurf": "38",
+            "name": "Starke arkane Scherbe",
+            "beschreibung": "Du kannst auf Geschick würfeln, um diese Scherbe auf eine Gruppe feindlicher Charaktere innerhalb weiter Distanz zu werfen. Ziele, gegen die dein Angriff erfolgreich ist, erleiden 4W20 magischen Schaden."
+        },
+        {
+            "wurf": "39",
+            "name": "Federknochen",
+            "beschreibung": "Du kannst diesen Knochen einsetzen, um eine Fallgeschwindigkeit für so viele Minuten, wie deiner Stufe entspricht, beliebig zu kontrollieren."
+        },
+        {
+            "wurf": "40",
+            "name": "Kreis der Leere",
+            "beschreibung": "Markiere 1 Stress, um einen kreisförmigen Bereich der Leere zu erzeugen, der sich bis in weite Distanz erstreckt. Innerhalb dieser Leere kann keine Magie gewirkt werden und Kreaturen, die sich in dem Kreis befinden, sind immun gegen magischen Schaden."
+        },
+        {
+            "wurf": "41",
+            "name": "Sonnenbaumsaft",
+            "beschreibung": "Wenn du diesen Saft trinkst, würfle einen W6. Bei einem Ergebnis von 5–6 lösche 2 Trefferpunkte. Bei 2–4 lösche 3 Stress. Bei einer 1 würfest du einen Blick hinter den Schleier des Todes und kehrst verändert zurück. Du trägst eine Narbe davon."
+        },
+        {
+            "wurf": "42",
+            "name": "Geiferzahngift",
+            "beschreibung": "Eine Kreatur, die dieses Gift zu sich nimmt, erleidet 8W10 direkten magischen Schaden."
+        },
+        {
+            "wurf": "43",
+            "name": "Starker Lebenstrank",
+            "beschreibung": "Lösche 1W4+2 Trefferpunkte."
+        },
+        {
+            "wurf": "44",
+            "name": "Starker Ausdauertrank",
+            "beschreibung": "Lösche 1W4+2 Stress."
+        },
+        {
+            "wurf": "45",
+            "name": "Ogermoschus",
+            "beschreibung": "Mit diesem Moschus kannst du bis zu deiner nächsten Rast verhindern, dass dich jemand mit magischen oder nicht-magischen Mitteln aufspürt."
+        },
+        {
+            "wurf": "46",
+            "name": "Flügelwuchs",
+            "beschreibung": "Du erhältst magische Flügel, mit denen du so viele Minuten, wie deiner Stufe entspricht, fliegen kannst."
+        },
+        {
+            "wurf": "47",
+            "name": "Krug der verlorenen Stimmen",
+            "beschreibung": "Wenn du diesen Krug öffnest, dringt ein ohrenbetäubendes Echo von Stimmen heraus, das so viele Minuten anhält, wie deiner Stufe entspricht. Kreaturen innerhalb weiter Distanz, die nicht darauf vorbereitet sind, erleiden 6W8 magischen Schaden."
+        },
+        {
+            "wurf": "48",
+            "name": "Drachenblütentee",
+            "beschreibung": "Wenn du diesen Tee trinkst, kannst du einen Angriff durch Feueratem ausführen. Würfle einen Instinktwurf gegen gegnerische Charaktere, die sich innerhalb kurzer Distanz vor dir befinden. Ziele, gegen die dein Angriff erfolgreich ist, erleiden W20 physischen Schaden mittels deiner Übung."
+        },
+        {
+            "wurf": "49",
+            "name": "Brückensaat",
+            "beschreibung": "Dicke Ranken wachsen von deinem Standort zu einem Ort deiner Wahl innerhalb weiter Distanz. Du kannst daran hochklettern oder sie überqueren. Bei deiner nächsten kurzen Rast verschwinden die Ranken."
+        },
+        {
+            "wurf": "50",
+            "name": "Schlafsaft",
+            "beschreibung": "Wenn du diesen Saft trinkst, fällst du sofort in tiefen Schlaf und schläfst die ganze Nacht durch. Beim Erwachen löschst du sämtlichen Stress."
+        },
+        {
+            "wurf": "51",
+            "name": "Festmahl von Xuria",
+            "beschreibung": "Nimm dieses Mahl zu dir, um alle Trefferpunkte und sämtlichen Stress zu löschen und 1W4 Hoffnung zu erhalten."
+        },
+        {
+            "wurf": "52",
+            "name": "Verschmelzungshonig",
+            "beschreibung": "Mit diesem Honig können zwei Objekte permanent aneinandergeklebt werden."
+        },
+        {
+            "wurf": "53",
+            "name": "Schrumpftrank",
+            "beschreibung": "Wenn du diesen Trank trinkst, halbierst du deine Körpergröße, bis du willentlich deine normale Größe wieder annimmst oder bis zu deiner nächsten Rast. In geschrumpfter Gestalt hast du einen +2 Bonus auf Agilität und einen -1 Malus auf deine Übung."
+        },
+        {
+            "wurf": "54",
+            "name": "Wachstumstrank",
+            "beschreibung": "Wenn du diesen Trank trinkst, verdoppelst du deine Körpergröße, bis du willentlich deine normale Größe wieder annimmst oder bis zu deiner nächsten Rast. In vergrößerter Gestalt hast du einen +2 Bonus auf Stärke und einen +1 Bonus auf deine Übung."
+        },
+        {
+            "wurf": "55",
+            "name": "Stein des Wissens",
+            "beschreibung": "Du würfelst, während du diesen Stein hältst, kann ein verbündeter Charakter eine Karte aus deiner Auslage nehmen und in seine Auslage oder Reserve legen. Nachdem der Charakter dieses Wissen genommen hat, zerfällt der Stein."
+        },
+        {
+            "wurf": "56",
+            "name": "Süßmoos",
+            "beschreibung": "Wenn du dieses Moos während einer Rast zu dir nimmst, kannst du 1W10 Trefferpunkte oder 1W10 Stress löschen."
+        },
+        {
+            "wurf": "57",
+            "name": "Blendkugel",
+            "beschreibung": "Du kannst diese Kugel aktivieren, um einen blendenden Lichtblitz zu erzeugen. Alle Ziele innerhalb kurzer Distanz werden Verwandbar, bis sie Trefferpunkte markieren."
+        },
+        {
+            "wurf": "58",
+            "name": "Todestee",
+            "beschreibung": "Nachdem du diesen Tee getrunken hast, tötest du sofort dein Ziel, wenn du bei einem Angriff einen kritischen Erfolg erzielst. Wenn du bis zu deiner nächsten langen Rast keinen kritischen Erfolg bei einem Angriff erzielst, stirbst du selbst."
+        },
+        {
+            "wurf": "59",
+            "name": "Spiegel der Ringelblume",
+            "beschreibung": "Wenn du Schaden erleidest, kannst du 1 Hoffnung einsetzen, um den Schaden zu neutralisieren, danach zersplittert der Spiegel."
+        },
+        {
+            "wurf": "60",
+            "name": "Sterntropfen",
+            "beschreibung": "Mit diesem Sterntropfen kannst du einen Hagelschauer von Kometen herbeirufen, der allen Zielen innerhalb sehr weiter Distanz 8W20 physischen Schaden zufügt."
+        }
+    ]
+}

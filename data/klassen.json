@@ -1,0 +1,865 @@
+[
+    {
+        "name": "Barde",
+        "name_full": "BARDE*IN",
+        "beschreibung": "Bard*innen sind die charismatischsten Personen in allen Sphären. Sie beherrschen es meisterhaft, ihr Publikum zu fesseln, und sind auf eine bestimmte Form der Darbietung spezialisiert, wie zum Beispiel Gesang, Instrumentalmusik oder Geschichtenerzählen. Als Bard*in blühst du in sozialen Situationen auf, egal ob du vor einem großen Publikum auftrittst oder zu einer Einzelperson sprichst. Ausübende dieser Profession lernen an Schulen oder in Gilden und knüpfen dort Bande fürs Leben, sind aber auch nicht gefeit gegen ein gewisses Maß an Egoismus. Wenn es darum geht, eine Gruppe zusammenzuschweißen, sind Bard*innen die erste Wahl, aber in der falschen Stimmung können sie auch das Gegenteil bewirken.",
+        "domaenen": [
+            "Anmut",
+            "Kodex"
+        ],
+        "ausweichen": 10,
+        "trefferpunkte": 5,
+        "klassengegenstaende": "Ein Liebesroman oder ein Brief, der nie geöffnet wurde",
+        "hoffnungsfaehigkeit": {
+            "name": "Eine Szene machen",
+            "text": "Setze 3 Hoffnung ein, um ein Ziel in kurzer Distanz vorübergehend in den Zustand Abgelenkt zu versetzen. Das Ziel erhält einen Malus von –2 auf seinen Schwierigkeitsgrad."
+        },
+        "klassenfaehigkeiten": [
+            {
+                "name": "Inspirieren",
+                "text": "Einmal pro Spielsitzung darfst du beschreiben, wie du deine Gruppe inspirierst, um dir und deinen Verbündeten je einen Inspirationswürfel zu geben. Auf Stufe 1 ist der Inspirationswürfel ein W6. SC dürfen den Inspirationswürfel einsetzen, um das Ergebnis zu ihrem Aktionswurf, Reaktionswurf oder Schadenswurf hinzuzufügen, oder Stress in Höhe des Ergebnisses zu löschen. Am Ende jeder Spielsitzung werden alle nicht eingesetzten Inspirationswürfel entfernt. Auf Stufe 5 erhöht sich dein Inspirationswürfel auf einen W8."
+            }
+        ]
+    },
+    {
+        "name": "Druide",
+        "name_full": "DRUIDE*IN",
+        "beschreibung": "Druid*in zu sein, ist mehr als nur ein Beruf; es ist eine Berufung für alle, die von der Magie der Wildnis lernen und sie beschützen wollen. Wer Druid*innen bei der oft sehr ruhigen und sanftmütigen Tätigkeit der Pflanzenkultivierung beobachtet, kann sich leicht dazu verleiten lassen, sie zu unterschätzen – aber wenn sie sich der ungezähmten Gewalten der Natur bedienen, bieten sie einen furchterregenden Anblick. Druid*innen setzen ihre Fähigkeiten oft in kleinen Gruppen ein, die häufig durch ein gemeinsames Ethos oder einen gemeinsamen Ort verbunden sind, aber einige ziehen es auch vor, allein zu arbeiten. Durch jahrelange hingebungsvolle Studien können Druid*innen lernen, sich in Tiere zu verwandeln und die Natur nach ihrem Willen zu formen.",
+        "domaenen": [
+            "Natur",
+            "Arkana"
+        ],
+        "ausweichen": 10,
+        "trefferpunkte": 6,
+        "klassengegenstaende": "Ein kleiner Beutel mit Steinen und Knochen oder ein seltsamer, irgendwo gefundener Anhänger",
+        "hoffnungsfaehigkeit": {
+            "name": "Evolution",
+            "text": "Setze 3 Hoffnung ein, um dich in eine Bestiengestalt zu verwandeln, ohne Stress zu markieren. Dabei kannst du ein Attribut deiner Wahl um +1 steigern, bis du die Bestiengestalt wieder ablegst."
+        },
+        "klassenfaehigkeiten": [
+            {
+                "name": "Bestiengestalt",
+                "text": "Du darfst 1 Stress markieren, um dich auf magische Weise in eine Kreatur deines Rangs oder niedriger aus der Bestiengestaltliste zu verwandeln. Du darfst dich jederzeit zurückverwandeln. Während du verwandelt bist, kannst du keine Waffen benutzen oder Zauber von Domänenkarten wirken, aber du kannst weiterhin andere Fähigkeiten oder Merkmale nutzen, auf die du Zugriff hast. Zauber, die du vor der Verwandlung gewirkt hast, bleiben aktiv und halten wie gewohnt an, und du kannst normal sprechen und kommunizieren. Zusätzlich erhältst du die Fähigkeiten der Bestiengestalt, addierst deren Ausweichenbonus zu deinem eigenen Ausweichen-Wert und nutzt das in ihren Werten angegebene Attribut für deinen Angriff. Während du in Bestiengestalt bist, wird deine Rüstung Teil deines Körpers, und du markierst Rüstungsfelder wie üblich; wenn du dich zurückverwandelst, bleiben diese markierten Rüstungsfelder bestehen. Wenn du deinen letzten TP markierst, verwandelst du dich automatisch zurück."
+            },
+            {
+                "name": "Naturberührung",
+                "text": "Du kannst nach Belieben harmlose, kleinere Natureffekte hervorrufen – zum Beispiel eine Blume schnell wachsen lassen, eine leichte Windböe erzeugen oder ein Lagerfeuer entfachen."
+            }
+        ],
+        "bestiengestalten": [
+            {
+                "name": "FLINKE NASE",
+                "rang": 1,
+                "beispiele": "Fuchs, Maus, Wiesel usw.",
+                "attribut_bonus": "Agilität +1",
+                "ausweichen_bonus": 2,
+                "angriff": {
+                    "distanz": "Unmittelbar",
+                    "attribut": "Agilität",
+                    "schaden": "W4",
+                    "schadenstyp": "phy"
+                },
+                "vorteile": [
+                    "Täuschen",
+                    "Finden",
+                    "Schleichen"
+                ],
+                "merkmale": [
+                    {
+                        "name": "Flink",
+                        "text": "Du bewegst dich leise und darfst 1 Hoffnung einsetzen, um dich bis in weite Distanz zu bewegen, ohne zu würfeln."
+                    },
+                    {
+                        "name": "Zerbrechlich",
+                        "text": "Wenn du Mittleren oder Schweren Schaden erleidest, verwandelst du dich zurück."
+                    }
+                ]
+            },
+            {
+                "name": "TREUES HAUSTIER",
+                "rang": 1,
+                "beispiele": "Katze, Hund, Kaninchen usw.",
+                "attribut_bonus": "Instinkt +1",
+                "ausweichen_bonus": 2,
+                "angriff": {
+                    "distanz": "Unmittelbar",
+                    "attribut": "Instinkt",
+                    "schaden": "W6",
+                    "schadenstyp": "phy"
+                },
+                "vorteile": [
+                    "Klettern",
+                    "Finden",
+                    "Beschützen"
+                ],
+                "merkmale": [
+                    {
+                        "name": "Treue Seele",
+                        "text": "Wenn du eine verbündete Person unterstützt, darfst du einen W8 als Vorteilswürfel werfen."
+                    },
+                    {
+                        "name": "Zerbrechlich",
+                        "text": "Wenn du Mittleren oder Schweren Schaden erleidest, verwandelst du dich zurück."
+                    }
+                ]
+            },
+            {
+                "name": "WENDIGES WEIDETIER",
+                "rang": 1,
+                "beispiele": "Reh, Gazelle, Ziege usw.",
+                "attribut_bonus": "Agilität +1",
+                "ausweichen_bonus": 3,
+                "angriff": {
+                    "distanz": "Unmittelbar",
+                    "attribut": "Agilität",
+                    "schaden": "W6",
+                    "schadenstyp": "phy"
+                },
+                "vorteile": [
+                    "Springen",
+                    "Schleichen",
+                    "Rennen"
+                ],
+                "merkmale": [
+                    {
+                        "name": "Fluchtreflex",
+                        "text": "Wenn ein Angriffswurf gegen dich erfolgreich wäre, darfst du 1 Stress markieren und 1W4 würfeln. Addiere das Ergebnis zu deinem Ausweichen gegen diesen Angriff."
+                    },
+                    {
+                        "name": "Zerbrechlich",
+                        "text": "Wenn du Mittleren oder Schweren Schaden erleidest, verlässt du die Bestiengestalt."
+                    }
+                ]
+            },
+            {
+                "name": "RUDELRAUBTIER",
+                "rang": 1,
+                "beispiele": "Kojote, Hyäne, Wolf usw.",
+                "attribut_bonus": "Stärke +2",
+                "ausweichen_bonus": 1,
+                "angriff": {
+                    "distanz": "Unmittelbar",
+                    "attribut": "Stärke",
+                    "schaden": "W8+2",
+                    "schadenstyp": "phy"
+                },
+                "vorteile": [
+                    "Angreifen",
+                    "Rennen",
+                    "Spurensuche"
+                ],
+                "merkmale": [
+                    {
+                        "name": "Zu Boden reißen",
+                        "text": "Wenn du bei einem Angriff gegen ein Ziel in unmittelbarer Distanz erfolgreich bist, darfst du 1 Stress markieren, um das Ziel vorübergehend Verwundbar zu machen."
+                    },
+                    {
+                        "name": "Rudeljagd",
+                        "text": "Wenn dir ein Angriff gegen das gleiche Ziel gelingt wie einer verbündeten Person, die direkt vor dir agiert, füge 1W8 zu deinem Schadenswurf hinzu."
+                    }
+                ]
+            },
+            {
+                "name": "SCHLÜPFRIGES WASSERWESEN",
+                "rang": 1,
+                "beispiele": "Aal, Fisch, Oktopus usw.",
+                "attribut_bonus": "Agilität +1",
+                "ausweichen_bonus": 2,
+                "angriff": {
+                    "distanz": "Unmittelbar",
+                    "attribut": "Agilität",
+                    "schaden": "W4",
+                    "schadenstyp": "phy"
+                },
+                "vorteile": [
+                    "Navigieren",
+                    "Schleichen",
+                    "Schwimmen"
+                ],
+                "merkmale": [
+                    {
+                        "name": "Aquatisch",
+                        "text": "Du kannst unter Wasser atmen und dich ungehindert bewegen."
+                    },
+                    {
+                        "name": "Zerbrechlich",
+                        "text": "Wenn du Mittleren oder Schweren Schaden erleidest, verwandelst du dich zurück."
+                    }
+                ]
+            },
+            {
+                "name": "STAKSENDES SPINNENTIER",
+                "rang": 1,
+                "beispiele": "Tarantel, Wolfspinne usw.",
+                "attribut_bonus": "Geschick +1",
+                "ausweichen_bonus": 2,
+                "angriff": {
+                    "distanz": "Unmittelbar",
+                    "attribut": "Geschick",
+                    "schaden": "W6+1",
+                    "schadenstyp": "phy"
+                },
+                "vorteile": [
+                    "Angreifen",
+                    "Klettern",
+                    "Schleichen"
+                ],
+                "merkmale": [
+                    {
+                        "name": "Giftiger Biss",
+                        "text": "Wenn du bei einem Angriff gegen ein Ziel in unmittelbarer Distanz erfolgreich bist, wird dieses Ziel vorübergehend Vergiftet. Ein Vergiftetes Lebewesen erleidet jedes Mal 1W10 direkten physischen Schaden, wenn es eine Aktion ausführt."
+                    },
+                    {
+                        "name": "Netzbau",
+                        "text": "Du kannst ein kräftiges Netzmaterial erzeugen, das sich auf vielfältige Weise einsetzen lässt. Das Netz ist stabil genug, um ein Lebewesen zu tragen. Du kannst ein Ziel innerhalb kurzer Distanz vorübergehend Festsetzen, wenn dir ein Wurf auf Geschick gelingt."
+                    }
+                ]
+            },
+            {
+                "name": "GEPANZERTE SCHILDWACHE",
+                "rang": 2,
+                "beispiele": "Gürteltier, Schuppentier, Schildkröte usw.",
+                "attribut_bonus": "Stärke +1",
+                "ausweichen_bonus": 1,
+                "angriff": {
+                    "distanz": "Unmittelbar",
+                    "attribut": "Stärke",
+                    "schaden": "W8+2",
+                    "schadenstyp": "phy"
+                },
+                "vorteile": [
+                    "Graben",
+                    "Finden",
+                    "Beschützen"
+                ],
+                "merkmale": [
+                    {
+                        "name": "Harte Schale",
+                        "text": "Dein hartes Äußeres verleiht dir Resistenz gegen physischen Schaden. Zusätzlich darfst du 1 Rüstungsfeld markieren, um dich in deinen Panzer zurückzuziehen. Solange du dich in deinem Panzer befindest, wird jeder physische Schaden um die Höhe deines Rüstungswertes reduziert (nachdem eine eventuelle Resistenz angewendet wurde), aber du kannst keine anderen Aktionen ausführen, ohne diese Form zu verlassen."
+                    },
+                    {
+                        "name": "Kanonenkugel",
+                        "text": "Markiere 1 Stress, um dich von einer verbündeten Person auf einen gegnerischen Charakter werfen oder katapultieren zu lassen. Dazu würfelt die verbündete Person einen Angriffswurf mit Agilität oder Stärke (nach Wahl der Person) gegen ein Ziel innerhalb kurzer Distanz. Bei einem Erfolg erleidet das Ziel W12+2 physischen Schaden, abhängig von der Übung der werfenden Person. Du kannst 1 Hoffnung einsetzen, um noch ein weiteres gegnerisches Ziel innerhalb sehr kurzer Distanz des ersten zu treffen. Das zweite Ziel erleidet halb so viel Schaden wie das erste Ziel."
+                    }
+                ]
+            },
+            {
+                "name": "MÄCHTIGE BESTIE",
+                "rang": 2,
+                "beispiele": "Bär, Stier, Elch usw.",
+                "attribut_bonus": "Stärke +3",
+                "ausweichen_bonus": 1,
+                "angriff": {
+                    "distanz": "Unmittelbar",
+                    "attribut": "Stärke",
+                    "schaden": "W10+4",
+                    "schadenstyp": "phy"
+                },
+                "vorteile": [
+                    "Navigieren",
+                    "Beschützen",
+                    "Angst einjagen"
+                ],
+                "merkmale": [
+                    {
+                        "name": "Umrennen",
+                        "text": "Wenn du auf einem Schadenswürfel eine 1 würfelst, kannst du einen W10 werfen und dessen Ergebnis zum Schadenswurf hinzuaddieren. Außerdem kannst du vor einem Angriffswurf 1 Stress markieren, um für diesen Angriff einen +1 Bonus auf deine Übung zu erhalten."
+                    },
+                    {
+                        "name": "Dickes Fell",
+                        "text": "Du erhältst einen +2 Bonus auf deine Schadensschwellen."
+                    }
+                ]
+            },
+            {
+                "name": "STATTLICHES HUFTIER",
+                "rang": 2,
+                "beispiele": "Kamel, Pferd, Zebra usw.",
+                "attribut_bonus": "Agilität +1",
+                "ausweichen_bonus": 2,
+                "angriff": {
+                    "distanz": "Unmittelbar",
+                    "attribut": "Agilität",
+                    "schaden": "W8+1",
+                    "schadenstyp": "phy"
+                },
+                "vorteile": [
+                    "Springen",
+                    "Navigieren",
+                    "Rennen"
+                ],
+                "merkmale": [
+                    {
+                        "name": "Reittier",
+                        "text": "Du kannst bis zu zwei freiwillige Verbündete tragen, wenn du dich bewegst."
+                    },
+                    {
+                        "name": "Niedertrampeln",
+                        "text": "Markiere 1 Stress, um dich in gerader Linie bis in kurze Distanz zu bewegen und einen Angriff gegen alle Ziele innerhalb unmittelbarer Distanz deiner Bewegungslinie zu führen. Ziele, die du erfolgreich angreifst, erleiden W8+1 physischen Schaden abhängig von deiner Übung und sind vorübergehend Verwundbar."
+                    }
+                ]
+            },
+            {
+                "name": "ZISCHELNDE SCHLANGE",
+                "rang": 2,
+                "beispiele": "Kobra, Klapperschlange, Viper usw.",
+                "attribut_bonus": "Geschick +1",
+                "ausweichen_bonus": 2,
+                "angriff": {
+                    "distanz": "Sehr kurz",
+                    "attribut": "Geschick",
+                    "schaden": "W8+4",
+                    "schadenstyp": "phy"
+                },
+                "vorteile": [
+                    "Klettern",
+                    "Täuschen",
+                    "Rennen"
+                ],
+                "merkmale": [
+                    {
+                        "name": "Giftangriff",
+                        "text": "Führe einen Angriff gegen eine beliebige Anzahl an Zielen innerhalb sehr kurzer Distanz aus. Bei einem Erfolg ist ein Ziel vorübergehend Vergiftet. Ein Vergiftetes Lebewesen erleidet jedes Mal, wenn es eine Aktion ausführt, 1W10 direkten physischen Schaden."
+                    },
+                    {
+                        "name": "Warnendes Zischeln",
+                        "text": "Markiere 1 Stress, um alle Ziele innerhalb unmittelbarer Distanz zu veranlassen, bis in sehr kurze Distanz zurückzuweichen."
+                    }
+                ]
+            },
+            {
+                "name": "GESCHMEIDIGES RAUBTIER",
+                "rang": 2,
+                "beispiele": "Gepard, Löwe, Panther usw.",
+                "attribut_bonus": "Instinkt +1",
+                "ausweichen_bonus": 3,
+                "angriff": {
+                    "distanz": "Unmittelbar",
+                    "attribut": "Instinkt",
+                    "schaden": "W8+6",
+                    "schadenstyp": "phy"
+                },
+                "vorteile": [
+                    "Angreifen",
+                    "Klettern",
+                    "Schleichen"
+                ],
+                "merkmale": [
+                    {
+                        "name": "Geschwind",
+                        "text": "Setze 1 Punkt Hoffnung ein, um dich bis in weite Distanz zu bewegen, ohne zu würfeln."
+                    },
+                    {
+                        "name": "Sprungangriff",
+                        "text": "Markiere 1 Stress, um dich bis in unmittelbare Distanz eines Zieles zu bewegen und führe einen Angriffswurf gegen es aus. Bei einem Erfolg erhältst du für diesen Angriff einen +2 Bonus auf deine Übung und das Ziel muss 1 Stress markieren."
+                    }
+                ]
+            },
+            {
+                "name": "SCHNELLE SCHWINGE",
+                "rang": 2,
+                "beispiele": "Habicht, Eule, Rabe usw.",
+                "attribut_bonus": "Geschick +1",
+                "ausweichen_bonus": 3,
+                "angriff": {
+                    "distanz": "Unmittelbar",
+                    "attribut": "Geschick",
+                    "schaden": "W4+2",
+                    "schadenstyp": "phy"
+                },
+                "vorteile": [
+                    "Täuschen",
+                    "Finden",
+                    "Angst einjagen"
+                ],
+                "merkmale": [
+                    {
+                        "name": "Vogelperspektive",
+                        "text": "Du kannst fliegen. Einmal pro Rast kannst du, während du dich in der Luft befindest, der Spielleitung eine Frage über die Szenerie unter dir stellen, ohne würfeln zu müssen. Beim ersten Mal, wenn ein Charakter aufgrund dieser Informationen eine Aktion ausführt, erhält er einen Vorteil für den Wurf."
+                    },
+                    {
+                        "name": "Hohle Knochen",
+                        "text": "Du erhältst einen Malus von –2 auf deine Schadensschwellen."
+                    }
+                ]
+            },
+            {
+                "name": "GROSSRAUBTIER",
+                "rang": 3,
+                "beispiele": "Schattenwolf, Velociraptor, Säbelzahntiger usw.",
+                "attribut_bonus": "Stärke +2",
+                "ausweichen_bonus": 2,
+                "angriff": {
+                    "distanz": "Unmittelbar",
+                    "attribut": "Stärke",
+                    "schaden": "W12+8",
+                    "schadenstyp": "phy"
+                },
+                "vorteile": [
+                    "Angreifen",
+                    "Schleichen",
+                    "Rennen"
+                ],
+                "merkmale": [
+                    {
+                        "name": "Reittier",
+                        "text": "Du kannst bis zu zwei freiwillige Verbündete tragen, wenn du dich bewegst."
+                    },
+                    {
+                        "name": "Zerfleischen",
+                        "text": "Wenn du bei einem Angriff gegen ein Ziel erfolgreich bist, darfst du 1 Hoffnung einsetzen, um es vorübergehend Verwundbar zu machen und für diesen Angriff einen +1 Bonus auf deine Übung zu erhalten."
+                    }
+                ]
+            },
+            {
+                "name": "MÄCHTIGE ECHSE",
+                "rang": 3,
+                "beispiele": "Alligator, Krokodil, Gila-Krustenechse usw.",
+                "attribut_bonus": "Instinkt +2",
+                "ausweichen_bonus": 1,
+                "angriff": {
+                    "distanz": "Unmittelbar",
+                    "attribut": "Instinkt",
+                    "schaden": "W10+7",
+                    "schadenstyp": "phy"
+                },
+                "vorteile": [
+                    "Angreifen",
+                    "Schleichen",
+                    "Spuren suchen"
+                ],
+                "merkmale": [
+                    {
+                        "name": "Panzerhaut",
+                        "text": "Du erhältst einen Bonus von +3 auf deine Schadensschwellen."
+                    },
+                    {
+                        "name": "Schnappen",
+                        "text": "Wenn du bei einem Angriff gegen ein Ziel in unmittelbarer Distanz erfolgreich bist, darfst du 1 Hoffnung einsetzen, um das Ziel mit deinem Maul gepackt zu halten, wodurch es vorübergehend Festgesetzt und Verwundbar wird."
+                    }
+                ]
+            },
+            {
+                "name": "RIESIGER RAUBVOGEL",
+                "rang": 3,
+                "beispiele": "Riesenadler, Riesenfalke usw.",
+                "attribut_bonus": "Geschick +2",
+                "ausweichen_bonus": 3,
+                "angriff": {
+                    "distanz": "Unmittelbar",
+                    "attribut": "Geschick",
+                    "schaden": "W8+6",
+                    "schadenstyp": "phy"
+                },
+                "vorteile": [
+                    "Täuschen",
+                    "Ablenken",
+                    "Finden"
+                ],
+                "merkmale": [
+                    {
+                        "name": "Vogelperspektive",
+                        "text": "Du kannst fliegen. Einmal pro Rast darfst du, während du dich in der Luft befindest, der Spielleitung eine Frage über die Szenerie unter dir stellen, ohne würfeln zu müssen. Beim ersten Mal, wenn ein Charakter aufgrund dieser Informationen eine Aktion ausführt, erhält er einen Vorteil für den Wurf."
+                    },
+                    {
+                        "name": "Reittier",
+                        "text": "Du kannst bis zu zwei freiwillige Verbündete tragen, wenn du dich bewegst."
+                    }
+                ]
+            },
+            {
+                "name": "MEERESRAUBTIER",
+                "rang": 3,
+                "beispiele": "Delfin, Orca, Hai usw.",
+                "attribut_bonus": "Agilität +2",
+                "ausweichen_bonus": 4,
+                "angriff": {
+                    "distanz": "Unmittelbar",
+                    "attribut": "Agilität",
+                    "schaden": "W10+6",
+                    "schadenstyp": "phy"
+                },
+                "vorteile": [
+                    "Angreifen",
+                    "Schwimmen",
+                    "Spuren suchen"
+                ],
+                "merkmale": [
+                    {
+                        "name": "Aquatisch",
+                        "text": "Du kannst unter Wasser atmen und dich ungehindert bewegen."
+                    },
+                    {
+                        "name": "Zerfleischen",
+                        "text": "Wenn du bei einem Angriff gegen ein Ziel erfolgreich bist, darfst du 1 Hoffnung einsetzen, um es vorübergehend Verwundbar zu machen und für diesen Angriff einen Bonus von +1 auf deine Übung zu erhalten."
+                    }
+                ]
+            },
+            {
+                "name": "LEGENDÄRES TIER",
+                "rang": 3,
+                "beispiele": "Verbesserte Rang-1-Optionen",
+                "attribut_bonus": "",
+                "ausweichen_bonus": 0,
+                "angriff": null,
+                "vorteile": [],
+                "merkmale": [
+                    {
+                        "name": "Weiterentwickelt",
+                        "text": "Wähle eine Bestiengestalt-Option aus Rang 1 und werde zu einer größeren, mächtigeren Version dieser Kreatur. Während du die Gestalt angenommen hast, besitzt du alle Attribute und Merkmale der Originalgestalt und zusätzlich die folgenden Boni: | +6 auf Schadenswürfe | +1 auf das von dieser Gestalt verwendete Attribut | +2 auf Ausweichen"
+                    }
+                ]
+            },
+            {
+                "name": "LEGENDÄRES HYBRIDWESEN",
+                "rang": 3,
+                "beispiele": "Greif, Sphinx usw.",
+                "attribut_bonus": "Stärke +2",
+                "ausweichen_bonus": 3,
+                "angriff": {
+                    "distanz": "Unmittelbar",
+                    "attribut": "Stärke",
+                    "schaden": "W10+8",
+                    "schadenstyp": "phy"
+                },
+                "vorteile": [],
+                "merkmale": [
+                    {
+                        "name": "Hybridmerkmale",
+                        "text": "Um dich in diese Gestalt zu verwandeln, musst du 1 Stress zusätzlich markieren. Wähle zwei Bestiengestalt-Optionen aus den Rängen 1–2. Wähle aus diesen Optionen insgesamt vier Vorteile und zwei Merkmale."
+                    }
+                ]
+            },
+            {
+                "name": "GEWALTIGER KOLOSS",
+                "rang": 4,
+                "beispiele": "Elefant, Mammut, Nashorn usw.",
+                "attribut_bonus": "Stärke +3",
+                "ausweichen_bonus": 1,
+                "angriff": {
+                    "distanz": "Unmittelbar",
+                    "attribut": "Stärke",
+                    "schaden": "W12+12",
+                    "schadenstyp": "phy"
+                },
+                "vorteile": [
+                    "Finden",
+                    "Beschützen",
+                    "Angst einjagen",
+                    "Rennen"
+                ],
+                "merkmale": [
+                    {
+                        "name": "Reittier",
+                        "text": "Du kannst bis zu vier freiwillige Verbündete tragen, wenn du dich bewegst."
+                    },
+                    {
+                        "name": "Niederwalzen",
+                        "text": "Setze 1 Hoffnung ein, um dich in gerader Linie bis in weite Distanz zu bewegen und einen Angriff gegen alle Ziele innerhalb unmittelbarer Distanz zu deiner Bewegungslinie auszuführen. Ziele, gegen die du erfolgreich bist, erleiden W8+10 physischen Schaden abhängig von deiner Übung und sind vorübergehend Verwundbar."
+                    },
+                    {
+                        "name": "Nicht zu bremsen",
+                        "text": "Du erhältst einen Bonus von +2 auf deine Schadensschwellen."
+                    }
+                ]
+            },
+            {
+                "name": "SCHRECKLICHE ECHSE",
+                "rang": 4,
+                "beispiele": "Brachiosaurus, Tyrannosaurus usw.",
+                "attribut_bonus": "Stärke +3",
+                "ausweichen_bonus": 2,
+                "angriff": {
+                    "distanz": "Unmittelbar",
+                    "attribut": "Stärke",
+                    "schaden": "W12+10",
+                    "schadenstyp": "phy"
+                },
+                "vorteile": [
+                    "Angreifen",
+                    "Täuschen",
+                    "Angst einjagen",
+                    "Spuren suchen"
+                ],
+                "merkmale": [
+                    {
+                        "name": "Verheerender Angriff",
+                        "text": "Wenn du einem Ziel innerhalb unmittelbarer Distanz Schweren Schaden zufügst, kannst du 1 Stress markieren, um es zu zwingen, einen weiteren Trefferpunkt zu markieren."
+                    },
+                    {
+                        "name": "Riesenschritt",
+                        "text": "Du kannst dich bis in weite Distanz bewegen, ohne zu würfeln. Dank deiner Größe kannst du raues Gelände ignorieren (Entscheidung der Spielleitung)."
+                    }
+                ]
+            },
+            {
+                "name": "MYTHISCHES FLUGRAUBTIER",
+                "rang": 4,
+                "beispiele": "Drache, Pterodaktylus, Rock, Lindwurm usw.",
+                "attribut_bonus": "Geschick +3",
+                "ausweichen_bonus": 4,
+                "angriff": {
+                    "distanz": "Unmittelbar",
+                    "attribut": "Geschick",
+                    "schaden": "W10+11",
+                    "schadenstyp": "phy"
+                },
+                "vorteile": [
+                    "Angreifen",
+                    "Täuschen",
+                    "Finden",
+                    "Navigieren"
+                ],
+                "merkmale": [
+                    {
+                        "name": "Reittier",
+                        "text": "Du kannst bis zu drei freiwillige Verbündete tragen, wenn du dich bewegst."
+                    },
+                    {
+                        "name": "Tödlicher Sturzflug",
+                        "text": "Du kannst fliegen und dich als Teil deiner Aktion bis in weite Distanz bewegen. Wenn du dich aus mindestens kurzer Distanz in unmittelbare Distanz zu einem Ziel bewegst und es in der gleichen Aktion angreifst, darfst du alle Schadenswürfel, die ein niedrigeres Ergebnis anzeigen als deine Übung, noch einmal würfeln."
+                    }
+                ]
+            },
+            {
+                "name": "EPISCHES WASSERWESEN",
+                "rang": 4,
+                "beispiele": "Riesentintenfisch, Wal usw.",
+                "attribut_bonus": "Agilität +3",
+                "ausweichen_bonus": 3,
+                "angriff": {
+                    "distanz": "Unmittelbar",
+                    "attribut": "Agilität",
+                    "schaden": "W10+10",
+                    "schadenstyp": "phy"
+                },
+                "vorteile": [
+                    "Finden",
+                    "Beschützen",
+                    "Angst einjagen",
+                    "Spuren suchen"
+                ],
+                "merkmale": [
+                    {
+                        "name": "Meeresherrschaft",
+                        "text": "Du kannst unter Wasser atmen und dich ungehindert bewegen. Wenn du gegen ein Ziel in unmittelbarer Distanz einen erfolgreichen Angriff ausführst, darfst du es vorübergehend Festsetzen."
+                    },
+                    {
+                        "name": "Zäh",
+                        "text": "Wenn du ein Rüstungsfeld markieren müsstest, würfle einen W6. Bei einer 5 oder 6 sinkt die Schwere des Schadens um eine Schwelle, ohne dass du ein Rüstungsfeld markierst."
+                    }
+                ]
+            },
+            {
+                "name": "MYTHISCHES TIER",
+                "rang": 4,
+                "beispiele": "Verbesserte Rang-1- oder Rang-2optionen",
+                "attribut_bonus": "",
+                "ausweichen_bonus": 0,
+                "angriff": null,
+                "vorteile": [],
+                "merkmale": [
+                    {
+                        "name": "Weiterentwickelt",
+                        "text": "Wähle eine Bestiengestalt-Option aus Rang 1 oder 2 und werde zu einer größeren, mächtigeren Version dieser Kreatur. Während du die Gestalt angenommen hast, besitzt du alle Attribute und Merkmale der Originalgestalt und zusätzlich die folgenden Boni: | +9 auf Schadenswürfe | +2 auf das von dieser Gestalt verwendet Attribut | +3 auf Ausweichen | Dein Schadenswürfel erhöht sich um eine Größe (W6 wird W8, W8 wird W10 usw.)"
+                    }
+                ]
+            },
+            {
+                "name": "MYTHISCHES HYBRIDWESEN",
+                "rang": 4,
+                "beispiele": "Chimäre, Basilisk, Mantikor usw.",
+                "attribut_bonus": "Stärke +3",
+                "ausweichen_bonus": 2,
+                "angriff": {
+                    "distanz": "Unmittelbar",
+                    "attribut": "Stärke",
+                    "schaden": "W12+10",
+                    "schadenstyp": "phy"
+                },
+                "vorteile": [],
+                "merkmale": [
+                    {
+                        "name": "Hybridmerkmale",
+                        "text": "Um dich in diese Gestalt zu verwandeln, musst du 2 Stress zusätzlich markieren. Wähle drei Bestiengestalt-Optionen aus den Rängen 1–3. Wähle aus diesen Optionen insgesamt fünf Vorteile und drei Merkmale."
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "Wächter",
+        "name_full": "WÄCHTER*IN",
+        "beschreibung": "Der Titel Wächter*in umfasst eine Vielzahl kriegerischer Professionen und bezieht sich mehr auf den moralischen Kompass und die unerschütterliche Standhaftigkeit der Kämpfenden als auf die eingesetzten Waffen oder Kampfstile. Manche Wächter*innen schließen sich Gruppen an, um für ein Land oder eine Sache zu kämpfen, aber häufiger sind sie mit den wenigen Personen unterwegs, die ihnen wirklich etwas bedeuten. Wächter*innen sind dafür bekannt, dass sie selbst in hoffnungsloser Unterzahl mit unerbittlichem Ingrimm kämpfen und der Schutz der Gruppe für sie an erster Stelle steht. Wer Verbündeten von Wächter*innen ein Leid antut, muss damit rechnen, es mit gleicher Münze heimgezahlt zu bekommen.",
+        "domaenen": [
+            "Mut",
+            "Klinge"
+        ],
+        "ausweichen": 9,
+        "trefferpunkte": 7,
+        "klassengegenstaende": "Ein Totem deines*deiner Mentor*in, oder ein geheimer Schlüssel",
+        "hoffnungsfaehigkeit": {
+            "name": "Vorderste Front",
+            "text": "Setze 3 Punkte Hoffnung ein, um 2 Rüstungsfelder zu löschen."
+        },
+        "klassenfaehigkeiten": [
+            {
+                "name": "Unaufaltsam",
+                "text": "Einmal pro langer Rast kannst du Unaufaltsam werden. Du erhältst einen Unaufaltsam-Würfel. Auf Stufe 1 ist dein Unaufaltsam-Würfel ein W4. Platziere ihn zunächst mit der 1 nach oben zeigend auf deinem Charakterbogen im vorgesehenen Feld. Nachdem du einen Schadenswurf durchgeführt hast, der einem Ziel mindestens 1 Trefferpunkt Schaden zufügt, erhöhe den Wert des Unaufaltsam-Würfels um 1. Sobald der Würfel seinen Maximalwert überschreiten würde oder die Szene endet, entfernst du den Würfel und bist nicht mehr Unaufaltsam. Ab Stufe 5 wird dein Unaufaltsam-Würfel zu einem W6. Während du Unaufaltsam bist, erhältst du die folgenden Vorteile: \n\n• Du verringerst die Schwere von physischem Schaden um eine Schwelle (Schwer zu Mittel, Mittel zu Leicht, Leicht zu Kein). \n• Du fügst deinem Schadenswurf den aktuellen Wert des Unaufaltsam-Würfels hinzu. \n• Du bist immun gegen die Zustände Festgesetzt und Verwundbar. \n\n**Hinweis:** Wenn dein Unaufaltsam-Würfel ein W4 ist und die 4 gerade oben liegt, entfernst du den Würfel beim nächsten Mal, wenn du ihn auf die nächsthöhere Zahl drehen müsstest. Wurde dein Unaufaltsam-Würfel jedoch auf einen W6 erhöht und die 4 liegt gerade oben, drehst du ihn beim nächsten Mal auf die 5. In diesem Fall entfernst du den Würfel, wenn du ihn auf die nächsthöhere Zahl nach der 6 drehen müsstest."
+            }
+        ]
+    },
+    {
+        "name": "Waldläufer",
+        "name_full": "WALDLÄUFER*IN",
+        "beschreibung": "Waldläufer*innen sind überaus geschickt in der Jagd und schließen sich trotz ihrer kämpferischen Fertigkeiten nur selten einer Armee an. Durch meisterhafte Körperbeherrschung und ein tiefes Verständnis für die wilde Natur sind sie in der Lage, ihre Beute mit Schläue und Geduld zur Strecke zu bringen. Viele Waldläufer*innen jagen und kämpfen an der Seite eines verbündeten Tieres, zu dem sie ein starkes spirituelles Band geknüpft haben – ihr Seelentier. Indem sie ihre Fertigkeiten in der Wildnis immer stärker verfeinern, werden Waldläufer*innen zu ausgezeichneten Fährtensuchenden, die ihre Beute in raffinierte Fallen locken, sie aber ebenso gut frontal angreifen können.",
+        "domaenen": [
+            "Knochen",
+            "Natur"
+        ],
+        "ausweichen": 12,
+        "trefferpunkte": 6,
+        "klassengegenstaende": "Eine Trophäe von deiner ersten erfolgreichen Jagd oder ein scheinbar kaputter Kompass",
+        "hoffnungsfaehigkeit": {
+            "name": "Rundumschlag",
+            "text": "Setze 3 Punkte Hoffnung ein, wenn du bei einem Angriffswurf mit einer Waffe einen Erfolg erzielst, um denselben Wurf auf zwei zusätzliche Ziele innerhalb der Distanz des Angriffs anzuwenden."
+        },
+        "klassenfaehigkeiten": [
+            {
+                "name": "Jagdfokus",
+                "text": "Setze 1 Hoffnung ein und führe einen Angriff gegen ein Ziel aus. Bei einem Erfolg verursachst du den normalen Schaden und machst das Ziel vorübergehend zu deinem Fokus. Solange diese Fähigkeit aktiv ist oder bis du eine andere Kreatur zu deinem Fokus machst, erhältst du folgende Vorteile gegenüber deinem Fokus: \n\n• Du weißt genau, in welcher Richtung sich dein Fokus befindet. \n• Wenn du ihm Schaden zufügst, muss er 1 Stress markieren. \n• Wenn du mit einem Angriff gegen deinen Fokus scheiterst, kannst du die Fähigkeit Jagdfokus beenden, um deine Dualwürfel neu zu würfeln."
+            }
+        ],
+        "seelentier": "Wenn du dich für die Subklasse Bestienbund entscheidest, nimmst du dir einen Seelentierbogen, auf dem du wichtige Informationen über das Seelentier deines Charakters festhältst. Du kannst den Bogen unter die rechte Seite deines Charakterbogens schieben, um immer alles im Blick zu haben.\n\n**SCHRITT 1: GIB DEINEM SEELENTIER EINEN NAMEN**\n\nSprich mit der Spielleitung ab, was für ein Tier du als Seelentier wählst. Gib ihm einen Namen und füge dem Seelentierbogen eine Zeichnung des Tieres hinzu.\n\n**SCHRITT 2: NOTIERE DEN AUSWEICHEN-WERT**\n\nFülle das Ausweichen-Feld deines Seelentiers aus; der Startwert beträgt 10.\n\n**SCHRITT 3: WÄHLE DIE ERFAHRUNGEN**\n\nÜberlege dir zwei Erfahrungen für dein Seelentier, basierend auf dessen Ausbildung und euren gemeinsamen Erlebnissen.\n\nBeide Erfahrungen starten mit +2. Immer wenn du eine neue Erfahrung erhältst, bekommt auch dein Seelentier eine. Alle neuen Erfahrungen beginnen mit +2.\n\nBeispiele für Seelentier-Erfahrungen\n\nKühnes Ablenkungsmanöver, Klettertalent, Apportieren, Zutraulich, Hüter*in des Waldes, Furchteinflößend, Einschüchternd, Treu bis in den Tod, Orientierung, Wendig, Niemand bleibt zurück, Immer auf der Hut, Schutzinstinkt, Edle Herkunft, Spürnase, Assistenztier, Treues Reittier, Wachsam, Wir finden alles, Nur was man findet, kann man zur Strecke bringen\n\n**SCHRITT 4: WÄHLE DIE ANGRIFFSART DEINES SEELENTIERES UND NOTIERE SEINE SCHADENSWÜRFEL**\n\nBeschreibe, wie dein Seelentier Schaden zufügt (seinen Standardangriff und Schadenstyp) und notiere das im Bereich „Angriff & Schaden“. Auf Stufe 1 ist der Schadenswürfel deines Seelentieres ein W6 und seine Distanz unmittelbar.\n\n**DEIN SEELENTIER IM SPIEL\n****\nZAUBERWÜRFE, HOFFNUNG UND ERFAHRUNGEN\n**\nFühre einen Zauberwurf durch, um Verbindung zu deinem Seelentier aufzunehmen und ihm einen Befehl zu erteilen. Wenn du 1 Hoffnung einsetzt, darfst du eine passende Seelentiererfahrung zum Wurf addieren. Bei einem Erfolg mit Hoffnung erhältst du, wenn deine nächste Aktion auf diesem Erfolg aufaut, einen Vorteil für diesen Wurf.\n\n**ANGREIFEN MIT DEINEM SEELENTIER\n**\nWenn du deinem Seelentier befiehlst anzugreifen, erhält es alle Vorteile, die normalerweise nur dir zukommen würden (wie zum Beispiel die Effekte deines Jagdfokus). Bei einem Erfolg verwendet es für seinen Schadenswurf deine Übung und seine Schadenswürfel.\n\n**SCHADEN ALS STRESS\n**\nWenn dein Seelentier Schaden erleiden würde, markiert es stattdessen Stress. Markiert es sein letztes Stressfeld, verlässt es die Szene (durch Verstecken, Fliehen oder etwas Ähnliches). Es bleibt verschwunden bis zum Beginn deiner nächsten langen Rast, dann kehrt es zurück, wobei 1 Stress gelöscht wird.\n\nWenn du dich für einen Auszeit-Zug entscheidest, der bei dir Stress löscht, dann wird bei deinem Seelentier die gleiche Menge Stress gelöscht.\n\n**DEIN SEELENTIER HOCHSTUFEN\n**\nWenn dein Charakter eine neue Stufe erreicht, wähle für dein Seelentier eine verfügbare Option aus der folgenden Liste und notiere sie auf deinem Seelentierbogen.\n\n**Intelligent:** Dein Seelentier bekommt einen permanenten +1 Bonus auf eine Seelentier-Erfahrung deiner Wahl.\n\n**Licht im Dunkeln:** Du erhältst ein zusätzliches Hoffnungsfeld für deinen Charakter, das du auf deinem Seelentierbogen markieren kannst.\n\n**Trostspende:** Einmal pro Rast kannst du dir einem ruhigen Moment Zeit nehmen, um deinem Seelentier Zuneigung und Aufmerksamkeit zu zeigen. Wenn du das tust, erhältst du entweder 1 Hoffnung, oder ihr könnt beide 1 Stress löschen.\n\n**Gerüstet:** Wenn dein Seelentier Schaden erleidet, kannst du eins deiner Rüstungsfelder markieren statt 1 Stress bei deinem Seelentier.\n\n**Wütend:** Erhöhe den Schadenswürfel oder die Distanz deines Seelentieres um eine Einheit (W6 auf W8, kurz auf weit usw.).\n\n**Widerstandsfähig:** Dein Seelentier erhält ein zusätzliches Stressfeld.\n\n**Seelenband:** Wenn du deinen letzten Trefferpunkt markierst, eilt dein Seelentier an deine Seite, um dir Trost zu spenden. Würfle so viele W6, wie dein Seelentier noch unmarkierte Stressfelder hat, und markiere diese Felder. Wenn einer der Würfel eine 6 erzielt, hilft dir dein Seelentier auf die Beine. Du löschst deinen letzten Trefferpunkt und kehrst in die Szene zurück.\n\n**Auf der Hut:** Dein Seelentier bekommt einen permanenten Bonus von +2 auf Ausweichen.\n"
+    },
+    {
+        "name": "Schurke",
+        "name_full": "SCHURKE*IN",
+        "beschreibung": "Schurk*innen nehmen es mit Gesetzen im Allgemeinen nicht so genau. Lügen und Stehlen werden ihnen als Hauptbeschäftigung nachgesagt, und die Besten dieser Klasse bewegen sich unerkannt durch die Welt. Dank ihrer scharfen Zungen und Klingen überlisten Schurk*innen die Gegenseite ebenso leicht durch geschickte Beeinflussung wie durch das Knacken von Schlössern, Klettern durch Fenster und Austeilen hinterhältiger Schläge. Dank ihrer magischen Künste beherrschen sie die Manipulation von Schatten und Bewegungen, was ihnen viele nützliche und manchmal tödliche Möglichkeiten eröffnet. Schurk*innen gründen häufig Gilden, um sich mit künftigen Verbündeten zu treffen, Jobs zu vergeben, ihre geheimen Fertigkeiten zu vervollkommnen und zu beweisen, dass auch Schlitzohren einem Ehrenkodex folgen.",
+        "domaenen": [
+            "Mitternacht",
+            "Anmut"
+        ],
+        "ausweichen": 12,
+        "trefferpunkte": 6,
+        "klassengegenstaende": "Fälschungswerkzeug-Set oder ein Greifaken",
+        "hoffnungsfaehigkeit": {
+            "name": "Flinkes Ausweichen",
+            "text": "Setze 3 Punkte Hoffnung ein, um einen Bonus von +2 auf Ausweichen zu erhalten, sobald dich ein Angriff treffen würde. Solange du nicht getroffen wirst, hält der Bonus bis zu deiner nächsten langen Rast an."
+        },
+        "klassenfaehigkeiten": [
+            {
+                "name": "Getarnt",
+                "text": "Immer wenn du Versteckt wärst, bist du stattdessen Getarnt. Zusätzlich zu den Vorteilen von Versteckt bleibst du im Zustand Getarnt unsichtbar, solange du stillstehst, selbst wenn sich ein Charakter an einen Ort bewegt, von dem aus er dich normalerweise sehen würde. Nachdem du einen Angriff ausführst oder einen Zug beendest, während du in Sichtlinie eines Charakters bist, giltst du nicht mehr als Getarnt."
+            },
+            {
+                "name": "Schleichangriff",
+                "text": "Wenn du erfolgreich einen Angriff ausführst, während du Getarnt bist, oder wenn sich ein verbündeter Charakter in unmittelbarer Distanz deines Ziels befindet, füge deinem Schadenswurf eine Anzahl von W6 hinzu, die deinem Rang entspricht. \n\nStufe 1 = Rang 1 \nStufen 2–4 = Rang 2 \nStufen 5–7 = Rang 3 \nStufen 8–10 = Rang 4"
+            }
+        ]
+    },
+    {
+        "name": "Seraph",
+        "name_full": "SERAPH",
+        "beschreibung": "Seraphim kämpfen und heilen in göttlichem Auftrag und mit einem heiligen Ziel vor Augen. Innerhalb der Sphären existiert eine große Vielfalt an Gottheiten, die zahlreiche Arten von Seraphim in ihre Dienste berufen haben. Ihr Ethos entspricht im Allgemeinen dem Zuständigkeitsbereich oder den Zielen ihrer Gottheit wie zum Beispiel der Schutz der Schwachen, die Ausübung von Rache, die Verteidigung eines Landes oder eines Artefakts oder die Verbreitung eines bestimmten Glaubens. Einige Seraphim verbünden sich mit Armeen oder bestimmten Örtlichkeiten, sehr zur Freude der jeweiligen Herrschenden, aber andere kämpfen auch gegen die Dummheiten der Welt der Sterblichen. Es ist immer besser, mit Seraphim verbündet zu sein, als sich ihre Feindschaft zuzuziehen, denn sie kennen keine Gnade mit denen, die sich ihrem Ziel in den Weg stellen.",
+        "domaenen": [
+            "Leben",
+            "Mut"
+        ],
+        "ausweichen": 9,
+        "trefferpunkte": 7,
+        "klassengegenstaende": "Ein Beutel voll Opfergaben oder ein Symbol deiner Gottheit",
+        "hoffnungsfaehigkeit": {
+            "name": "Lebenserhaltung",
+            "text": "Setze 3 Punkte Hoffnung ein, um 1 TP bei einem verbündeten Charakter innerhalb kurzer Distanz zu löschen."
+        },
+        "klassenfaehigkeiten": [
+            {
+                "name": "Gebetswürfel",
+                "text": "Zu Beginn jeder Spielsitzung würfelst du eine Anzahl W4, die dem Zauber-Attribut deiner Subklasse entspricht, und legst sie in den dafür vorgesehenen Bereich auf deinem Charakterbogen. Diese Würfel sind deine Gebetswürfel. Du darfst beliebig viele Gebetswürfel einsetzen, um dir selbst oder einem verbündeten Charakter innerhalb weiter Distanz zu helfen. Den Wert eines Gebetswürfels darfst du einsetzen, um eingehenden Schaden zu reduzieren, das Ergebnis eines bereits gewürfelten Wurfs zu verbessern oder Hoffnung in Höhe des Würfelergebnisses zu erhalten. Am Ende jeder Spielsitzung verfallen alle nicht eingesetzten Gebetswürfel."
+            }
+        ]
+    },
+    {
+        "name": "Zauberer",
+        "name_full": "ZAUBERER*IN",
+        "beschreibung": "Nicht alle von Natur aus Magiebegabten entscheiden sich dafür, ihre Kunst zu verfeinern, aber diejenigen, die es tun, können zu mächtigen Zauber*innen werden. Die Gabe wird von den Eltern an die Kinder vererbt, selbst wenn die Familie nichts davon weiß oder sich scheut, Magie auszuüben. Die Fähigkeiten von Zauber*innen können von der Beherrschung der Elemente bis zur Kunst der Illusion und darüber hinaus reichen, und viele schließen sich mit ähnlich Talentierten zu Gruppen zusammen. Wahre Größe erlangt man als Zauber*in nicht durch die Erlangung von immer mehr Macht, sondern indem man lernt, die Macht, die man bereits besitzt, zu zähmen und zu beherrschen. Die Magie fehlgeleiteter oder undisziplinierter Zauber*innen stellt eine große Gefahr dar.",
+        "domaenen": [
+            "Arkana",
+            "Mitternacht"
+        ],
+        "ausweichen": 10,
+        "trefferpunkte": 6,
+        "klassengegenstaende": "Ein flüsternder Orb oder ein Erbstück deiner Familie",
+        "hoffnungsfaehigkeit": {
+            "name": "Launenhafte Magie",
+            "text": "Setze 3 Punkte Hoffnung ein, um beliebig viele Schadenswürfel erneut zu würfeln, sofern der Angriff magischen Schaden bewirkt."
+        },
+        "klassenfaehigkeiten": [
+            {
+                "name": "Arkanes Gespür",
+                "text": "Du kannst die Präsenz magischer Lebewesen und Objekte innerhalb kurzer Distanz spüren."
+            },
+            {
+                "name": "Einfache Illusion",
+                "text": "Führe einen Zauberwurf (10) durch. Bei einem Erfolg erschaffst du eine visuelle Illusion innerhalb kurzer Distanz von maximal deiner Größe. Diese Illusion wirkt überzeugend auf alle, die sich in kurzer Distanz oder weiter entfernt befinden."
+            },
+            {
+                "name": "Pure Macht kanalisieren",
+                "text": "Einmal pro langer Rast kannst du eine Domänenkarte aus deiner Auslage in deine Reserve legen und dich für einen der folgenden Effekte entscheiden:\n\n• Erhalte Hoffnung in Höhe der Kartenstufe. \n• Verstärke einen Zauber, der Schaden verursacht, und erhalte einen Bonus auf den Schadenswurf in Höhe der doppelten Kartenstufe."
+            }
+        ]
+    },
+    {
+        "name": "Krieger",
+        "name_full": "KRIEGER*IN",
+        "beschreibung": "Krieger*in zu werden, erfordert Jahre, manchmal ein ganzes Leben des Übens und der Hingabe, bis man den Umgang mit Waffen meisterlich beherrscht. Während viele, die kämpfen wollen, nur ihre Stärke trainieren, wissen Krieger*innen um die Wichtigkeit eines flinken Körpers und Geistes, was sie zu den gefragtesten Kämpfenden in allen Sphären macht. Oft finden Krieger*innen Beschäftigung bei Armeen, Söldnertrupps oder sogar in einer königlichen Wache, aber ihr Potenzial ist in jeder Position verschwendet, in der sie ihre Fertigkeiten nicht verbessern und ausweiten können. Krieger*innen haben im Allgemeinen eine Lieblingswaffe; ihnen und ihrer Klinge in den Weg zu geraten, erweist sich oft als schwerer Fehler.",
+        "domaenen": [
+            "Klinge",
+            "Knochen"
+        ],
+        "ausweichen": 11,
+        "trefferpunkte": 6,
+        "klassengegenstaende": "Die Zeichnung eines*einer Geliebten oder ein Wetzstein",
+        "hoffnungsfaehigkeit": {
+            "name": "Keine Gnade",
+            "text": "Setze 3 Punkte Hoffnung ein, um bis zu deiner nächsten Rast einen Bonus von +1 auf Angriffswürfe zu erhalten."
+        },
+        "klassenfaehigkeiten": [
+            {
+                "name": "Gelegenheitsangriff",
+                "text": "Wenn ein Ziel versucht, sich aus deiner unmittelbaren Distanz herauszubewegen, darfst du einen Reaktionswurf mit einem Attribut deiner Wahl gegen dessen Schwierigkeitsgrad durchführen. Wähle bei einem Erfolg einen der folgenden Effekte, bei einem kritischen Erfolg zwei: \n\n• Das Ziel bleibt auf seiner Position stehen. \n• Du verursachst Schaden in Höhe des Schadenswertes deiner Primärwaffe. \n• Du bewegst dich mit dem Ziel."
+            },
+            {
+                "name": "Kampfausbildung",
+                "text": "Du ignorierst Last beim Ausrüsten von Waffen. Wenn du physischen Schaden verursachst, erhältst du einen Bonus in Höhe deiner Stufe auf deinen Schadenswurf."
+            }
+        ]
+    },
+    {
+        "name": "Magier",
+        "name_full": "MAGIER*IN",
+        "beschreibung": "Durch den Besuch entsprechender Institutionen oder durch individuelle Studien erlangen und verbessern Magier*innen in langen Jahren des Lernens ihre beeindruckenden magischen Fähigkeiten, wobei sie eine Vielzahl von Hilfsmitteln wie Bücher, Edelsteine, Tränke und Kräuter verwenden. Einige Magier*innen widmen ihr Leben der Perfektionierung einer bestimmten magischen Schule, während andere aus vielen unterschiedlichen Disziplinen schöpfen. Viele werden zu weisen und einflussreichen Persönlichkeiten in ihren Gemeinschaften, die Herrschende beraten, Kranke heilen und manchmal sogar Kriegsräte leiten. Das gemeinsame Ziel aller Magier*innen ist das Sammeln magischen Wissens, aber oft fechten sie die erbittertsten Konflikte in den eigenen Reihen aus, da der Erwerb, das Bewahren und das Teilen mächtiger Geheimnisse immer wieder zu hitzigen Auseinandersetzungen führen, aus denen bereits unzählige Todesfälle resultierten.",
+        "domaenen": [
+            "Kodex",
+            "Leben"
+        ],
+        "ausweichen": 11,
+        "trefferpunkte": 5,
+        "klassengegenstaende": "Ein Buch, das du zu übersetzen versuchst, oder ein winziges, harmloses elementares Haustier",
+        "hoffnungsfaehigkeit": {
+            "name": "Diesmal nicht",
+            "text": "Setze 3 Punkte Hoffnung ein, um eine gegnerische Kreatur innerhalb weiter Distanz einen Angriffs- oder Schadenswurf erneut würfeln zu lassen."
+        },
+        "klassenfaehigkeiten": [
+            {
+                "name": "Taschenspielerei",
+                "text": "Du kannst nach Belieben harmlose, subtile magische Effekte erzeugen. Zum Beispiel kannst du die Farbe eines Objekts ändern, einen Geruch erschaffen, eine Kerze entzünden, einen kleinen Gegenstand schweben lassen, einen Raum erleuchten oder einen kleinen Gegenstand reparieren."
+            },
+            {
+                "name": "Seltsame Muster",
+                "text": "Wähle eine Zahl zwischen 1 und 12. Wenn du diese Zahl auf einem der Dualwürfel würfelst, erhältst du entweder 1 Hoffnung oder darfst 1 Stress löschen. Du darfst diese Zahl bei einer langen Rast ändern."
+            }
+        ]
+    }
+]

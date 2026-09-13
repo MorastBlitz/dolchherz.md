@@ -1,0 +1,601 @@
+[
+    {
+        "name": "Abgelegene Siedlung",
+        "rang": 1,
+        "typ": "Sozial",
+        "beschreibung": "Eine kleine Stadt am Rand einer Nation oder Region, in der Nähe eines Verlieses, von Gräbern oder anderer Abenteuerziele.",
+        "anregungen": "Die Verzweifelten in ein sicheres Verderben treiben, von zerlumpter Hoffnung profitieren",
+        "schwierigkeitsgrad": "12",
+        "moegliche_gegner": "Blitzdolch-Bandit*innen (Hexer, Knochenbrecherin, Lakai, Leutnant, Schatten, Heckenschütze), Maskierter Dieb, Händlerin",
+        "faehigkeiten": [
+            {
+                "name": "Gerüchte überall",
+                "art": "Passiv",
+                "text": "Klatsch ist die am schnellsten reisende Währung im Reich. Ein SC kann sich mit einem Präsenzwurf nach wichtigen Ereignissen erkundigen. Was er erfährt, hängt gemäß den folgenden Kriterien vom Ergebnis seines Wurfs ab. _Welche Neuigkeiten haben die SC, die sie an neugierige Reisende weitergeben könnten? Was denken die Einheimischen über diese Ereignisse?_\n- **Kritischer Erfolg:** Erfährt etwas über zwei wichtige Ereignisse. Der SC kann eine Anschlussfrage zu einem der Gerüchte stellen und erhält eine wahrheitsgemäße (wenn auch nicht immer vollständige) Antwort.\n- **Erfolg mit Hoffnung:** Erfährt etwas über zwei Ereignisse, von denen mindestens eines für die Vorgeschichte des Charakters relevant ist.\n- **Erfolg mit Furcht:** Erfährt ein beunruhigendes Gerücht, das mit der Vorgeschichte des Charakters zusammenhängt.\n- **Jeder Misserfolg:** Die Einheimischen reagieren schlecht auf ihre Nachfragen. Der SC muss 1 Stress markieren, um ein relevantes Gerücht zu erfahren."
+            },
+            {
+                "name": "Gesellschaft des Gebrochenen Kompasses",
+                "art": "Passiv",
+                "text": "Eine Abenteuergesellschaft unterhält hier ein Kapitelhaus, in dem Held*innen Prahlereien und Gerüchte austauschen, auf ihre eingebildeten Erfolge trinken und intrigieren, um ihre Rivalen zu untergraben. _Mit welchen Prahlereien kommen die Abenteuernden hier an, und welche davon haltet ihr für wahr?_"
+            },
+            {
+                "name": "Rivalisierende Gruppe",
+                "art": "Passiv",
+                "text": "Eine andere Abenteuergruppe ist hier und sucht dieselben Schätze oder Hinweise wie die SC. _Welcher SC hat eine Verbindung zu einem der Mitglieder der rivalisierenden Gruppe? Sprechen sie den SC zuerst an oder warten sie, bis der SC sich bewegt?_"
+            },
+            {
+                "name": "Es wäre eine Schande, wenn eurem Laden etwas zustoßen würde",
+                "art": "Aktion",
+                "text": "Die SC werden Zeug*innen, wie Handlanger einer örtlichen Verbrecherchefin einen Gemischtwarenladen unter Druck setzen. _Welchen Ärger verursacht es, wenn die SC eingreifen?_"
+            },
+            {
+                "name": "Falscher Ort, falsche Zeit",
+                "art": "Reaktion",
+                "text": "Nachts oder wenn die Gruppe allein in einer Hintergasse ist, könnt ihr **1 Furcht ausgeben**, um eine Gruppe von Dieb*innen einzuführen, die versuchen, sie auszurauben. Die Dieb*innen erscheinen in kurzer Distanz zu einem gewählten SC und umfassen eine Blitzdolch-Knochenbrecherin, so viele Lakaien wie SC vorhanden sind und einen Leutnant. Für eine größere Gruppe fügt einen Hexer oder Heckenschützen hinzu. _Welche Details zeigen der Gruppe, dass diese Leute verzweifelte ehemalige Abenteuernde sind?_"
+            }
+        ]
+    },
+    {
+        "name": "Belagerung",
+        "rang": 3,
+        "typ": "Ereignis",
+        "beschreibung": "Eine aktive Belagerung, bei der eine angreifende Streitmacht darum kämpft, in eine befestigte Burg einzudringen.",
+        "anregungen": "Den Kampfwillen ausbluten lassen, die Mauern durchbrechen, Spannung aufbauen",
+        "schwierigkeitsgrad": "17",
+        "moegliche_gegner": "Söldner (Plänkler, Mietschwert, Arkane Söldnerin, Waffenmeisterin), Adelige Streitkräfte (Bogenstaffel, Zwangsverpflichtete, Elitesoldat, Ritterin des Königreichs)",
+        "faehigkeiten": [
+            {
+                "name": "Geheimer Eingang",
+                "art": "Passiv",
+                "text": "Ein SC kann mit einem erfolgreichen Instinkt- oder Wissenswurf einen geheimen Weg in die Burg finden oder sich daran erinnern. _Wie gelangen sie hinein, ohne den Angreifern den Weg zu verraten? Überwacht eine der Verteidigerinnen diesen Weg?_"
+            },
+            {
+                "name": "Belagerungswaffen (Umgebungswechsel)",
+                "art": "Aktion",
+                "text": "_Konsequenzcountdown (6)._ Die angreifende Streitmacht setzt Belagerungswaffen ein, um die Befestigungen der Verteidiger niederzureißen. Aktiviert den Countdown, wenn die Belagerung beginnt (für eine langwierige Belagerung macht daraus stattdessen einen langfristigen Countdown). Wenn er ausgelöst wird, sind die Befestigungen der Verteidiger durchbrochen und die Angreifer strömen hinein. Ihr erhaltet 2 Furcht und wechselt dann zum Schauplatz „Offene Feldschlacht“ und rückt ihn in den Fokus. _Welche Belagerungswaffen werden eingesetzt? Sind sie magisch, weltlich oder eine Mischung aus beidem? Welche Verteidigungen müssen die Charaktere überwinden, um die Burg zu stürmen?_"
+            },
+            {
+                "name": "Verstärkung!",
+                "art": "Aktion",
+                "text": "Beschwört eine Ritterin des Königreichs, eine Anzahl Rang-3-Lakaien in Höhe der Anzahl der SC und zwei gegnerische Charaktere eurer Wahl innerhalb weiter Distanz zu einem gewählten SC als Verstärkung. Die Ritterin des Königreichs übernimmt sofort den Fokus. _Wen greifen sie zuerst an? Welche Formation nehmen sie ein?_"
+            },
+            {
+                "name": "Kollateralschaden",
+                "art": "Reaktion",
+                "text": "Wenn ein gegnerischer Charakter besiegt wird, könnt ihr **1 Furcht ausgeben**, um einen verirrten Angriff einer Belagerungswaffe auf einen Punkt des Schlachtfelds treffen zu lassen. Alle Ziele innerhalb sehr kurzer Distanz dieses Punkts müssen einen Agilitäts-Reaktionswurf ausführen. _Welche Trümmer werden durch den Angriff verstreut? Was wird durch den Treffer zerstört und lässt sich nicht leicht reparieren?_\n- Ziele, die scheitern, erleiden **3W8+3** physischen oder magischen Schaden und müssen 1 Stress markieren.\n- Ziele, die gelingen, müssen 1 Stress markieren."
+            }
+        ]
+    },
+    {
+        "name": "Belebter Marktplatz",
+        "rang": 1,
+        "typ": "Sozial",
+        "beschreibung": "Das wirtschaftliche Herz der Siedlung mit örtlichen Kunsthandwerker*innen, reisenden Händler*innen und Kundschaft aus allen Gesellschaftsschichten.",
+        "anregungen": "Billig kaufen und teuer verkaufen, mit Waren aus nah und fern verführen und verlocken",
+        "schwierigkeitsgrad": "10",
+        "moegliche_gegner": "Wachen (Wache mit Schwert, Oberwache), Maskierter Dieb, Händlerin",
+        "faehigkeiten": [
+            {
+                "name": "Die Waage kippen",
+                "art": "Passiv",
+                "text": "SC können Vorteil auf einen Präsenzwurf erhalten, indem sie als Teil der Interaktion eine Handvoll Gold anbieten. _Wird jede Münze akzeptiert oder nur die örtliche Währung? Wie offensichtlich bieten die SC dieses Bestechungsgeld an?_"
+            },
+            {
+                "name": "Unerwarteter Fund",
+                "art": "Aktion",
+                "text": "Enthüllt den SC, dass eine der Händlerinnen etwas hat, das sie wollen oder brauchen, etwa Essen von zu Hause, ein seltenes Buch, magische Komponenten, eine zweifelhafte Schatzkarte oder einen magischen Schlüssel. _Welchen Preis jenseits von Gold wird die Händlerin für diese Rarität verlangen?_"
+            },
+            {
+                "name": "Lange Finger",
+                "art": "Aktion",
+                "text": "Eine Diebin versucht, einem SC etwas zu stehlen. Der SC muss einen Instinktwurf bestehen, um die Diebin zu bemerken, oder verliert einen Gegenstand der Wahl der SL, während die Diebin bis in kurze Distanz entkommt. Um den gestohlenen Gegenstand zurückzuholen, müssen die SC einen Fortschrittscountdown (6) abschließen, um die Diebin zu verfolgen, bevor die Diebin einen Konsequenzcountdown (4) abschließt und in ihr Versteck entkommt. _Was hat diese Person zum Taschendiebstahl getrieben? Wo ist das Versteck der Diebin und wie ist es der Entdeckung entgangen?_"
+            },
+            {
+                "name": "Die Menge rückt zusammen",
+                "art": "Reaktion",
+                "text": "Wenn sich ein SC von der Gruppe trennt, verschiebt sich die Menge und schneidet ihn von der Gruppe ab. _Wohin trägt die Bewegung der Menge ihn? Wie fühlt er sich, allein, aber umgeben zu sein?_"
+            }
+        ]
+    },
+    {
+        "name": "Brennendes Herz des Waldes",
+        "rang": 3,
+        "typ": "Erkundung",
+        "beschreibung": "Dicker indigoblauer Asche erfüllt die Luft um einen hoch aufragenden, moosbedeckten Baum, der ewig mit Flammen in einem krankhaften Blauton brennt.",
+        "anregungen": "Einen unheimlichen Rhythmus vorgeben, dem alle folgen, den Wald korrumpieren",
+        "schwierigkeitsgrad": "16",
+        "moegliche_gegner": "Tiere (Bär, Glasschlange), Elementare (Elementarfunke), Grüne Verteidiger (Dryade, Eichen-Baumhirte, Hirschritterin)",
+        "faehigkeiten": [
+            {
+                "name": "Ort chaotischer Magie",
+                "art": "Passiv",
+                "text": "Wenn ein SC einen Zauberwurf ausführt, muss er zwei Furchtwürfel würfeln und das höhere Ergebnis nehmen. _Wie fühlt es sich an, an diesem chaotisch berührten Ort Magie zu wirken? Was befürchtet ihr, was passiert, wenn ihr die Kontrolle über den Zauber verliert?_"
+            },
+            {
+                "name": "Die Indigoflamme",
+                "art": "Passiv",
+                "text": "SC, die sich dem zentralen Baum nähern, können einen Wissenswurf ausführen, um zu versuchen, die Magie zu identifizieren, die diese Umgebung verzehrt hat. _Welcher Kult der Gefallenen hat diesen Wald verflucht? Was haben sie bereits mit dem verfluchten Holz und dem Saft dieses Baums getan?_\n- **Bei einem Erfolg** erfahren sie drei der untenstehenden Details. Bei einem Erfolg mit Furcht erfahren sie zwei.\n- **Bei einem Misserfolg** können sie 1 Stress markieren, um eines zu erfahren und Vorteil auf den nächsten Aktionswurf zur Untersuchung dieser Umgebung zu erhalten.\n- **Details:** Dies ist das Ergebnis von Magie der Gefallenen. Die Korruption verbreitet sich durch das aschige Moos. Sie kann nur durch ein Ritual der Naturmagie mit einem Fortschrittscountdown (8) gereinigt werden."
+            },
+            {
+                "name": "Greifende Ranken",
+                "art": "Aktion",
+                "text": "Belebte Ranken voller Dornen peitschen aus dem Unterholz hervor, um die SC zu fesseln. Ein Ziel muss einen Agilitäts-Reaktionswurf bestehen oder wird _Festgesetzt_ und _Verwundbar_, bis es sich mit einem erfolgreichen Geschick- oder Stärkewurf befreit und beide Zustände löscht oder den Ranken 10 Schaden zufügt. Wenn das Ziel einen Wurf zum Entkommen ausführt, erleidet es **1W8+4** physischen Schaden und verliert 1 Hoffnung. _Welche schmerzhaften Erinnerungen bringt ihr die Ranken an die Oberfläche, wenn sie Fleisch durchbohren?_"
+            },
+            {
+                "name": "Holzkohle-Konstrukte",
+                "art": "Aktion",
+                "text": "Verformte Tiere, in indigoblaue Flammen gehüllt, trampeln durch einen Punkt eurer Wahl. Alle Ziele innerhalb kurzer Distanz dieses Punkts müssen einen Agilitäts-Reaktionswurf ausführen. Ziele, die scheitern, erleiden **3W12+3** physischen Schaden. Ziele, die gelingen, erleiden stattdessen den halben Schaden. _Sind dies echte Tiere, die von der Flamme verzehrt wurden, oder nur Konstrukte der korrumpierenden Magie?_"
+            },
+            {
+                "name": "Erstickende Asche",
+                "art": "Reaktion: Countdown (Schleife 6)",
+                "text": "Wenn die SC das Brennende Herz des Waldes betreten, aktiviert den Countdown. Wenn er ausgelöst wird, müssen alle Charaktere einen Stärke- oder Instinkt-Reaktionswurf ausführen. Ziele, die scheitern, erleiden **4W6+5** direkten physischen Schaden. Ziele, die gelingen, erleiden den halben Schaden. Schützende Masken oder Kleidung geben Vorteil auf den Reaktionswurf. _Welche Halluzinationen löst die Asche aus? Welchen unpassenden Geschmack besitzt sie?_"
+            }
+        ]
+    },
+    {
+        "name": "Gebirgspass",
+        "rang": 2,
+        "typ": "Gelände",
+        "beschreibung": "Felsige Gipfel, die in die Wolken ragen, mit einem sich windenden Pfad, der sich in vielen Serpentinen hinauf und hinüber schlängelt.",
+        "anregungen": "Einen eisigen Tribut an Vorräten und Ausdauer fordern, magische Manipulation offenbaren, die Reise verlangsamen",
+        "schwierigkeitsgrad": "15",
+        "moegliche_gegner": "Tiere (Bär, Riesenadler, Glasschlange), Chaosschädel, Minotaurenkrieger, Jägerin der Sterblichen",
+        "faehigkeiten": [
+            {
+                "name": "Eingravierte Sigille",
+                "art": "Passiv",
+                "text": "In den Berghang wurden große Zeichen und Gravuren eingearbeitet. Ein SC mit passendem Hintergrund oder passender Erfahrung erkennt sie als Wettermagie, die die Kraft der eisigen Winde verstärkt. Ein SC, dem ein Wissenswurf gelingt, kann sich Informationen über die Sigille, mögliche Informationen über ihre Schöpfer und das Wissen, wie sie aufzulösen sind, ins Gedächtnis rufen. Wenn ein SC einen kritischen Erfolg erzielt, erkennt er, dass die Sigille in einem Stil gestaltet wurden, den Zauberer aus den Bergen geschaffen haben, und er erhält Vorteil auf einen Wurf zum Auflösen der Sigille. _Wer hat diese Verzauberung angelegt? Sind sie in der Nähe? Warum wollten sie, dass das Wetter furchterregender ist?_"
+            },
+            {
+                "name": "Lawine",
+                "art": "Aktion",
+                "text": "**Gebt 1 Furcht aus**, um den Berg mit einem eisigen Strom zu durchschneiden und eine Lawine auszulösen. Alle SC in ihrem Weg müssen einen Agilitäts- oder Stärke-Reaktionswurf bestehen oder werden umgeworfen und den Berg hinuntergetragen. Ein SC, der Seil, Steigeisen oder andere Kletterausrüstung verwendet, erhält Vorteil auf diesen Wurf. Ziele, die scheitern, werden den Berg hinunter bis in weite Distanz geschleudert, erleiden **2W20** physischen Schaden und müssen 1 Stress markieren. Ziele, die gelingen, müssen 1 Stress markieren. _Wie versuchen die SC, die Lawine zu überstehen? Welchen Ansatz wählen die Charaktere, um einander zu finden, wenn ihre Gefährten den Berghang hinuntergeschleudert werden?_"
+            },
+            {
+                "name": "Raubvogel-Nest",
+                "art": "Reaktion",
+                "text": "Wenn die SC das Jagdrevier der Raubvögel betreten, erscheinen zwei Riesenadler in sehr weiter Distanz zu einem gewählten SC und betrachten die SC als wahrscheinliche Beute. _Wie lange ist es her, dass die Adler zuletzt Beute gefunden haben? Haben sie Eier im Nest oder flügge Junge?_"
+            },
+            {
+                "name": "Eisige Winde",
+                "art": "Reaktion: Countdown (Schleife 4)",
+                "text": "Wenn die SC den Gebirgspass betreten, aktiviert den Countdown. Wenn er ausgelöst wird, müssen alle Charaktere, die durch den Pass reisen, einen Stärke-Reaktionswurf bestehen oder 1 Stress markieren. Ein SC, der für extreme Kälte geeignete Kleidung trägt, erhält Vorteil auf diese Würfe. _Welche Körperteile der SC werden zuerst taub? Wie versuchen sie, sich warm zu halten, während sie voranschreiten?_"
+            }
+        ]
+    },
+    {
+        "name": "Geisterstadt",
+        "rang": 2,
+        "typ": "Erkundung",
+        "beschreibung": "Eine verlassene Stadt, bewohnt von den ruhelosen Geistern vergangener Epochen.",
+        "anregungen": "Fehlleiten und desorientieren, Apokalypsen öffentlicher und persönlicher Art wiederaufleben lassen",
+        "schwierigkeitsgrad": "14",
+        "moegliche_gegner": "Geister (Geisterbogenschütze, Geisterkommandantin, Geisterwache), geisterhafte Versionen anderer gegnerischer Charaktere (siehe „Geisterhafte Form“)",
+        "faehigkeiten": [
+            {
+                "name": "Begrabenes Wissen",
+                "art": "Passiv",
+                "text": "Die Stadt birgt unzählige Mysterien, die es zu entfalten gilt. Ein SC, der Wissen über die gefallene Stadt sucht, kann einen Instinkt- oder Wissenswurf ausführen, um etwas über diesen Ort zu erfahren und (möglicherweise verfluchte) Beute zu entdecken. _Welche größeren Geheimnisse birgt die Stadt? Warum sind so viele Geister hier verweilt? Welchen dem Untergang geweihten Abenteuernden ist hier bereits ein schlimmes Schicksal widerfahren?_\n- **Kritischer Erfolg:** Erhaltet wertvolle Informationen und einen dazugehörigen nützlichen Gegenstand.\n- **Erfolg mit Hoffnung:** Erhaltet wertvolle Informationen.\n- **Erfolg mit Furcht:** Deckt vage oder unvollständige Informationen auf.\n- **Jeder Misserfolg:** Markiert 1 Stress, um nach einer erschöpfenden Suche eine Spur zu finden."
+            },
+            {
+                "name": "Geisterhafte Form",
+                "art": "Passiv",
+                "text": "Gegnerische Charaktere, die hier erscheinen, haben eine geisterhafte Form. Sie haben Resistenz gegen physischen Schaden und können **1 Stress markieren**, um sich bis in kurze Distanz durch feste Objekte zu bewegen. _Welche Verletzungen an ihrer physischen Form erzählen von ihrer Todesursache? Welcher unerfüllte Zweck hält sie in der Sterblichen Ebene fest?_"
+            },
+            {
+                "name": "Sackgassen",
+                "art": "Aktion",
+                "text": "Die Geister einer früheren Epoche lassen Szenen aus ihrer vergangenen Zeit erscheinen, etwa ein Straßenfest, eine Revolution oder einen Raubüberfall. Diese Spukereien verändern die Anordnung der Stadt um die SC herum, versperren den Weg hinter ihnen, erzwingen einen Umweg oder stellen ihnen eine Herausforderung – etwa wenn sie während des Überfalls für rivalisierende Diebe gehalten werden. _Was wollen die Geister von euch? Was braucht ihr von ihnen?_"
+            },
+            {
+                "name": "Apokalypse von damals",
+                "art": "Aktion",
+                "text": "**Gebt 1 Furcht aus**, um das Echo einer vergangenen Katastrophe erscheinen zu lassen, die die Stadt verwüstet hat. Aktiviert einen Fortschrittscountdown (5), während die Katastrophe sich um die SC herum wiederholt. Um den Countdown abzuschließen und der Katastrophe zu entkommen, müssen die SC Bedrohungen wie wütende Feuer, stampfende Zivilist*innen, einstürzende Gebäude oder bröckelnde Straßen überwinden, während sie sich an die Geschichte erinnern und Hinweise zur Flucht vor dem Unvermeidlichen finden. _Ist dies die Katastrophe, die zur Aufgabe der Stadt führte? Was ist über diese Katastrophe bekannt und wie könnte das den SC bei der Flucht helfen?_"
+            }
+        ]
+    },
+    {
+        "name": "Göttlicher Umsturz",
+        "rang": 4,
+        "typ": "Ereignis",
+        "beschreibung": "Ein massives Ritual, das dazu bestimmt ist, die Tore der Geweihten Höhen zu durchbrechen und die Neuen Gottheiten selbst zu entthronen.",
+        "anregungen": "Macht sammeln, überwältigen, Widerspruch zum Schweigen bringen",
+        "schwierigkeitsgrad": "20",
+        "moegliche_gegner": "Erznekromantin, Schocktrupps der Gefallenen, Jägerin der Sterblichen, Orakel der Verdammnis, Vollkommener Zombie",
+        "faehigkeiten": [
+            {
+                "name": "Letzte Vorbereitungen",
+                "art": "Passiv",
+                "text": "Wenn der Schauplatz zum ersten Mal den Fokus übernimmt, bestimmt einen gegnerischen Charakter als den Umstürzenden, der die Götter stürzen will. Aktiviert einen Langfristigen Countdown (8), während der Umstürzende zusammenstellt, was er zur Durchführung des Rituals benötigt. Wenn er ausgelöst wird, rückt diesen Schauplatz in den Fokus, um das Merkmal „Anfang vom Ende“ zu nutzen. Solange dieser Schauplatz im Spiel bleibt, könnt ihr bis zu 15 Furcht halten. _Was braucht der Umstürzende noch: das Herz eines Hochseraphs? Den Leitstein eines uralten Wegetors? Die Loyalität zweier Erzfeind*innen? Die herzzerreißenden Tränen einer reinen Seele?_"
+            },
+            {
+                "name": "Göttlicher Segen",
+                "art": "Passiv",
+                "text": "Wenn ein SC einen kritischen Erfolg erzielt, kann er 2 Hoffnung ausgeben, um eine normalerweise nutzungsbegrenzte Fähigkeit aufzufrischen (etwa einmal pro Rast, einmal pro Spielsitzung). _Welche Gottheit begünstigt euch, während ihr gegen diesen Umsturz kämpft? Wie spiegelt eure erneuerte Macht ihren Einfluss wider?_"
+            },
+            {
+                "name": "Schänder überall",
+                "art": "Aktion",
+                "text": "**Gebt 2 Furcht aus**, um **1W4+2** Schocktrupps der Gefallenen zu beschwören, die in kurzer Distanz zum Umstürzenden erscheinen, um ihre göttliche Belagerung zu unterstützen. Rückt sofort die Schocktrupps in den Fokus, um eine Aktion „Gruppenangriff“ zu nutzen. _Welchem hohen Gefallenen dienen diese Truppen? Von wessen göttlichem Fleisch wollen sie schmausen?_"
+            },
+            {
+                "name": "Gottesschlächter",
+                "art": "Aktion",
+                "text": "Wenn der Göttliche-Belagerungs-Countdown (siehe „Anfang vom Ende“) ausgelöst wurde, könnt ihr **3 Furcht ausgeben**, um zu beschreiben, wie der Umstürzende eine der Gottheiten der Geweihten Höhen tötet, sich an ihrer Macht labt und stärker wird. Der Umstürzende löscht 2 TP. Erhöht seinen Schwierigkeitsgrad, Schaden, Angriffsmodifikator oder gebt ihm ein neues Merkmal der getöteten Gottheit. _Welche Gottheit findet ihr Ende? Was sind ihre letzten Worte? Wie manifestiert sich die neu gestohlene Macht des Umstürzenden?_"
+            },
+            {
+                "name": "Anfang vom Ende",
+                "art": "Reaktion",
+                "text": "Wenn der langfristige Countdown „Letzte Vorbereitungen“ ausgelöst wird, beginnt der Umstürzende, gegen die Tore der Geweihten selbst zu hämmern. Aktiviert einen Göttlichen-Belagerungs-Countdown (10). Rückt den Umstürzenden in den Fokus, um den Angriff des Umstürzenden zu beschreiben, und zählt diesen Countdown um 1 herunter. Erleidet der Umstürzende Mittleren oder größeren Schaden, zählt den Countdown um 1 hoch. Wenn er ausgelöst wird, zerschmettert der Umstürzende die Barriere zwischen dem Reich der Sterblichen und den Geweihten Höhen, um die Götter zu töten und ihren Platz einzunehmen. Ihr erhaltet für jeden unmarkierten TP des Umstürzenden 1 Furcht. Ihr könnt sofort das Merkmal „Gottesschlächter“ nutzen, ohne Furcht für einen zusätzlichen SL-Zug auszugeben. _Wie windet sich das Reich der Sterblichen, als die natürliche Ordnung verletzt wird? Welche Sterblichen werden Zeug*innen dieser Gotteslästerung aus der Ferne?_"
+            },
+            {
+                "name": "Ritualknotenpunkt",
+                "art": "Reaktion",
+                "text": "Bei jedem Misserfolg mit Furcht gegen den Umstürzenden muss der SC durch den Rückschlag magischer Macht **1W4** Stress markieren. _Welche Visionen vergangener Misserfolge quälen euch, wenn eure Bemühungen zu kurz greifen? Wie werden diese Erinnerungen vom Umstürzenden verdreht?_"
+            }
+        ]
+    },
+    {
+        "name": "Heiliger Tempel",
+        "rang": 2,
+        "typ": "Sozial",
+        "beschreibung": "Ein emsiger, aber gut gepflegter Tempel, der Heilung bietet und regelmäßige Gottesdienste ausrichtet, beaufsichtigt von einer Priesterin oder einem Seraph.",
+        "anregungen": "Das Reich der Sterblichen mit den Geweihten Höhen verbinden, die Macht des Göttlichen zeigen, den Gläubigen Beistand und Trost bieten",
+        "schwierigkeitsgrad": "13",
+        "moegliche_gegner": "Wachen (Wache mit Bogen, Wache mit Schwert, Oberwache)",
+        "faehigkeiten": [
+            {
+                "name": "Ein Ort der Heilung",
+                "art": "Passiv",
+                "text": "Ein SC, der im Heiligen Tempel eine Rast einlegt, löscht automatisch alle TP. _Wie riecht der Weihrauch? Welche Lieder singen die Akolyt*innen?_"
+            },
+            {
+                "name": "Göttliche Führung",
+                "art": "Passiv",
+                "text": "Ein SC, der im Heiligen Tempel zu einer Gottheit betet, kann einen Instinktwurf ausführen, um Antworten zu erhalten. Wenn die Gottheit, die er anfleht, in diesem Tempel nicht willkommen ist, wird der Wurf mit Nachteil ausgeführt. _Wie fühlt es sich an, von dieser Vision berührt zu werden? Welches Gefühl bleibt zurück, nachdem die Bilder vorübergezogen sind?_\n- **Kritischer Erfolg:** Der SC erhält klare Informationen. Zusätzlich erhält er **1W4** Hoffnung, die zwischen der Gruppe verteilt werden kann, wenn sie die erhaltene Vision und Führung teilt.\n- **Erfolg mit Hoffnung:** Der SC erhält klare Informationen.\n- **Erfolg mit Furcht:** Der SC erhält kurze Einsichtsblitze und einen emotionalen Eindruck, der eine Antwort vermittelt.\n- **Jeder Misserfolg:** Der SC erhält nur vage Blitze. Er kann 1 Stress markieren, um ein klares Bild ohne Kontext zu erhalten."
+            },
+            {
+                "name": "Unermüdliche Hoffnung",
+                "art": "Reaktion",
+                "text": "Einmal pro Szene kann jeder SC 1 Stress markieren, um ein Ergebnis mit Furcht in ein Ergebnis mit Hoffnung zu verwandeln. _Mit welchen Emotionen oder Erinnerungen verbindet ihr euch, wenn die Furcht eindringt?_"
+            },
+            {
+                "name": "Göttliche Rüge",
+                "art": "Reaktion",
+                "text": "Wenn die SC eingedrungen sind, gelästert oder die Geistlichkeit beleidigt haben, könnt ihr **1 Furcht ausgeben**, um einen Hochseraph und **1W4** Wachen mit Schwert in kurzer Distanz zur leitenden Priesterin zu beschwören, um deren Willen durchzusetzen. _Welche Symbole oder Ikonen tragen sie, die sie als gesalbte Agenten der Gottheit ausweisen? Wer führt die Gruppe an und was hat sie zu dieser Berufung geführt?_"
+            }
+        ]
+    },
+    {
+        "name": "Hinterhalt",
+        "rang": 1,
+        "typ": "Ereignis",
+        "beschreibung": "Ein Hinterhalt wird gestellt, um eine nichtsahnende Gruppe zu überrumpeln.",
+        "anregungen": "Überwältigen, zerstreuen, einkreisen",
+        "schwierigkeitsgrad": "Besonders (siehe „Relative Stärke“)",
+        "moegliche_gegner": "Beliebig",
+        "faehigkeiten": [
+            {
+                "name": "Relative Stärke",
+                "art": "Passiv",
+                "text": "Der Schwierigkeitsgrad dieses Schauplatzes entspricht dem des gegnerischen Charakters mit dem höchsten Schwierigkeitsgrad. _Wer gibt das Zeichen zum Hinterhalt? Was macht deutlich, dass sie das Sagen haben?_"
+            },
+            {
+                "name": "Überraschung!",
+                "art": "Aktion",
+                "text": "Die Hinterhaltenden offenbaren sich der Gruppe, ihr erhaltet 2 Furcht, und der Fokus wechselt sofort zu einem der hinterhaltenden gegnerischen Charaktere. _Was wollen die Hinterhaltenden von der Gruppe? Wie spiegeln ihre Taktiken im Hinterhalt das wider?_"
+            }
+        ]
+    },
+    {
+        "name": "Hinterhaltende",
+        "rang": 1,
+        "typ": "Ereignis",
+        "beschreibung": "Ein Hinterhalt wird von den SC gestellt, um nichtsahnende gegnerische Charaktere zu überrumpeln.",
+        "anregungen": "Entkommen, sich zusammentun, die Verletzlichsten beschützen",
+        "schwierigkeitsgrad": "Besonders (siehe „Relative Stärke“)",
+        "moegliche_gegner": "Beliebig",
+        "faehigkeiten": [
+            {
+                "name": "Relative Stärke",
+                "art": "Passiv",
+                "text": "Der Schwierigkeitsgrad dieses Schauplatzes entspricht dem des gegnerischen Charakters mit dem höchsten Schwierigkeitsgrad. _Welcher gegnerische Charakter ist am wenigsten vorbereitet? Welcher am meisten?_"
+            },
+            {
+                "name": "Wo kommen sie her?",
+                "art": "Reaktion",
+                "text": "Wenn ein SC den Hinterhalt gegen nichtsahnende gegnerische Charaktere eröffnet, verliert ihr 2 Furcht und der erste Angriffswurf, den ein SC ausführt, hat Vorteil. _Was tun die gegnerischen Charaktere gerade, wenn der Hinterhalt beginnt? Wie wirkt sich das auf ihre Herangehensweise an den Kampf aus?_"
+            }
+        ]
+    },
+    {
+        "name": "Kaiserlicher Hof",
+        "rang": 4,
+        "typ": "Sozial",
+        "beschreibung": "Das majestätische Herrschaftsgebiet eines mächtigen Reichs, üppig mit gestohlenen Schätzen ausgestattet.",
+        "anregungen": "Kaiserliche Herrschaft rechtfertigen und aufrechterhalten, Rivalen mit Versprechungen von Macht und Komfort verführen",
+        "schwierigkeitsgrad": "20",
+        "moegliche_gegner": "Wache mit Schwert, Kurtisan, Ritterin des Königreichs, Monarch, Spionin",
+        "faehigkeiten": [
+            {
+                "name": "Alle Wege führen hierher",
+                "art": "Passiv",
+                "text": "Solange sich ein SC am Kaiserlichen Hof befindet, hat er Nachteil auf Präsenzwürfe, die ausgeführt werden, um Aktionen zu unternehmen, die nicht zur kaiserlichen Lebensweise passen oder die Vorherrschaft des Reichs nicht unterstützen. _Wie macht die Art der Sprachverwendung selbst das Besprechen alternativer Lebensweisen schwierig? Welche offensichtlichen Vorteile für Loyalität erzeugen Reibung, wenn ihr versucht, Alternativen zu besprechen?_"
+            },
+            {
+                "name": "Rivalisierende Vasallen",
+                "art": "Passiv",
+                "text": "Die SC können kaiserliche Untertanen, Vasallen und Bittsteller am Hof finden, die alle um Gunst wetteifern, Nähe zur Macht suchen, Gefallen gegen Loyalität tauschen und ihren Status über den anderer erhöhen. Manche könnten verzweifelt versuchen, ihre Rivalen zu untergraben, während andere sogar offen für Gespräche sein könnten, die an Aufruhr grenzen. _Wie profitieren sie von der Vasallenschaft und was hat es sie gekostet? Welche Ausbeutung treibt sie dazu, den Unaufhaltsamen Widerstand zu leisten?_"
+            },
+            {
+                "name": "Die Schwerkraft des Reichs",
+                "art": "Aktion",
+                "text": "**Gebt 1 Furcht aus**, um einem SC eine goldene Gelegenheit zu präsentieren oder ein großes Ziel zu erfüllen, im Austausch für Gehorsam oder Unterstützung des Reichs. Das Ziel muss einen Präsenz-Reaktionswurf ausführen. Bei einem Misserfolg muss es den gesamten Stress markieren oder das Angebot annehmen. Wenn es bereits den gesamten Stress markiert hat, muss es das Angebot annehmen oder sich aus dem Reich verbannen. Bei einem Erfolg muss es **1W4** Stress markieren, da es von der Versuchung belastet wird. _Was wollen die SC so verzweifelt, dass sie erwägen könnten, sich mit dieser rücksichtslosen Macht einzulassen? Wie haben kaiserliche Agenten die größten Wünsche der SC erfahren?_"
+            },
+            {
+                "name": "Kaiserlicher Erlass",
+                "art": "Aktion",
+                "text": "**Gebt 1 Furcht aus**, um einen langfristigen Countdown, der mit der Agenda des Reichs zusammenhängt, um **1W4** herunterzuzählen. Wenn dadurch der Countdown ausgelöst wird, wird eine mit der Agenda verbundene Proklamation am Hof verkündet, während der Plan ausgeführt wird. _Welche Machtdemonstration oder welcher Vermögenstransfer war nötig, um diesen Plan zu beschleunigen? Wessen Leben wurde gestört oder auf den Kopf gestellt, damit das geschehen konnte?_"
+            },
+            {
+                "name": "Überall Augen",
+                "art": "Reaktion",
+                "text": "Bei einem Ergebnis mit Furcht könnt ihr **1 Furcht ausgeben**, um jemanden, der dem Reich loyal ist, aufrührerisches Gerede im Hof belauschen zu lassen. Ein SC muss einen Instinkt-Reaktionswurf bestehen, um zu bemerken, dass die Gruppe belauscht wurde, damit sie versuchen können, die Zeugin abzufangen, bevor die SC entlarvt werden. _Wie hat das Reich diese Zeugin kompromittiert? Warum ist ihr erster Impuls, das Reich zu schützen, selbst wenn es sie schlecht behandelt?_"
+            }
+        ]
+    },
+    {
+        "name": "Kultisches Ritual",
+        "rang": 2,
+        "typ": "Ereignis",
+        "beschreibung": "Ein Kult der Gefallenen versammelt sich um ein Sigill der besiegten Götter und ein Lagerfeuer, das in einem krankhaften Grünton brennt.",
+        "anregungen": "Das Land entweihen, das Reich der Sterblichen mit den Finsteren Stätten vereinen",
+        "schwierigkeitsgrad": "14",
+        "moegliche_gegner": "Kult der Gefallenen (Kult-Adeptin, Kult-Vollstrecker, Kult-Novizin, Geheimniswahrerin)",
+        "faehigkeiten": [
+            {
+                "name": "Entweihtes Land",
+                "art": "Passiv",
+                "text": "Kultisten haben diesen Ort den Gefallenen Gottheiten geweiht, und ihr übler Einfluss sickert in ihn ein. Reduziert den Hoffnungswürfel der SC in dieser Umgebung auf einen **W10**. Die Entweihung kann mit einem Fortschrittscountdown (6) entfernt werden. _Wie bemerken die SC zum ersten Mal, dass etwas an diesem Ort nicht stimmt? Welche Ängste tauchen wieder auf, während die Hoffnung in Schach gehalten wird?_"
+            },
+            {
+                "name": "Gotteslästerliche Macht",
+                "art": "Aktion",
+                "text": "Ein Teil der Kraft des Rituals wird in ein Kultmitglied umgeleitet, um Eindringlinge abzuwehren. Wählt einen gegnerischen Charakter, der bis zum Ende der Szene oder bis er besiegt wird mit schrecklicher Magie _Erfüllt_ wird. Ein _Erfüllter_ gegnerischer Charakter übernimmt sofort den Fokus und erhält einen der folgenden Vorteile – oder alle drei, wenn ihr **1 Furcht ausgebt**:\n- Er erhält Vorteil auf alle Angriffe.\n- Er fügt bei einem erfolgreichen Angriff zusätzliche **1W10** Schaden zu.\n- Er erhält das folgende Merkmal: _Unermüdlich (2) – Passiv:_ Dieser gegnerische Charakter kann bis zu zweimal pro Spielleitungsrunde in den Fokus gerückt werden. Gebt wie üblich Furcht aus, um ihn in den Fokus zu rücken. _Wie verändert sich das Erscheinungsbild des Feindes? Welche Ängste bringen seine Schläge an die Oberfläche?_"
+            },
+            {
+                "name": "Die Beschwörung",
+                "art": "Reaktion: Countdown (6)",
+                "text": "Wenn die SC die Szene betreten oder der Kult das Ritual zur Beschwörung eines Dämons beginnt, aktiviert den Countdown. Bestimmt einen gegnerischen Charakter, der das Ritual anführt. Der Countdown zählt jedes Mal herunter, wenn ein SC mit Furcht würfelt. Wenn er ausgelöst wird, beschwört einen Kleinen Dämon innerhalb sehr kurzer Distanz zum Anführer des Rituals. Wenn der Anführer besiegt wird, endet der Countdown wirkungslos, da das Ritual scheitert. _Was wird der Kult mit diesem angeleinten Dämon tun, wenn er Erfolg hat? Was werden sie als Nächstes zu beschwören versuchen?_"
+            },
+            {
+                "name": "Das Ritual vollenden",
+                "art": "Reaktion",
+                "text": "Wenn der Anführer des Rituals von einem Angriff oder Zauber ins Visier genommen wird, kann ein Verbündeter innerhalb sehr kurzer Distanz zu ihm **1 Stress markieren**, um stattdessen von diesem Angriff oder Zauber getroffen zu werden. _Wie fühlt es sich an, solche Hingabe zu sehen, die der Verfolgung von Furcht und Herrschaft gewidmet ist?_"
+            }
+        ]
+    },
+    {
+        "name": "Nekromantisches Beinhaus",
+        "rang": 4,
+        "typ": "Erkundung",
+        "beschreibung": "Eine verstaubte Krypta mit einer Bibliothek, sich windenden Korridoren und zahlreichen Sarkophagen, bespritzt mit dem Blut unglückseliger Eindringlinge.",
+        "anregungen": "Eindringlinge verwirren, in Geheimnisse eintauchen, die besser begraben blieben, Untote manifestieren, eine Flut von Untoten entfesseln",
+        "schwierigkeitsgrad": "19",
+        "moegliche_gegner": "Gefolge der Erznekromantin (Vollkommener Zombie, Zombielegion)",
+        "faehigkeiten": [
+            {
+                "name": "Kein Ort für die Lebenden",
+                "art": "Passiv",
+                "text": "Eine Fähigkeit oder Aktion, die TP löscht, erfordert das Ausgeben von 1 Hoffnung, um sie einzusetzen. Wenn sie bereits Hoffnung kostet, muss ein SC zusätzlich 1 Hoffnung ausgeben. _Wie fühlt es sich an, an einem Ort zu heilen, der so sehr gegen das Leben gerichtet ist?_"
+            },
+            {
+                "name": "Jahrhunderte des Wissens",
+                "art": "Passiv",
+                "text": "Ein SC kann die Bibliothek und das Labor untersuchen und einen Wissenswurf ausführen, um Informationen zu Arkanem, zur örtlichen Geschichte und zu den Plänen der Nekromantin zu erfahren. _Wie heißen die Folianten? Woran arbeitet die Nekromantin und was sagt das über ihre Pläne aus?_"
+            },
+            {
+                "name": "Skelettausbruch",
+                "art": "Aktion",
+                "text": "Alle Ziele innerhalb kurzer Distanz eines Punkts eurer Wahl in dieser Umgebung müssen einen Agilitäts-Reaktionswurf bestehen oder erleiden **4W8+8** physischen Schaden durch Knochensplitter, während ein Teil des Beinhauses um sie herum detoniert. _Welche uralte Skelettarchitektur wird zerstört? Welche Knochen bleiben in eurer Rüstung stecken?_"
+            },
+            {
+                "name": "Aura des Todes",
+                "art": "Aktion",
+                "text": "Einmal pro Szene würfelt einen **W4**. Jeder Untote innerhalb weiter Distanz der Nekromantin kann TP und Stress in Höhe des gewürfelten Ergebnisses löschen. Der Untote kann wählen, wie diese Zahl zwischen TP und Stress aufgeteilt wird. _Wie manifestiert sich ihre erneuerte Kraft? Sehen sie lebendiger aus oder sind sie paradoxerweise verfallener, aber kraftvoller?_"
+            },
+            {
+                "name": "Sie kommen einfach immer wieder!",
+                "art": "Aktion",
+                "text": "**Gebt 1 Furcht aus**, um **1W6** Verrottete Zombies, zwei Vollkommene Zombies oder eine Zombielegion zu beschwören, die in kurzer Distanz zu einem gewählten SC erscheinen. _Wer waren diese Menschen, bevor sie zu Bauern der Nekromantin wurden? Welche Überreste dieser Leben bleiben für die Held*innen sichtbar?_"
+            }
+        ]
+    },
+    {
+        "name": "Offene Feldschlacht",
+        "rang": 3,
+        "typ": "Ereignis",
+        "beschreibung": "Ein massiver Kampf zwischen zwei großen Gruppen bewaffneter Kämpfer*innen.",
+        "anregungen": "Menschen, Land und Reichtum an sich reißen, Blut für Gier und Ruhm vergießen",
+        "schwierigkeitsgrad": "17",
+        "moegliche_gegner": "Söldner (Mietschwert, Plänkler, Arkane Söldnerin, Waffenmeisterin), Adelige Streitkräfte (Bogenstaffel, Zwangsverpflichtete, Elitesoldat, Ritterin des Königreichs)",
+        "faehigkeiten": [
+            {
+                "name": "Auf einem Meer aus Stahl treiben",
+                "art": "Passiv",
+                "text": "Die Durchquerung eines Schlachtfelds während eines aktiven Kampfes ist äußerst gefährlich. Ein SC muss einen Agilitätswurf bestehen, um sich überhaupt zu bewegen, und kann bei einem Erfolg nur bis in kurze Distanz gehen. Wenn sich ein gegnerischer Charakter in unmittelbarer Distanz zu ihm befindet, muss er 1 Stress markieren, um einen Agilitätswurf zum Bewegen auszuführen. _Halten die Kämpfer*innen euch für den Feind oder betrachten sie euch als Eindringlinge? Könnt ihr im Getümmel zwischen Freund und Feind unterscheiden?_"
+            },
+            {
+                "name": "Niederbrennen und Plündern",
+                "art": "Aktion",
+                "text": "Die angreifende Streitmacht erhöht den Einsatz, indem sie ein Feuer legt, einen wertvollen Besitz stiehlt, eine wichtige Person entführt oder die Bevölkerung tötet. _Was ist hier wertvoll? Wer ist am verwundbarsten?_"
+            },
+            {
+                "name": "Kriegsmagie",
+                "art": "Aktion",
+                "text": "**Gebt 1 Furcht aus**, während ein Magier einer Seite großflächige zerstörerische Magie einsetzt. Wählt einen Punkt auf dem Schlachtfeld innerhalb sehr weiter Distanz des Magiers. Alle Ziele innerhalb kurzer Distanz dieses Punkts müssen einen Agilitäts-Reaktionswurf ausführen. Ziele, die scheitern, erleiden **3W12+8** magischen Schaden und müssen 1 Stress markieren. _Welche Form nimmt der Angriff an – Feuerball, herabregnende Säure, ein Sturm aus Klingen? Welches taktische Ziel soll dieser Angriff erreichen und was kommt als Nächstes?_"
+            },
+            {
+                "name": "Verstärkung!",
+                "art": "Aktion",
+                "text": "Beschwört eine Ritterin des Königreichs, eine Anzahl Rang-3-Lakaien in Höhe der Anzahl der SC und zwei gegnerische Charaktere eurer Wahl innerhalb weiter Distanz zu einem gewählten SC als Verstärkung. Die Ritterin des Königreichs übernimmt sofort den Fokus. _Wen greifen sie zuerst an? Welche Formation nehmen sie ein?_"
+            }
+        ]
+    },
+    {
+        "name": "Reich des Chaos",
+        "rang": 4,
+        "typ": "Gelände",
+        "beschreibung": "Ein jenseitiger Raum, in dem die Gesetze der Realität instabil und gefährlich sind.",
+        "anregungen": "Gewissheit vernichten, Macht verzehren, Logik trotzen",
+        "schwierigkeitsgrad": "20",
+        "moegliche_gegner": "Monstrositäten der Äußeren Sphären (Gräuel, Verderbnis, Leibeigener)",
+        "faehigkeiten": [
+            {
+                "name": "Unmögliche Architektur",
+                "art": "Passiv",
+                "text": "Oben ist unten, unten ist rechts, rechts ist sternenwärts. Schwerkraft und Richtungsbezüge selbst sind im Fluss, und jeder Versuch, sich durch dieses Reich zu bewegen, ist eine eigene Odyssee, die einen Fortschrittscountdown (8) erfordert. Bei einem Misserfolg muss ein SC zusätzlich zu den anderen Konsequenzen des Wurfs 1 Stress markieren. _Wie fühlt es sich an, sich in einem Raum zu bewegen, der dem Reich der Sterblichen so fremd ist? Auf welchen Orientierungspunkt fixiert ihr euch, um das Gleichgewicht zu halten? An welchen bizarren Wahrzeichen kommt ihr auf eurer Reise vorbei?_"
+            },
+            {
+                "name": "Alles, was ihr seid, wird dieser Ort euch nehmen",
+                "art": "Aktion: Countdown (Schleife 1W4)",
+                "text": "Aktiviert den Countdown. Wenn er ausgelöst wird, müssen alle SC einen Präsenz-Reaktionswurf bestehen, oder ihr höchstes Attribut wird vorübergehend um **1W4** reduziert, es sei denn, sie markieren eine Anzahl Stress in Höhe seines Werts. Verlorene Attributpunkte werden zurückgewonnen, wenn der SC einen kritischen Erfolg erzielt oder das Reich des Chaos verlässt. _Wie versucht dieser Ort, euch zu stehlen, was euch legendär macht? Wie fühlt es sich an, wenn euch diese Macht genommen wird?_"
+            },
+            {
+                "name": "Entmachung",
+                "art": "Aktion",
+                "text": "**Gebt 1 Furcht aus**, um einen SC zu einem Stärke-Reaktionswurf zu zwingen. Bei einem Misserfolg erleidet er **4W10** direkten magischen Schaden. Bei einem Erfolg muss er 1 Stress markieren. _Welchen Blick auf andere Welten erhascht ihr, während dieser Ort versucht, euch zu entmachten? Welche Kernfacetten eurer Persönlichkeit versucht die Entmachung auszulöschen?_"
+            },
+            {
+                "name": "Raubtiere der Äußeren Sphären",
+                "art": "Aktion",
+                "text": "**Gebt 1 Furcht aus**, um ein Gräuel der Äußeren Sphären, eine Verderbnis der Äußeren Sphären und **2W6** Leibeigene der Äußeren Sphären zu beschwören, die in kurzer Distanz zu einem gewählten SC erscheinen – der Logik und Kausalität trotzend. Rückt sofort einen dieser gegnerischen Charaktere in den Fokus, und ihr könnt **zusätzlich 1 Furcht ausgeben**, um bei dessen Standardangriff automatisch zu gelingen. _Welche halbverzehrten Überreste der zerschmetterten Welt werfen diese Monstrositäten auf der Jagd nach lebendem Fleisch beiseite? Welche gezackten Spiegelbilder früherer Persönlichkeit erhascht ihr zwischen Momenten fragloser Bosheit?_"
+            },
+            {
+                "name": "Desorientierende Realität",
+                "art": "Reaktion",
+                "text": "Bei einem Ergebnis mit Furcht könnt ihr den SC bitten, zu beschreiben, welche seiner Ängste das Reich des Chaos hervorruft, während eine Vision der Realität sich vor dem SC entmacht und neu zusammensetzt. Der SC verliert 1 Hoffnung. Ist es seine letzte Hoffnung, erhaltet ihr 1 Furcht. _Welchen Moment sieht er? Wenn es eine Erinnerung ist, wie wird sie von diesem Ort verzerrt? Wie schwer wird es sein, an der echten Erinnerung festzuhalten?_"
+            }
+        ]
+    },
+    {
+        "name": "Reißender Fluss",
+        "rang": 1,
+        "typ": "Gelände",
+        "beschreibung": "Ein schnell fließender Fluss ohne Brücke, tief genug, um die meisten Leute mit sich zu reißen.",
+        "anregungen": "Überquerung verhindern, Unvorsichtige mit sich reißen, das Land teilen",
+        "schwierigkeitsgrad": "10",
+        "moegliche_gegner": "Tiere (Bär, Glasschlange), Blitzdolch-Bandit*innen (Hexer, Knochenbrecherin, Lakai, Leutnant, Schatten, Heckenschütze)",
+        "faehigkeiten": [
+            {
+                "name": "Gefährliche Überquerung",
+                "art": "Passiv",
+                "text": "Um den Fluss zu überqueren, muss die Gruppe einen Fortschrittscountdown (4) vollenden. Ein SC, der einen Misserfolg mit Furcht würfelt, wird sofort zum Ziel der Aktion „Sog“, ohne dass für das Merkmal 1 Furcht ausgegeben werden muss. _Haben die SC schon einmal Flüsse wie diesen durchquert? Hat irgendwer von ihnen Angst vor dem Ertrinken?_"
+            },
+            {
+                "name": "Sog",
+                "art": "Aktion",
+                "text": "**Gebt 1 Furcht aus**, um einen SC im Sog zu fangen. Er muss einen Agilitäts-Reaktionswurf ausführen. Bei einem Misserfolg erleidet er **1W6+1** physischen Schaden, wird eine kurze Distanz flussabwärts bewegt und ist _Verwundbar_, bis er aus dem Fluss herauskommt. Bei einem Erfolg muss er 1 Stress markieren. _Welche Kleinode und Schmuckstücke liegen auf dem Grund des Flussbetts? Schwimmen Raubtiere in diesen Flüssen?_"
+            },
+            {
+                "name": "Geduldige Jägerin",
+                "art": "Aktion",
+                "text": "**Gebt 1 Furcht aus**, um eine Glasschlange innerhalb kurzer Distanz zu einem gewählten SC zu beschwören. Die Schlange erscheint im oder am Fluss und übernimmt sofort den Fokus, um ihre Aktion „Rotierende Schlange“ einzusetzen. _Welche Schätze hat das Tier in seinem Bau? Welche Reisenden sind diesem Raubtier bereits zum Opfer gefallen?_"
+            }
+        ]
+    },
+    {
+        "name": "Steile Klippe",
+        "rang": 1,
+        "typ": "Gelände",
+        "beschreibung": "Eine steile, felsige Klippe, hoch genug, um die Durchquerung gefährlich zu machen.",
+        "anregungen": "die Unvorbereiteten in ein felsiges Verderben stürzen lassen, die Menschen mit dem Versprechen dessen, was oben liegt, anlocken",
+        "schwierigkeitsgrad": "12",
+        "moegliche_gegner": "Konstrukt, Wehrwurz, Riesenskorpion, Glasschlange",
+        "faehigkeiten": [
+            {
+                "name": "Der Aufstieg",
+                "art": "Passiv",
+                "text": "Das Hinaufklettern an der Klippe verwendet einen Fortschrittscountdown (12). Er zählt gemäß den folgenden Kriterien herunter, wenn die SC einen Aktionswurf zum Klettern ausführen:\n- **Kritischer Erfolg:** 3 herunterzählen\n- **Erfolg mit Hoffnung:** 2 herunterzählen\n- **Erfolg mit Furcht:** 1 herunterzählen\n- **Misserfolg mit Hoffnung:** Kein Voranschritt\n- **Misserfolg mit Furcht:** 1 hochzählen\nWenn der Countdown ausgelöst wird, hat die Gruppe die Spitze der Klippe erreicht. _In welchen seltsamen Formationen sind die Steine angeordnet? Welche unheilvollen Warnungen haben frühere Abenteuernde hinterlassen?_"
+            },
+            {
+                "name": "Zurückgelassene Steigeisen",
+                "art": "Passiv",
+                "text": "Frühere Kletterer haben große Metallstangen zurückgelassen, die Kletternde zur Unterstützung ihres Aufstiegs nutzen können. Wenn ein SC die Steigeisen benutzt und einen Aktionswurf zum Klettern verpatzt, kann er 1 Stress markieren, statt den Countdown hochzuzählen. _Was sagen euch Form und Material dieser Steigeisen über die früheren Kletterer? Wie weit sind sie voneinander entfernt?_"
+            },
+            {
+                "name": "Sturz",
+                "art": "Aktion",
+                "text": "**Gebt 1 Furcht aus**, um einen Handgriff eines SC versagen zu lassen, sodass er in Richtung Boden stürzt. Wird er bei der nächsten Aktion nicht gerettet, schlägt er auf dem Boden auf und zählt den Countdown um 2 hoch. Der SC erleidet **1W12** physischen Schaden, wenn der Countdown zwischen 8 und 12 liegt, **2W12** zwischen 4 und 7 und **3W12** bei 3 oder weniger. _Wie könnt ihr erkennen, dass hier schon viele andere gestürzt sind? Was lebt in diesen Wänden und könnte versuchen, Abenteuernde in den Sturz zu treiben, um eine leichte Mahlzeit zu bekommen?_"
+            }
+        ]
+    },
+    {
+        "name": "Verlassener Hain",
+        "rang": 1,
+        "typ": "Erkundung",
+        "beschreibung": "Ein ehemaliger druidischer Hain, der brach liegt und vollständig von der Natur zurückerobert wurde.",
+        "anregungen": "Neugierige anziehen, die Vergangenheit widerhallen lassen",
+        "schwierigkeitsgrad": "11",
+        "moegliche_gegner": "Tiere (Bär, Schattenwolf, Glasschlange), Hainwächter (Kleiner Baumhirte, Waldsoldat, Junge Dryade)",
+        "faehigkeiten": [
+            {
+                "name": "Überwuchertes Schlachtfeld",
+                "art": "Passiv",
+                "text": "Hier hat eine Schlacht stattgefunden. Ein SC kann einen Instinktwurf ausführen, um Hinweise auf diesen Kampf zu erkennen. Bei einem Erfolg mit Hoffnung erfährt er alle drei untenstehenden Informationen. Bei einem Erfolg mit Furcht erfährt er zwei. Bei einem Misserfolg kann ein SC 1 Stress markieren, um eine zu erfahren und Vorteil auf den nächsten Aktionswurf zur Untersuchung dieser Umgebung zu erhalten. Ein SC mit passendem Hintergrund oder passender Erfahrung kann ein zusätzliches Detail erfahren und eine Anschlussfrage zur Szene stellen und eine wahrheitsgemäße (wenn auch nicht immer vollständige) Antwort erhalten. _Warum sind diese Gruppen aneinandergeraten? Warum wird der Hain jetzt nicht mehr genutzt?_\n- Spuren einer Schlacht (zerbrochene Waffen und Zweige, Kerben im Boden) übersäen den Boden.\n- Ein moosbedeckter Baumstamm ist in Wahrheit die Leiche eines Baumhirten.\n- Noch stehende Bäume sind auf seltsame Weise verdreht, als wären sie von mächtiger Magie geformt worden."
+            },
+            {
+                "name": "Stacheldornen",
+                "art": "Aktion",
+                "text": "Wählt einen Punkt im Hain. Alle Ziele innerhalb sehr kurzer Distanz dieses Punkts müssen einen Agilitäts-Reaktionswurf bestehen oder erleiden **1W8+3** physischen Schaden und werden von Stacheldornen _Festgesetzt_. _Festgesetzt_ hält an, bis sie mit einem erfolgreichen Geschick- oder Stärkewurf befreit werden oder den Ranken mindestens 6 Schaden zugefügt wird. _Wie viele Ranken gibt es? Wo packen sie euch? Ziehen sie euch herunter oder heben sie euch vom Boden?_"
+            },
+            {
+                "name": "Ihr seid hier nicht willkommen",
+                "art": "Aktion",
+                "text": "Eine Junge Dryade, zwei Waldsoldaten und eine Anzahl Kleiner Baumhirten in Höhe der Anzahl der SC erscheinen, um die Gruppe wegen ihres Eindringens zur Rede zu stellen. _Was verbergen die Hainwächter? Welche Bedrohung für den Wald könnten die SC abwenden, um die Dryade zu besänftigen?_"
+            },
+            {
+                "name": "Schänder",
+                "art": "Aktion",
+                "text": "**Gebt 1 Furcht aus**, um einen Kleinen Chaos-Elementar zu beschwören, der von den Echos der Gewalt und Zwietracht angezogen wird. Er erscheint innerhalb weiter Distanz zu einem gewählten SC und übernimmt sofort den Fokus. _Welche Farbe nimmt das Gras an, wenn der Elementar erscheint? Wie verzerrt das Chaos Insekten und kleine Wildtiere im Hain?_"
+            }
+        ]
+    },
+    {
+        "name": "Wirtshaus",
+        "rang": 1,
+        "typ": "Sozial",
+        "beschreibung": "Ein lebhaftes Wirtshaus, das als sozialer Mittelpunkt seiner Stadt dient.",
+        "anregungen": "Abenteuernden Gelegenheiten bieten, die Gemeinschaft pflegen",
+        "schwierigkeitsgrad": "10",
+        "moegliche_gegner": "Wachen (Wache mit Schwert, Oberwache), Söldner (Plänkler, Mietschwert, Arkane Söldnerin, Waffenmeisterin), Händlerin",
+        "faehigkeiten": [
+            {
+                "name": "Wovon spricht die Stadt?",
+                "art": "Passiv",
+                "text": "Ein SC kann die Wirtin, das Personal oder die Gäste mit einem Präsenzwurf nach örtlichen Ereignissen, Gerüchten und möglicher Arbeit fragen. Bei einem Erfolg kann er zwei der untenstehenden Details erfahren – oder drei, wenn er einen kritischen Erfolg erzielt. Bei einem Misserfolg kann er eines erfahren und markiert 1 Stress, während der Einheimische über etwas Belangloses weiterredet. _Wer hat welche Art von Informationen? Welchen Klatsch beginnen die Einheimischen über die SC zu verbreiten?_\n- Ein faszinierendes Gerücht mit einer Verbindung zur Vorgeschichte eines SC\n- Ein vielversprechender Job für die Gruppe, der eine nahe Bedrohung oder Situation betrifft\n- Örtliche Folklore, die mit etwas zusammenhängt, das sie gesehen haben\n- Stadtklatsch, der auf ein Gemeinschaftsproblem hindeutet"
+            },
+            {
+                "name": "Sing für dein Abendessen",
+                "art": "Passiv",
+                "text": "Ein SC kann einmal für die Gäste auftreten, indem er einen Präsenzwurf ausführt. Bei einem Erfolg verdient er **1W4** Handvoll Gold (**2W4**, wenn er einen kritischen Erfolg erzielt). Bei einem Misserfolg markiert er 1 Stress. _Welches Stück führt ihr auf? Was bedeutet euch dieses Stück? Wann habt ihr es das letzte Mal vor einer Menschenmenge aufgeführt?_"
+            },
+            {
+                "name": "Geheimnisvolle Fremde",
+                "art": "Aktion",
+                "text": "Enthüllt eine Fremde, die ihre Identität verbirgt und in einer schattigen Nische lauert. _Was will sie? Welchen Eindruck hat sie von den SC? Welche Eigenheiten oder Accessoires hat sie?_"
+            },
+            {
+                "name": "Jemand kommt in die Stadt",
+                "art": "Aktion",
+                "text": "Führt einen bedeutenden NSC ein, der die Gruppe für etwas anheuern möchte oder der mit der Vorgeschichte eines SC zusammenhängt. _Wussten sie, dass die SC hier waren? Was wollen sie in dieser Stadt?_"
+            },
+            {
+                "name": "Schlägerei!",
+                "art": "Aktion",
+                "text": "**Gebt 1 Furcht aus**, um eine Schlägerei im Wirtshaus ausbrechen zu lassen. Wenn ein SC versucht, sich durch das Wirtshaus zu bewegen, während die Schlägerei andauert, muss ihm ein Agilitäts- oder Präsenzwurf gelingen, oder er erleidet **1W6+2** physischen Schaden durch einen wilden Schwinger oder ein geworfenes Objekt. Ein SC kann versuchen, dieses Merkmal zu aktivieren, indem ihm ein Aktionswurf gelingt, der die Wirtshausgäste provoziert. _Wer hat die Schlägerei begonnen? Was wird nötig sein, um sie zu beenden?_"
+            }
+        ]
+    }
+]

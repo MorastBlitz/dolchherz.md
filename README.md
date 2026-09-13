@@ -1,157 +1,286 @@
-# BeastVault
+# dolchherz.md
 
-An [Obsidian.md](https://obsidian.md) plugin for Daggerheart TTRPG GMs to search, edit, and create beautiful adversary & environment stat blocks.
+Ein [Obsidian](https://obsidian.md)-Plugin für Daggerheart-Spielleitungen: Wertekästen
+für Gegner\*innen und Schauplätze auf Deutsch — durchsuchen, einfügen, würfeln und
+während der Sitzung mitverfolgen.
 
-## Features
+Die Daten stammen aus dem deutschen SRD-Bestand in [`data/`](data) und werden mit dem
+Plugin ausgeliefert. Eigene Wertekästen lassen sich ohne Codeänderung ergänzen.
 
-- Search and insert adversaries & environments from the SRD via commands
-- Beautifully render editable stat blocks with intuitive UI
-- Roll dice for attack or damage with one click
-- Track marked HP, stress, countdowns and feature uses
-- Battle points counted in the status bar
-- Customizable colors to look pretty in any color theme
-- Works in a canvas for [FCG](https://freshcutgrass.app)-style encounter building
+Dieses Plugin ist eine deutsche Bearbeitung von [BeastVault](https://github.com/ly0va/beastvault).
+Die Unterschiede zum Original fasst der Abschnitt *Unterschiede zu BeastVault* zusammen.
 
-### Planned
+## Funktionen
 
-- [x] Local library support for homebrew stat blocks to search over
-- [ ] Filtering and sorting via Bases
-- [ ] "Summon" buttons for adversaries/environments that might summon others
-- [ ] Ability to mark adversaries with conditions (e.g. Vulnerable, Restrained)
+- Wertekästen für Gegner\*innen und Schauplätze als Codeblock `dolchherz`
+- Bibliothek mit 129 Gegner\*innen und 19 Schauplätzen aus dem SRD
+- Suchdialog und Vorlagenbefehle, erzeugt aus dem Kartenregister
+- Trefferpunkte, Stress, Schwellen, Anwendungen und Countdowns per Klick
+- Schadensschwellen-Knöpfe: Klick markiert TP, Alt+Klick löscht sie wieder
+- Würfeln per Klick auf Angriffsmodifikator oder Schadenswürfel
+- Zustände, inklusive der drei Standardzustände mit Kurzregel
+- Kampfpunkte in der Statusleiste, samt Budget und den Anpassungen aus dem SRD
+- Anzahlsteuerung und Farbwahl je Karte
+- Funktioniert auch in Canvas
 
 ## Installation
 
-### Manual
+### Manuell
 
-1. Go to the [latest release](https://github.com/ly0va/beastvault/releases/latest)
-2. Download `main.js`, `manifest.json` and `styles.css`
-3. Inside your Obsidian vault, create folder `.obsidian/plugins/beastvault`
-4. Copy the downloaded files to this folder
-5. If Obsidian was open, restart it
-6. Navigate to `Settings` > `Community plugins` and enable BeastVault
+1. Ordner `.obsidian/plugins/dolchherz.md` im Vault anlegen
+2. `main.js`, `manifest.json` und `styles.css` aus dem
+   [neuesten Release](https://github.com/MorastBlitz/dolchherz.md/releases/latest)
+   hineinkopieren
+3. Obsidian neu starten, falls es geöffnet war
+4. In Obsidian unter *Einstellungen → Community-Plugins* aktivieren
 
-### Automatic via [BRAT](https://github.com/TfTHacker/obsidian42-brat)
+### Automatisch über BRAT
 
-1. Install the [BRAT](obsidian://show-plugin?id=obsidian42-brat) plugin from the community plugins browser
-2. Navigate to BRAT settings and click `Add beta plugin`
-3. Enter `ly0va/beastvault` as the repository and click `Add plugin`
+1. Das Plugin [BRAT](obsidian://show-plugin?id=obsidian42-brat) installieren
+2. In den BRAT-Einstellungen *Add beta plugin* wählen
+3. `MorastBlitz/dolchherz.md` eintragen und *Add plugin* wählen
 
-## Showcase
+Entwicklungsstand: `npm run build` erzeugt `main.js` im Projektordner.
 
-### Insert from library
+## Verwendung
 
-Insert an adversary via a command by going `Ctrl+P` > `Insert adversary from library` or using the side ribbon menu.
+### Wertekasten einfügen
 
-![Insert an adversary from library](./media/insert.gif)
+`Strg/Cmd+P` → *Einfügen aus Bibliothek: Gegner\*in* bzw. *Schauplatz*.
+Alternativ das Menüband-Symbol **dolchherz.md**. Für schnellen Zugriff lohnt
+sich eine Tastenkombination auf diese Befehle.
 
-> [!TIP]
-> For quicker access, bind plugin commands to a key combination of your choice from the Hotkeys settings tab.
-> I use `Alt+A` to insert an adversary & `Alt+E` to insert an environment.
+### Wertekasten von Hand schreiben
 
-> [!TIP]
-> `Click` threshold buttons to mark the corresponding amount of HP. Use `Alt+Click` to clear it instead.
+````markdown
+```dolchherz
+art: gegner
+name: Arkane Söldnerin
+rang: 1
+typ: Anführer*in
+beschreibung: Eine Söldnerin, die Schwertkunst und Magie kombiniert.
+ziele_taktiken: Sprengen, befehlen, durchhalten
+schwierigkeitsgrad: 14
+schwellen: 8/14
+tp: 6
+stress: 3
+angriff:
+  bonus: "+3"
+  waffe: Verstärktes Langschwert
+  distanz: unmittelbar
+  schaden: 1W8+4
+  schadenstyp: phy/mag
+erfahrung: Magisches Wissen +2
+faehigkeiten:
+  - name: Arkaner Stahl
+    art: Passiv
+    text: Der Schaden gilt als physischer und magischer Schaden.
+```
+````
 
----
+Ein leeres Gerüst liefern die Befehle *Vorlage einfügen: …*.
 
-### Homebrew
+> **Hinweis:** Beim Einfügen wird automatisch eine `id` vergeben. Sie bestimmt,
+> welcher Wertekasten welchen markierten Zustand behält, und darf frei geändert
+> werden. Fehlt sie, wird der Dateipfad samt Namen verwendet.
 
-Make your own homebrew adversary by creating a `daggerheart` code block, or edit an inserted one by clicking the `</>` button in the top-right corner.
+### Fußzeile
 
-![Create homebrew adversary](./media/create.png)
+Am unteren Rand jedes Wertekastens erscheinen beim Überfahren die Bedienelemente:
 
-> [!TIP]
-> You can insert an empty adversary template by using the `Insert adversary template` command.
+| Symbol | Wirkung |
+| --- | --- |
+| − / + | Anzahl der Exemplare; jedes Exemplar verfolgt Trefferpunkte und Zustände eigenständig |
+| Kopieren | Legt den Wertekasten als Codeblock in die Zwischenablage |
+| Papierkorb | Entfernt den Codeblock nach Rückfrage aus der Notiz |
+| Farbfeld | Farbe dieses Wertekastens |
 
-> [!IMPORTANT]
-> Do not use `TAB` in stat blocks. The indents for features must be manually indented with spaces.
+**Kopieren** vergibt eine neue `id`. Die Kopie startet ohne markierte Werte, damit
+zwei Wertekästen nie denselben Fortschritt teilen. Das Ergebnis ist ein vollständiger
+Codeblock und lässt sich in jede Notiz oder auf ein Canvas einfügen.
 
----
+**Löschen** arbeitet auf der Notiz, in der der Codeblock steht: Er wird samt Zäunen
+entfernt. Vor dem Schreiben prüft das Plugin, ob der Zeilenbereich wirklich einen
+eigenen Wertekasten umschließt, damit bei verschobenen Zeilen kein fremder Text
+verloren geht. In einem Canvas gibt es keine Codeblockposition; dort meldet die
+Funktion, dass sie nicht verfügbar ist.
 
-### Build encounters
+### Felder
 
-Build out full encounters (works in a canvas too!) and track their HP & stress during a session. Marked HP & stress are preserved even after you close Obsidian.
+**Gegner\*innen** (SRD: Wertekästen von Gegner\*innen)
 
-![Canvas encounter](./media/encounter.gif)
-
-> [!TIP]
-> Building encounters in a canvas is made much more convenient by enabling node auto-resizing in [this plugin](https://github.com/Developer-Mike/obsidian-advanced-canvas).
-> During a playing session, using canvas in read-only mode is recommended.
-
----
-
-### Library management
-
-Go to `BeastVault settings` > `Library folder location` and enter a folder name. All notes in this folder will be scanned for `daggerheart` codeblocks, which will be available in search.
-
-You can also import adversaries in bulk, by creating `.json` or `.yaml` files in this folder, which can contain a single stat block or an array of stat blocks.
-The structure of the stat blocks is documented below.
-
-Additionally, it is possible to enable compatibility with [Fantasy Statblocks](https://github.com/javalent/fantasy-statblocks) in settings.
-With this enabled, any FSB-compatible blocks found in the notes inside the library folder will also be available in search, as long as they have `layout: Daggerheart Adversary` or `layout: Daggerheart Environment`.
-
-> [!IMPORTANT]
-> - Only entries with a valid string `name` are added to the library.
-> - After adding, deleting, or modifying anything in the library, run `Refresh library` either by using the side ribbon menu or the command palette.
-> - If an entry has no `hp` and no `stress` fields, it is added as an environment; otherwise - as an adversary.
-> - All other fields are optional.
-
-## Reference
-
-The `daggerheart` code block parses the adversary or an environment as [YAML](https://yaml.org) with the following properties:
-
-| Property | Definition | Example |
+| Feld | Bedeutung | Beispiel |
 | --- | --- | --- |
-| `name` | Name of the adversary | `Bear` |
-| `tier` | Adversary tier | `1` |
-| `type` | Type of the adversary | `Bruiser` |
-| `desc` | Adversary description | `A large bear with thick fur and powerful claws.` |
-| `difficulty` | Adversary difficulty | `14` |
-| `weapon` | Name of the adversary's weapon | `Claws` |
-| `range` | Range of the adversary's weapon | `Close` |
-| `damage` | Amount and type of adversary's weapon damage | `1d8+3 phy` |
-| `hp` | Total adversary hitpoint slots | `6` |
-| `stress` | Total adversary stress slots | `3` |
-| `thresholds` | Adversary thresholds, separated by a `/`; leave blank for minions with 1 HP | `9/17` |
-| `attack` | Adversary attack bonus; click to roll for attack | `+1` |
-| `xp` | Adversary experiences | `Ambusher +2, Keen Senses +3` |
-| `motives` | Adversary's motives and tactics | `Climb, defend territory, pummel, track` |
-| `features` | List of feature objects, see table below | |
-| `id` | Stat block id, used by the plugin to track marked HP, stress etc; inserted automatically, can be any random string; defaults to `fileName::adversaryName` | `a2sd4vsf` |
+| `name` | Name des Wertekastens | `Arkane Söldnerin` |
+| `rang` | Rang 1–4 | `1` |
+| `typ` | Gegnertyp, siehe Kampfpunkte | `Anführer*in` |
+| `beschreibung` | Kurzbeschreibung | `Eine Söldnerin …` |
+| `ziele_taktiken` | Ziele & Taktiken | `Sprengen, befehlen` |
+| `schwierigkeitsgrad` | Schwierigkeitsgrad aller Würfe gegen sie | `14` |
+| `schwellen` | Mittlere/Schwere Schadensschwelle | `8/14` |
+| `tp` | Trefferpunktfelder | `6` |
+| `stress` | Stressfelder | `3` |
+| `angriff` | Standardangriff, siehe unten | |
+| `erfahrung` | Erfahrungen, durch Komma getrennt | `Magisches Wissen +2` |
+| `faehigkeiten` | Liste von Fähigkeiten, siehe unten | |
 
-`features` properties:
+`angriff` hat die Felder `bonus`, `waffe`, `distanz`, `schaden` und `schadenstyp`.
+Schaden und Schadensart werden zusammengeführt, sofern die Art nicht schon im
+Schadenstext steht.
 
-| Property | Definition | Example |
+**Schauplätze** (SRD: Wertekästen von Schauplätzen)
+
+| Feld | Bedeutung | Beispiel |
 | --- | --- | --- |
-| `name` | Name of the feature | `Relentless (2)` |
-| `type` | Feature type | `Passive` |
-| `desc` | Feature description; supports markdown | `Make a standard attack. On a success, the target is *Vulnerable* until they next act.` |
-| `uses` | Uses per scene (for those features that limit them) | `2` |
-| `countdown` | Size of the countdown activated by the feature, if any | `6` |
-| `flavor` | Hints for GM/PCs for flavoring an adversary or environment for their setting | `Have any of the PCs forded rivers like this before? Are any of them afraid of drowning?` |
+| `name`, `rang`, `typ` | wie oben; Typ ist `Erkundung`, `Sozial`, `Gelände` oder `Ereignis` | |
+| `beschreibung` | Ein-Satz-Zusammenfassung | |
+| `anregungen` | Anregungen des Schauplatzes | `Die Verzweifelten …` |
+| `schwierigkeitsgrad` | Standard-Schwierigkeitsgrad | `12` |
+| `moegliche_gegner` | Mögliche Gegner\*innen | `Maskierter Dieb, Händlerin` |
+| `faehigkeiten` | Merkmale | |
 
-For environments, `weapon`, `damage`, `range`, `hp`, `stress`, `thresholds`, `attack`, `xp`, `motives` are not set.
-Instead, additional properties are available:
+Schauplätze haben weder Trefferpunkte noch Stress und zählen nicht in die
+Kampfpunkte.
 
-| Property | Definition | Example |
+**Fähigkeiten**
+
+| Feld | Bedeutung |
+| --- | --- |
+| `name` | Name der Fähigkeit |
+| `art` | `Aktion`, `Reaktion` oder `Passiv` |
+| `text` | Beschreibung, unterstützt Markdown |
+| `anwendungen` | Anwendungen je Rast oder Szene, erzeugt Felder |
+| `countdown` | Startwert eines Countdowns, erzeugt Felder |
+
+Steht in `art` eine Countdown-Angabe, wird sie abgetrennt:
+`Reaktion: Countdown (Schleife 1W6)` ergibt die Art `Reaktion`, einen Countdown
+der Größe 6 mit zufälligem Startwert und die Schleifeneigenschaft.
+
+Kursiv gesetzte Passagen mit Fragezeichen — im SRD die *Merkmal-Fragen* — werden
+als Erzählteil abgetrennt und unter der Beschreibung kursiv dargestellt.
+
+### Zustände
+
+Unter jedem Wertekasten stehen die drei Standardzustände **Versteckt**,
+**Festgesetzt** und **Verwundbar** als Schaltflächen; ein Kurztext erscheint beim
+Überfahren. Über `+` lassen sich beliebige weitere Zustände eintragen, etwa
+`Brand` oder `Abgelenkt`. Das Symbol daneben markiert einen Zustand als
+*vorübergehend*, den das Ziel mit einem Zug löschen kann.
+
+Zustände gelten je platziertem Exemplar und werden mit dem Vault gespeichert.
+
+### Kampfpunkte
+
+Die Statusleiste zeigt die aufsummierten Kampfpunkte der Wertekästen der
+aktuellen Datei; beim Überfahren erscheint das Budget. Grundlage ist das SRD,
+Abschnitt *Ausgewogene Begegnungen erschaffen*:
+
+| Typ | Kosten |
+| --- | --- |
+| Sozial, Unterstützung | 1 |
+| Horde, Fernkampf, Leichtfuß, Standard | 2 |
+| Anführer\*in | 3 |
+| Schwergewicht | 4 |
+| Solo | 5 |
+| Lakai | 1 je Gruppe in Größe der Spielrunde, aufgerundet |
+
+Das Budget beträgt `(3 × Anzahl SC) + 2` und lässt sich in den Einstellungen um
+die sechs Anpassungen des SRD verschieben.
+
+### Eigene Wertekästen
+
+In den Einstellungen einen Ordner angeben. Alle `.json`-, `.yml`- und
+`.yaml`-Dateien darin werden gelesen, ebenso `dolchherz`-Codeblöcke in
+`.md`-Dateien. Ein Eintrag ohne `hp` und `stress` gilt als Schauplatz.
+
+## Einstellungen
+
+| Einstellung | Wirkung |
+| --- | --- |
+| Standardfarbe | Farbe neuer Wertekästen |
+| Farbwahl je Karte anzeigen | Farbwähler in der Fußzeile |
+| "Massiv"-Schwelle anzeigen | Optionale Regel *Massive Schäden*, vierter Knopf |
+| Anzahl der Spielcharaktere | Budget und Größe von Lakaiengruppen |
+| Anpassungen des Budgets | Die sechs Verschiebungen aus dem SRD |
+| Ordner für eigene Wertekästen | Zusätzliche Datenquelle |
+| Duplikate ignorieren | Bei gleichem Namen gewinnt der eingebaute Wertekasten |
+| Abweichungen von Richtwerten melden | Hinweis, wenn Werte vom Rang-Richtwert abweichen |
+
+## Entwicklung
+
+```bash
+npm install
+npm run dev      # baut bei Änderungen neu
+npm run build    # Typprüfung und Produktionsbuild
+npm run pruefen  # Datenprüfung gegen den echten Bestand
+```
+
+`npm run pruefen` führt `data/*.json` durch Kartenerkennung, Normalisierung,
+Kampfpunkte und Würfelauswertung und schlägt bei jeder Abweichung fehl. Der
+Prüflauf ersetzt das Obsidian-Modul durch eine Attrappe
+([`scripts/obsidian-stub.ts`](scripts/obsidian-stub.ts)) und läuft daher ohne
+laufende Oberfläche.
+
+### Neuen Kartentyp ergänzen
+
+Die Architektur ist darauf ausgelegt, dass ein weiterer Kartentyp — etwa
+Abstammung, Gemeinschaft, Domäne oder Waffe — eine Datei und eine Zeile kostet.
+
+1. **Typ anlegen** in `src/types.ts`, abgeleitet von den gemeinsamen Feldern.
+2. **Karte schreiben** in `src/cards/`, indem [`Kartendefinition`](src/registry.ts)
+   umgesetzt wird: `erkennen`, `lesen`, `untertitel`, `beschreibung`, `rendern`.
+   Für die Darstellung stehen die Bausteine aus [`src/ui/primitives.ts`](src/ui/primitives.ts)
+   bereit — `kopfzeile`, `faehigkeiten`, `statusleiste`, `zustandsleiste`,
+   `textblock`, `tabelle`.
+3. **Registrieren** in [`src/cards/index.ts`](src/cards/index.ts) mit einer Zeile.
+
+Damit erscheinen automatisch die Einfüge- und Vorlagenbefehle, der Eintrag im
+Suchdialog und im Menüband. Optionale Methoden steuern Zusatzverhalten:
+`anzahlbar` für die Anzahlsteuerung, `kampfpunkttyp` für die Kampfpunkte,
+`zustaende` für die Zustandsleiste, `hinweise` für die Richtwertprüfung und
+`vorlage` für ein YAML-Gerüst.
+
+## Unterschiede zu BeastVault
+
+| Bereich | BeastVault | dolchherz.md |
 | --- | --- | --- |
-| `impulses` | Environment impulses | `Bar crossing, carry away the unready, divide the land` |
-| `adversaries` | Potential adversaries in an environment | `Guards (Bladed Guard, Head Guard), Masked Thief, Merchant` |
-| `tone` | Tone and feel of the environment | `Musty and mournful, serene yet slightly wrong` |
+| Sprache | Englisch | Deutsch — Oberfläche, Befehle und Feldnamen |
+| Codeblock | `daggerheart` | `dolchherz` |
+| Datenbestand | englisches SRD | deutsche SRD-Übersetzung mit 129 Gegner\*innen und 19 Schauplätzen |
+| Felder | `tier`, `type`, `desc`, `difficulty`, `weapon`, `range`, `damage`, `hp`, `stress`, `thresholds`, `attack`, `xp`, `motives`, `features` | `rang`, `typ`, `beschreibung`, `schwierigkeitsgrad`, `angriff`, `tp`, `stress`, `schwellen`, `erfahrung`, `ziele_taktiken`, `faehigkeiten` |
+| Zustände | als geplant vermerkt | die drei Standardzustände plus eigene Zustände, als *vorübergehend* markierbar |
+| Kampfpunkte | Anzeige in der Statusleiste | zusätzlich Budget `3 × Anzahl SC + 2` und die sechs Anpassungen des SRD |
+| Richtwerte | – | Hinweis, wenn Kartenwerte vom Richtwert des Rangs abweichen |
+| Fantasy Statblocks | optionale Kompatibilität | bewusst nicht enthalten, damit fremde Blöcke keine Meldung erzeugen |
+| Datenprüfung | – | `npm run pruefen` prüft den echten Bestand |
+| Paketverwaltung | pnpm | npm |
 
-All of the properties are optional, and simply won't render if skipped.
+## Herkunft der Daten
 
-## Attributions
+Die Wertekästen beruhen auf dem Daggerheart-Systemreferenzdokument.
 
-Plugin inspired by [FreshCutGrass](https://freshcutgrass.app) and [DaggerForge](https://github.com/Torutu/daggerforge).
+- Englisches Original: Daggerheart SRD 1.0, © Critical Role, LLC.
+- Deutsche Übersetzung: [github.com/MorastBlitz/daggerheart-srd-ger](https://github.com/MorastBlitz/daggerheart-srd-ger)
 
-### Copyright Notice
+Öffentliches Spielmaterial im Sinne der Darrington Press Community Gaming License:
+<https://darringtonpress.com/license/>.
 
-This plugin includes materials from the Daggerheart System Reference Document 1.0, © Critical Role, LLC. All rights reserved.
+Die Architektur orientiert sich an [BeastVault](https://github.com/ly0va/beastvault)
+(MIT) und an [DaggerForge](https://github.com/Torutu/daggerforge).
 
-Public Game Content created and owned by Darrington Press, LLC. Available at https://www.daggerheart.com.
+## Lizenz und Rechtliches
 
-Licensed under the Darrington Press Community Gaming License: https://darringtonpress.com/license/.
+- **Code:** MIT, siehe [`LICENSE`](LICENSE). Der Originalhinweis von BeastVault
+  (© 2025 Lev Potomkin) bleibt erhalten, diese Fassung steht unter derselben Lizenz.
+- **Inhalte:** Die deutschen Wertekästen beruhen auf dem Daggerheart SRD und werden
+  unter der *Darrington Press Community Gaming License* verwendet. Die Übersetzung
+  wurde mit Werkzeugen zur künstlichen Intelligenz erstellt und anschließend
+  redaktionell bearbeitet und geprüft.
 
-Stat blocks may have minor edits to correct obvious errors.
+Dieses Projekt ist ein unabhängiges Fanprojekt ohne Verbindung zu Critical Role LLC,
+Darrington Press LLC oder Pegasus Spiele GmbH.
 
-
+„Daggerheart™“, „Darrington Press™“, „Critical Role™“ sowie zugehörige Marken und
+Logos sind Eigentum ihrer jeweiligen Rechteinhaber. Die Verwendung dieser Begriffe
+erfolgt ausschließlich zur Beschreibung des zugrunde liegenden Rollenspielsystems,
+der Kompatibilität und zur Kennzeichnung von Inhalten dieses Fanprojekts.

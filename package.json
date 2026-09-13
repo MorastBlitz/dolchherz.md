@@ -1,22 +1,27 @@
 {
-	"name": "beastvault",
-	"version": "1.2.4",
-	"description": "Obsidian plugin for encounter management in Daggerheart TTRPG",
+	"name": "dolchherz.md",
+	"version": "0.1.0",
+	"description": "Obsidian-Plugin für Gegner- und Schauplatz-Wertekästen in Daggerheart (deutsch)",
 	"main": "main.js",
 	"scripts": {
 		"dev": "node esbuild.config.mjs",
-		"build": "tsc -noEmit -skipLibCheck && node esbuild.config.mjs production"
+		"build": "tsc -noEmit -skipLibCheck && node esbuild.config.mjs production",
+		"pruefen": "node scripts/pruefe.mjs && node .pruefung.cjs"
 	},
-	"keywords": [],
-	"author": "",
+	"keywords": [
+		"obsidian",
+		"daggerheart",
+		"ttrpg"
+	],
 	"license": "MIT",
+	"dependencies": {
+		"@airjp73/dice-notation": "^2.2.2"
+	},
 	"devDependencies": {
-		"@airjp73/dice-notation": "^2.2.2",
 		"@types/node": "^24.0.0",
 		"builtin-modules": "3.3.0",
 		"esbuild": "0.17.3",
 		"obsidian": "latest",
-		"tslib": "^2.4.0",
 		"typescript": "^5.4.0"
 	}
 }

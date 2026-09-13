@@ -1,122 +1,140 @@
-import { App, PluginSettingTab, Setting, Notice } from 'obsidian';
-import BeastVault from './main';
+import { type App, PluginSettingTab, Setting } from 'obsidian';
+import { t } from './i18n';
+import type DolchherzOrakel from './main';
+import { ANPASSUNGEN } from './regeln/kampfpunkte';
+import type { Einstellungen } from './types';
 
-export type PluginSettings = {
-    defaultColor: string;
-    showColorPicker: boolean;
-    showMassiveThreshold: boolean;
-    numberOfPCs: number;
-    libraryFolder?: string;
-    ignoreDuplicateNames: boolean;
-    compatibleWithFSB: boolean;
-}
+export const STANDARDEINSTELLUNGEN: Einstellungen = {
+	standardFarbe: '#8A5CF5',
+	farbwahlAnzeigen: true,
+	massiveSchwelle: false,
+	anzahlSC: 4,
+	bibliotheksOrdner: '',
+	duplikateIgnorieren: true,
+	richtwerteMelden: false,
+	kampfpunkteAnpassungen: [],
+};
 
-export const DEFAULT_SETTINGS: PluginSettings = {
-    showColorPicker: true,
-    showMassiveThreshold: false,
-    defaultColor: '#8A5CF5',
-    numberOfPCs: 4,
-    ignoreDuplicateNames: true,
-    compatibleWithFSB: false,
-}
+export class DhOrakelSettingTab extends PluginSettingTab {
+	constructor(
+		app: App,
+		private readonly plugin: DolchherzOrakel
+	) {
+		super(app, plugin);
+	}
 
-export class SettingTab extends PluginSettingTab {
-    constructor(app: App, private plugin: BeastVault) {
-        super(app, plugin);
-    }
+	display(): void {
+		const { containerEl } = this;
+		containerEl.empty();
 
-    display(): void {
-        const { containerEl } = this;
-        containerEl.empty();
+		const uebernehmen = () => {
+			void this.plugin.saveData(this.plugin.state);
+			this.plugin.neuzeichnen();
+		};
 
-        new Setting(containerEl).setName("Appearance").setHeading();
+		new Setting(containerEl).setName(t('einstellung.darstellung')).setHeading();
 
-        new Setting(containerEl)
-            .setName('Default color')
-            .addColorPicker(color => color
-                .setValue(this.plugin.state.settings.defaultColor)
-                .onChange((value) => {
-                    this.plugin.state.settings.defaultColor = value;
-                    this.plugin.updateState();
-                    this.plugin.renderAll();
-                }));
+		new Setting(containerEl).setName(t('einstellung.standardfarbe')).addColorPicker((auswahl) =>
+			auswahl
+				.setValue(this.plugin.einstellungen.standardFarbe)
+				.onChange((wert) => {
+					this.plugin.einstellungen.standardFarbe = wert;
+					uebernehmen();
+				})
+		);
 
-        new Setting(containerEl)
-            .setName('Show color picker')
-            .addToggle(toggle => toggle
-                .setValue(this.plugin.state.settings.showColorPicker)
-                .onChange((value) => {
-                    this.plugin.state.settings.showColorPicker = value;
-                    this.plugin.updateState();
-                    this.plugin.renderAll();
-                }));
+		new Setting(containerEl).setName(t('einstellung.farbwahl')).addToggle((schalter) =>
+			schalter.setValue(this.plugin.einstellungen.farbwahlAnzeigen).onChange((wert) => {
+				this.plugin.einstellungen.farbwahlAnzeigen = wert;
+				uebernehmen();
+			})
+		);
 
-        new Setting(containerEl)
-            .setName('Show the "massive" threshold button')
-            .setDesc('Adds a 4th threshold button, for damage ≥ double the severe threshold')
-            .addToggle(toggle => toggle
-                .setValue(this.plugin.state.settings.showMassiveThreshold)
-                .onChange((value) => {
-                    this.plugin.state.settings.showMassiveThreshold = value;
-                    this.plugin.updateState();
-                    this.plugin.renderAll();
-                }));
+		new Setting(containerEl)
+			.setName(t('einstellung.massiveSchwelle'))
+			.setDesc(t('einstellung.massiveSchwelleBeschreibung'))
+			.addToggle((schalter) =>
+				schalter.setValue(this.plugin.einstellungen.massiveSchwelle).onChange((wert) => {
+					this.plugin.einstellungen.massiveSchwelle = wert;
+					uebernehmen();
+				})
+			);
 
-        new Setting(containerEl)
-            .setName('Number of player characters')
-            .setDesc('Used for battle points calculation in the status bar')
-            .addSlider(slider => slider
-                .setLimits(0, 10, 1)
-                .setValue(this.plugin.state.settings.numberOfPCs)
-                .setDynamicTooltip()
-                .onChange((value) => {
-                    this.plugin.state.settings.numberOfPCs = value;
-                    this.plugin.updateState();
-                    this.plugin.updateStatusBar();
-                }));
+		new Setting(containerEl).setName(t('einstellung.begegnung')).setHeading();
 
-        new Setting(containerEl).setName("Homebrew library").setHeading();
+		new Setting(containerEl)
+			.setName(t('einstellung.anzahlSC'))
+			.setDesc(t('einstellung.anzahlSCBeschreibung'))
+			.addSlider((regler) =>
+				regler
+					.setLimits(0, 10, 1)
+					.setValue(this.plugin.einstellungen.anzahlSC)
+					.setDynamicTooltip()
+					.onChange((wert) => {
+						this.plugin.einstellungen.anzahlSC = wert;
+						uebernehmen();
+					})
+			);
 
-        new Setting(containerEl)
-            .setName('Library folder location')
-            .setDesc('Adversaries from notes, JSON and YAML files in this folder will become available in search')
-            .addText(text => text
-                .setPlaceholder('Example: daggerheart/homebrew')
-                .setValue(this.plugin.state.settings.libraryFolder ?? '')
-                .onChange(async (value) => {
-                    this.plugin.state.settings.libraryFolder = value;
-                    this.plugin.updateState();
-                    await this.plugin.scanLibrary(false, 'conditional');
-                    // TODO: add watcher?
-                }))
-            .addButton(button => button
-                .setIcon('library')
-                .setTooltip('View library')
-                .onClick(async () => {
-                    await this.plugin.scanLibrary(true, 'no');
-                    new Notice('Library viewer under construction!');
-                }));
+		new Setting(containerEl)
+			.setName(t('einstellung.anpassungen'))
+			.setDesc(t('einstellung.anpassungenBeschreibung'))
+			.setHeading();
 
-        new Setting(containerEl)
-            .setName('Ignore entries with duplicate names')
-            .setDesc('If multiple adversaries share the same name, only the first one found will be used in search')
-            .addToggle(toggle => toggle
-                .setValue(this.plugin.state.settings.ignoreDuplicateNames)
-                .onChange(async (value) => {
-                    this.plugin.state.settings.ignoreDuplicateNames = value;
-                    this.plugin.updateState();
-                    await this.plugin.scanLibrary(false, 'no');
-                }));
+		for (const anpassung of ANPASSUNGEN) {
+			new Setting(containerEl)
+				.setName(anpassung.bezeichnung)
+				.setDesc(`${anpassung.wert > 0 ? '+' : ''}${anpassung.wert} Kampfpunkte`)
+				.addToggle((schalter) =>
+					schalter
+						.setValue(
+							this.plugin.einstellungen.kampfpunkteAnpassungen.includes(anpassung.id)
+						)
+						.onChange((wert) => {
+							const aktiv = new Set(this.plugin.einstellungen.kampfpunkteAnpassungen);
+							if (wert) aktiv.add(anpassung.id);
+							else aktiv.delete(anpassung.id);
+							this.plugin.einstellungen.kampfpunkteAnpassungen = [...aktiv];
+							uebernehmen();
+						})
+				);
+		}
 
-        new Setting(containerEl)
-            .setName('Compatibility with Fantasy Statblocks')
-            .setDesc('Any FSB-compatible statblocks in the notes inside the library folder will be also be available in search')
-            .addToggle(toggle => toggle
-                .setValue(this.plugin.state.settings.compatibleWithFSB)
-                .onChange(async (value) => {
-                    this.plugin.state.settings.compatibleWithFSB = value;
-                    this.plugin.updateState();
-                    await this.plugin.scanLibrary(false, 'no');
-                }));
-    }
+		new Setting(containerEl).setName(t('einstellung.bibliothek')).setHeading();
+
+		new Setting(containerEl)
+			.setName(t('einstellung.ordner'))
+			.setDesc(t('einstellung.ordnerBeschreibung'))
+			.addText((feld) =>
+				feld
+					.setPlaceholder(t('einstellung.ordnerPlatzhalter'))
+					.setValue(this.plugin.einstellungen.bibliotheksOrdner)
+					.onChange((wert) => {
+						this.plugin.einstellungen.bibliotheksOrdner = wert;
+						void this.plugin.saveData(this.plugin.state);
+						void this.plugin.ladeBibliothek(false);
+					})
+			);
+
+		new Setting(containerEl)
+			.setName(t('einstellung.duplikate'))
+			.setDesc(t('einstellung.duplikateBeschreibung'))
+			.addToggle((schalter) =>
+				schalter.setValue(this.plugin.einstellungen.duplikateIgnorieren).onChange((wert) => {
+					this.plugin.einstellungen.duplikateIgnorieren = wert;
+					void this.plugin.saveData(this.plugin.state);
+					void this.plugin.ladeBibliothek(false);
+				})
+			);
+
+		new Setting(containerEl)
+			.setName(t('einstellung.richtwerte'))
+			.setDesc(t('einstellung.richtwerteBeschreibung'))
+			.addToggle((schalter) =>
+				schalter.setValue(this.plugin.einstellungen.richtwerteMelden).onChange((wert) => {
+					this.plugin.einstellungen.richtwerteMelden = wert;
+					uebernehmen();
+				})
+			);
+	}
 }

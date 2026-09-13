@@ -1,0 +1,1892 @@
+[
+  {
+    "domaene": "ARCANA",
+    "domaene_full": "ARCANA-DOMÄNE",
+    "name": "RUNENSIEGEL",
+    "typ": "Zauber",
+    "stufe": 1,
+    "rueckrufkosten": 0,
+    "kartentext": "Du trägst einen sehr persönlichen Gegenstand bei dir, der mit Schutzmagie angereichert und als Siegel von dir oder einem verbündeten Charakter genutzt werden kann. Beschreibe, worum es sich bei dem Gegenstand handelt, und wieso er so wichtig für dich ist. Wer das Siegel trägt, darf 1 Hoffnung einsetzen, um erlittenen Schaden um 1W8 zu reduzieren.\n\nWenn das Ergebnis des Siegel-Wurfes 8 ist, verliert es nach der Verminderung des Schadens in dieser Runde seine Kraft. Während deiner nächsten Rast kann es kostenlos aufgeladen werden.",
+    "kartennummer": 1
+  },
+  {
+    "domaene": "ARCANA",
+    "domaene_full": "ARCANA-DOMÄNE",
+    "name": "ENTFESSELTES CHAOS",
+    "typ": "Zauber",
+    "stufe": 1,
+    "rueckrufkosten": 1,
+    "kartentext": "Lege zu Beginn einer Spielsitzung eine Anzahl an Markern auf diese Karte, die deinem Zauber-Attribut entspricht.\n\nFühre einen Zauberwurf gegen ein Ziel in weiter Distanz durch und setze eine beliebige Anzahl deiner Marker ein, um pure Energie aus deinem Inneren zu kanalisieren und gegen das Ziel zu entfesseln. Bei einem Erfolg würfelst du eine Anzahl an W10, die der Anzahl eingesetzter Marker entspricht, und fügst dem Ziel entsprechenden magischen Schaden zu. Markiere 1 Stress, um diese Karte wieder mit Markern bis zu deinem Zauber-Attributswert aufzufüllen.\n\nAm Ende jeder Spielsitzung werden alle nicht eingesetzten Marker entfernt.",
+    "kartennummer": 2
+  },
+  {
+    "domaene": "ARCANA",
+    "domaene_full": "ARCANA-DOMÄNE",
+    "name": "WANDLAUF",
+    "typ": "Zauber",
+    "stufe": 1,
+    "rueckrufkosten": 1,
+    "kartentext": "Setze 1 Hoffnung ein, um es einer Kreatur in unmittelbarer Distanz zu ermöglichen, an Wänden und Decken entlangzulaufen wie auf dem Boden. Dieser Effekt hält bis zum Ende der Szene an oder bis du Wandlauf erneut wirkst.",
+    "kartennummer": 3
+  },
+  {
+    "domaene": "ARCANA",
+    "domaene_full": "ARCANA-DOMÄNE",
+    "name": "ZUNDERGRIFF",
+    "typ": "Zauber",
+    "stufe": 2,
+    "rueckrufkosten": 1,
+    "kartentext": "Führe einen Zauberwurf gegen ein Ziel in unmittelbarer Distanz durch. Bei einem Erfolg geht das Ziel sofort in Flammen auf, erleidet 1W20+3 magischen Schaden und erhält vorübergehend den Zustand Brand.\n\nWenn eine Brennende Kreatur eine Aktion ausführt, erleidet sie zusätzlich 2W6 magischen Schaden, wenn sie am Ende ihrer Aktion immer noch den Zustand Brand hat.",
+    "kartennummer": 4
+  },
+  {
+    "domaene": "ARCANA",
+    "domaene_full": "ARCANA-DOMÄNE",
+    "name": "SCHWEBENDES AUGE",
+    "typ": "Zauber",
+    "stufe": 2,
+    "rueckrufkosten": 0,
+    "kartentext": "Setze 1 Hoffnung ein, um eine kleine schwebende Kugel zu beschwören, die sich innerhalb sehr weiter Distanz überall hinbewegen kann. Während dieser Zauber aktiv ist, kannst du durch die Kugel sehen als würdest du auf ihrer Position stehen. Du kannst frei zwischen der Wahrnehmung deiner eigenen Sinne und der Sicht durch die Kugel wechseln. Wenn die Kugel Schaden erleidet oder sich außerhalb der Distanz bewegt, endet der Zauber.",
+    "kartennummer": 5
+  },
+  {
+    "domaene": "ARCANA",
+    "domaene_full": "ARCANA-DOMÄNE",
+    "name": "ZAUBERBRUCH",
+    "typ": "Zauber",
+    "stufe": 3,
+    "rueckrufkosten": 2,
+    "kartentext": "Du kannst einen magischen Effekt unterbrechen, indem du einen Reaktionswurf mit deinem Zauber-Attribut durchführst. Bei einem Erfolg endet der Effekt sofort und sämtliche Auswirkungen werden verhindert. Im Anschluss legst du diese Karte in deine Reserve.",
+    "kartennummer": 6
+  },
+  {
+    "domaene": "ARCANA",
+    "domaene_full": "ARCANA-DOMÄNE",
+    "name": "FLUG",
+    "typ": "Zauber",
+    "stufe": 3,
+    "rueckrufkosten": 1,
+    "kartentext": "Führe einen Zauberwurf (15) durch. Bei einem Erfolg legst du eine Anzahl Marker auf diese Karte, die deinem Wert in Agilität entspricht (mindestens 1). Wenn du beim Fliegen einen Aktionswurf durchführst, setze 1 Marker von dieser Karte ein. Nach der Aktion, für die du den letzten Marker auf dieser Karte einsetzt, landest du auf dem Boden direkt unter dir.",
+    "kartennummer": 7
+  },
+  {
+    "domaene": "ARCANA",
+    "domaene_full": "ARCANA-DOMÄNE",
+    "name": "HIER UND DORT",
+    "typ": "Zauber",
+    "stufe": 4,
+    "rueckrufkosten": 1,
+    "kartentext": "Führe einen Zauberwurf (12) durch. Bei einem Erfolg darfst du 1 Hoffnung einsetzen, um dich zu einer anderen Position innerhalb weiter Distanz zu teleportieren, die du sehen kannst. Wenn sich weitere Kreaturen innerhalb sehr kurzer Distanz befinden, die sich auch teleportieren möchten, darfst du 1 Hoffnung für jede zusätzliche Kreatur einsetzen und diese mit dir teleportieren.",
+    "kartennummer": 8
+  },
+  {
+    "domaene": "ARCANA",
+    "domaene_full": "ARCANA-DOMÄNE",
+    "name": "SCHÜTZENDE DRUCKWELLE",
+    "typ": "Zauber",
+    "stufe": 4,
+    "rueckrufkosten": 1,
+    "kartentext": "Führe einen Zauberwurf gegen alle Ziele in unmittelbarer Distanz durch. Getroffene Ziele werden in weite Distanz zurückgeschleudert und erleiden W8+3 magischen Schaden, abhängig von deinem Zauber-Attribut.",
+    "kartennummer": 9
+  },
+  {
+    "domaene": "ARCANA",
+    "domaene_full": "ARCANA-DOMÄNE",
+    "name": "KETTENBLITZ",
+    "typ": "Zauber",
+    "stufe": 5,
+    "rueckrufkosten": 1,
+    "kartentext": "Markiere 2 Stress, um einen Zauberwurf durch-zuführen und Blitze auf alle Ziele in kurzer Distanz niedergehen zu lassen. Getroffene Ziele müssen einen Reaktionswurf mit einem Schwierigkeitsgrad durchführen, der dem Ergebnis deines Zauberwurfs entspricht. Ziele, die einen Misserfolg erzielen, erleiden 2W8+4 magischen Schaden. Zusätzliche gegnerische Ziele, die nicht von Kettenblitz anvisiert wurden und sich innerhalb kurzer Distanz zu getroffenen Zielen befinden, müssen ebenfalls einen Reaktionswurf durchführen. Ziele, die einen Misserfolg erzielen, erleiden 2W8+4 magischen Schaden. Diese Kette setzt sich bis zum letzten gegnerischen Ziel in der entsprechenden Distanz fort.",
+    "kartennummer": 10
+  },
+  {
+    "domaene": "ARCANA",
+    "domaene_full": "ARCANA-DOMÄNE",
+    "name": "VORAHNUNG",
+    "typ": "Zauber",
+    "stufe": 5,
+    "rueckrufkosten": 2,
+    "kartentext": "Du bist in der Lage die arkane Energie so lenken, dass du Visionen der Zukunft erhältst. Einmal pro langer Rast darfst du, unmittelbar nachdem die SL dir die Folgen eines deiner Würfe sagt, diese Aktion und ihre Folgen widerrufen, als wären sie nie geschehen und stattdessen eine andere Aktion durchführen.",
+    "kartennummer": 11
+  },
+  {
+    "domaene": "ARCANA",
+    "domaene_full": "ARCANA-DOMÄNE",
+    "name": "PORTALWANDELN",
+    "typ": "Zauber",
+    "stufe": 6,
+    "rueckrufkosten": 2,
+    "kartentext": "Führe einen Zauberwurf (15) durch. Bei einem Erfolg erschaffst du eine magische Markierung auf dem Boden unter deinen Füßen. Wenn du das nächste Mal erfolgreich Portalwandeln wirkst, öffnet sich ein Riss im Raum, der einen sicheren Übergang zu der Stelle bietet, an der du die Markierung platziert hast. Der Riss bleibt geöffnet, bis du ihn schließt oder du einen anderen Zauber wirkst.\n\nDu kannst den Zauber jederzeit beenden, wenn du Portalwandeln erneut wirkst und die Markierung an einer anderen Stelle setzt.",
+    "kartennummer": 12
+  },
+  {
+    "domaene": "ARCANA",
+    "domaene_full": "ARCANA-DOMÄNE",
+    "name": "TELEKINESE",
+    "typ": "Zauber",
+    "stufe": 6,
+    "rueckrufkosten": 0,
+    "kartentext": "Führe einen Zauberwurf gegen ein Ziel innerhalb weiter Distanz durch. Bei einem Erfolg darfst du das Ziel mittels Gedankenkraft an eine beliebige Position in weiter Distanz zu seiner Ursprungsposition bewegen. Du darfst das Ziel als Angriff werfen, indem du einen zusätzlichen Zauberwurf gegen ein zweites Ziel durchführst, das du mit dem ersten Ziel treffen willst. Bei einem Erfolg erleidet das zweite Ziel W12+4 physischen Schaden, abhängig von deiner Übung. Im Anschluss endet dieser Zauber.",
+    "kartennummer": 13
+  },
+  {
+    "domaene": "ARCANA",
+    "domaene_full": "ARCANA-DOMÄNE",
+    "name": "SEGEN DER ARKANA",
+    "typ": "Fähigkeit",
+    "stufe": 7,
+    "rueckrufkosten": 2,
+    "kartentext": "Wenn 4 oder mehr Domänenkarten in deiner Auslage aus der Arkana-Domäne stammen, erhältst du folgende Vorteile:\n\n• Einen Bonus von +1 auf Zauberwürfe.\n\n• Einmal pro Rast darfst du die Würfelergebnisse deines Hoffnungs- und Furchtwürfels miteinander tauschen.",
+    "kartennummer": 14
+  },
+  {
+    "domaene": "ARCANA",
+    "domaene_full": "ARCANA-DOMÄNE",
+    "name": "VERHÜLLENDER ANGRIFF",
+    "typ": "Zauber",
+    "stufe": 7,
+    "rueckrufkosten": 2,
+    "kartentext": "Wenn du einen erfolgreichen Zauberwurf für einen anderen Zauber durchführst, darfst du 1 Hoffnung einsetzen, um den Zustand Getarnt zu erhalten.\n\nMit dem Zustand Getarnt bleibst du unsichtbar, solange du dich nicht bewegst, wenn ein gegnerischer Charakter sich auf eine Position bewegt, von der aus er dich eigentlich sehen würde. Wenn du dich in das Sichtfeld oder innerhalb des Sichtfeldes eines gegnerischen Charakters bewegst, oder einen Angriff durchführst, bist du nicht mehr Getarnt.",
+    "kartennummer": 15
+  },
+  {
+    "domaene": "ARCANA",
+    "domaene_full": "ARCANA-DOMÄNE",
+    "name": "ARKANE REFLEXION",
+    "typ": "Zauber",
+    "stufe": 8,
+    "rueckrufkosten": 1,
+    "kartentext": "Wenn du magischen Schaden erleiden würdest, darfst du beliebig viel Hoffnung einsetzen, um entsprechend viele W6 zu würfeln. Wenn mindestens einer davon eine 6 zeigt, wird der Angriff auf die angreifende Kreatur zurückgeworfen und sie erleidet an deiner Stelle den Schaden.",
+    "kartennummer": 16
+  },
+  {
+    "domaene": "ARCANA",
+    "domaene_full": "ARCANA-DOMÄNE",
+    "name": "AURA DER VERWIRRUNG",
+    "typ": "Zauber",
+    "stufe": 8,
+    "rueckrufkosten": 2,
+    "kartentext": "Führe einen Zauberwurf (14) durch. Bei einem Erfolg darfst du einmal pro langer Rast eine Illusion über deinem Körper erschaffen, die deine genaue Position verschleiert. Markiere beliebig viel Stress, um entsprechend viele zusätzliche Schichten der Illusion zu erzeugen. Wenn eine gegnerische Kreatur dich angreift, würfle eine Anzahl W6 die den aktiven Schichten der Illusion entspricht. Wenn du mindestens eine 5 oder höher würfelst, wird eine Schicht der Illusion zerstört und der Angriff gegen dich schlägt fehl. Wenn alle Würfel 4 oder weniger zeigen, erleidest du Schaden und der Zauber endet.",
+    "kartennummer": 17
+  },
+  {
+    "domaene": "ARCANA",
+    "domaene_full": "ARCANA-DOMÄNE",
+    "name": "ERDBEBEN",
+    "typ": "Zauber",
+    "stufe": 9,
+    "rueckrufkosten": 2,
+    "kartentext": "Führe einen Zauberwurf (16) durch. Einmal pro Rast bei einem Erfolg müssen alle nicht-fliegenden Ziele innerhalb sehr weiter Distanz einen Reaktionswurf (18) durchführen. Ziele, die einen Misserfolg erzielen, erleiden 3W10+8 physischen Schaden und erhalten vorübergehend den Zustand Verwundbar. Ziele, die einen Erfolg erzielen, erleiden den halben Schaden.\n\nZusätzlich wird bei einem Erfolg auf den Zauberwurf die gesamte Umgebung innerhalb sehr weiter Distanz zu schwierig passierbarem Terrain. Gebäude innerhalb dieser Distanz können Schaden davontragen oder zusammenstürzen.",
+    "kartennummer": 18
+  },
+  {
+    "domaene": "ARCANA",
+    "domaene_full": "ARCANA-DOMÄNE",
+    "name": "PROJEKTION DER SINNE",
+    "typ": "Zauber",
+    "stufe": 9,
+    "rueckrufkosten": 0,
+    "kartentext": "Einmal pro Rast darfst du einen Zauberwurf (15) durchführen. Bei einem Erfolg erhältst du eine Vision, in der du einen dir bekannten Ort klar sehen und hören kannst, als wärst du selbst dort. Du kannst dich in der Vision frei bewegen und bist nicht an die physischen Einschränkungen deines Körpers gebunden. Dieser Zauber kann weder durch Magie noch durch weltliche Methoden entdeckt werden. Die Vision endet, wenn du Schaden erleidest oder einen anderen Zauber wirkst.",
+    "kartennummer": 19
+  },
+  {
+    "domaene": "ARCANA",
+    "domaene_full": "ARCANA-DOMÄNE",
+    "name": "NEUE REALITÄT",
+    "typ": "Zauber",
+    "stufe": 10,
+    "rueckrufkosten": 1,
+    "kartentext": "Nachdem du oder ein gewillter verbündeter Charakter einen beliebigen Wurf durchgeführt haben, darfst du 5 Hoffnung einsetzen, um das nummerische Ergebnis des Wurfs in ein Ergebnis deiner Wahl zu ändern. Das gewählte Ergebnis muss innerhalb des Würfelwertes liegen.",
+    "kartennummer": 20
+  },
+  {
+    "domaene": "ARCANA",
+    "domaene_full": "ARCANA-DOMÄNE",
+    "name": "HIMMELSFALL",
+    "typ": "Zauber",
+    "stufe": 10,
+    "rueckrufkosten": 1,
+    "kartentext": "Führe einen Zauberwurf gegen alle gegnerischen Ziele innerhalb weiter Distanz durch. Du darfst beliebig viel Stress markieren, um magische Splitter vom Himmel regnen zu lassen. Getroffene Ziele erleiden 1W20+2 magischen Schaden für jeden Punkt Stress, den du markiert hast.",
+    "kartennummer": 21
+  },
+  {
+    "domaene": "KLINGE",
+    "domaene_full": "KLINGE-DOMÄNE",
+    "name": "WIEDER AUFSTEHEN",
+    "typ": "Fähigkeit",
+    "stufe": 1,
+    "rueckrufkosten": 1,
+    "kartentext": "Wenn du Schweren Schaden erleidest, darfst du 1 Stress markieren, um die Schwere des Schadens um 1 Schwelle zu reduzieren.",
+    "kartennummer": 22
+  },
+  {
+    "domaene": "KLINGE",
+    "domaene_full": "KLINGE-DOMÄNE",
+    "name": "NICHT GUT GENUG",
+    "typ": "Fähigkeit",
+    "stufe": 1,
+    "rueckrufkosten": 1,
+    "kartentext": "Bei einem Schadenswurf darfst du alle 1en und 2en erneut würfeln.",
+    "kartennummer": 23
+  },
+  {
+    "domaene": "KLINGE",
+    "domaene_full": "KLINGE-DOMÄNE",
+    "name": "WIRBELWIND",
+    "typ": "Fähigkeit",
+    "stufe": 1,
+    "rueckrufkosten": 0,
+    "kartentext": "Wenn du einen erfolgreichen Angriff gegen ein Ziel innerhalb sehr kurzer Distanz ausführst, darfst du 1 Hoffnung einsetzen, um den Angriff gleichzeitig gegen alle anderen Ziele innerhalb sehr kurzer Distanz auszuführen. Alle weiteren mit dieser Fähigkeit getroffenen Ziele erleiden den halbierten Schaden.",
+    "kartennummer": 24
+  },
+  {
+    "domaene": "KLINGE",
+    "domaene_full": "KLINGE-DOMÄNE",
+    "name": "KOMPANIE-BANDE",
+    "typ": "Fähigkeit",
+    "stufe": 2,
+    "rueckrufkosten": 1,
+    "kartentext": "Einmal pro langer Rast erhalten du und ein weiterer Charakter je 3 Hoffnung, wenn du diesem Charakter ein Kompliment machst oder ihn nach etwas fragst, das er gut kann.",
+    "kartennummer": 25
+  },
+  {
+    "domaene": "KLINGE",
+    "domaene_full": "KLINGE-DOMÄNE",
+    "name": "WAGEHALS",
+    "typ": "Fähigkeit",
+    "stufe": 2,
+    "rueckrufkosten": 1,
+    "kartentext": "Markiere 1 Stress, um einen Vorteil auf einen Angriff zu erhalten.",
+    "kartennummer": 26
+  },
+  {
+    "domaene": "KLINGE",
+    "domaene_full": "KLINGE-DOMÄNE",
+    "name": "GERANGEL",
+    "typ": "Fähigkeit",
+    "stufe": 3,
+    "rueckrufkosten": 1,
+    "kartentext": "Wenn dir eine Kreatur in unmittelbarer Distanz Schaden zufügen würde, darfst du dem Angriff einmal pro Rast ausweichen und dich ungehindert aus der unmittelbaren Distanz dieser Kreatur herausbewegen.",
+    "kartennummer": 27
+  },
+  {
+    "domaene": "KLINGE",
+    "domaene_full": "KLINGE-DOMÄNE",
+    "name": "VIELSEITIGES KAMPFTALENT",
+    "typ": "Fähigkeit",
+    "stufe": 3,
+    "rueckrufkosten": 1,
+    "kartentext": "Du darfst ein anderes Charakterattribut für eine ausgerüstete Waffe nutzen als jenes, das die Waffe eigentlich benennt.\n\nWenn du Schaden auswürfelst, darfst du 1 Stress markieren, um für einen deiner Schadenswürfel den maximalen Wert statt des Würfelergebnisses zu verwenden.",
+    "kartennummer": 28
+  },
+  {
+    "domaene": "KLINGE",
+    "domaene_full": "KLINGE-DOMÄNE",
+    "name": "TÖDLICHER FOKUS",
+    "typ": "Fähigkeit",
+    "stufe": 4,
+    "rueckrufkosten": 2,
+    "kartentext": "Einmal pro Rast darfst du deinen gesamten Fokus auf ein Ziel deiner Wahl richten. Du erhältst einen Bonus von +1 auf deine Übung, bis du eine andere Kreatur angreifst, das Ziel besiegst oder der Kampf endet.",
+    "kartennummer": 29
+  },
+  {
+    "domaene": "KLINGE",
+    "domaene_full": "KLINGE-DOMÄNE",
+    "name": "VERSTÄRKTE RÜSTUNG",
+    "typ": "Fähigkeit",
+    "stufe": 4,
+    "rueckrufkosten": 0,
+    "kartentext": "Du erhältst einen Bonus von +2 auf deine Schadensschwellen, solange du Rüstung trägst.",
+    "kartennummer": 30
+  },
+  {
+    "domaene": "KLINGE",
+    "domaene_full": "KLINGE-DOMÄNE",
+    "name": "MEISTERLICHER VORTEIL",
+    "typ": "Fähigkeit",
+    "stufe": 5,
+    "rueckrufkosten": 1,
+    "kartentext": "Wenn du bei einem Angriff einen kritischen Erfolg würfelst, darfst du bis zu 3 Hoffnung einsetzen, um eine der folgenden Optionen für jede eingesetzte Hoffnung auszuwählen:\n\n• Du löschst 1 TP.\n\n• Du löschst 1 Rüstungsfeld.\n\n• Dein Ziel muss 1 zusätzlichen TP markieren.\n\nDu darfst jede Option nur einmal wählen.",
+    "kartennummer": 31
+  },
+  {
+    "domaene": "KLINGE",
+    "domaene_full": "KLINGE-DOMÄNE",
+    "name": "VITALITÄT",
+    "typ": "Fähigkeit",
+    "stufe": 5,
+    "rueckrufkosten": 0,
+    "kartentext": "Wenn du diese Karte wählst, erhältst du zwei der folgenden Vorteile permanent:\n\n• 1 zusätzliches Stress-Feld.\n\n• 1 zusätzliches TP-Feld.\n\n• Einen Bonus von +2 auf deine Schadensschwellen.\n\nIm Anschluss legst du diese Karte permanent in deine Reserve.",
+    "kartennummer": 32
+  },
+  {
+    "domaene": "KLINGE",
+    "domaene_full": "KLINGE-DOMÄNE",
+    "name": "ABGEHÄRTET",
+    "typ": "Fähigkeit",
+    "stufe": 6,
+    "rueckrufkosten": 2,
+    "kartentext": "Einmal pro langer Rast darfst du 1 Hoffnung einsetzen, um 1 TP bei dir zu löschen, statt einen Todeszug auszuführen.",
+    "kartennummer": 33
+  },
+  {
+    "domaene": "KLINGE",
+    "domaene_full": "KLINGE-DOMÄNE",
+    "name": "FURORE",
+    "typ": "Fähigkeit",
+    "stufe": 6,
+    "rueckrufkosten": 1,
+    "kartentext": "Vor einem Angriffswurf darfst du 1 Stress markieren, um deinem Schadenswurf einen Bonus in Höhe deines doppelten Stärke-Wertes hinzuzufügen.\n\nPro Angriff darfst du Furore zweimal einsetzen.",
+    "kartennummer": 34
+  },
+  {
+    "domaene": "KLINGE",
+    "domaene_full": "KLINGE-DOMÄNE",
+    "name": "SEGEN DER KLINGE",
+    "typ": "Fähigkeit",
+    "stufe": 7,
+    "rueckrufkosten": 1,
+    "kartentext": "Wenn 4 oder mehr Domänenkarten in deiner Auslage aus der Klinge-Domäne stammen, erhältst du folgende Vorteile:\n\n• Einen Bonus von +2 auf Angriffswürfe.\n\n• Einen Bonus von +4 auf deine Schwere Schadensschwelle.",
+    "kartennummer": 35
+  },
+  {
+    "domaene": "KLINGE",
+    "domaene_full": "KLINGE-DOMÄNE",
+    "name": "FLÜCHTIGER TREFFER",
+    "typ": "Fähigkeit",
+    "stufe": 7,
+    "rueckrufkosten": 1,
+    "kartentext": "Wenn du einen Misserfolg bei einem Angriffswurf erzielst, darfst du 1 Stress markieren, um dem Ziel Waffenschaden in Höhe der Hälfte deiner Übung zuzufügen.",
+    "kartennummer": 36
+  },
+  {
+    "domaene": "KLINGE",
+    "domaene_full": "KLINGE-DOMÄNE",
+    "name": "KAMPFSCHREI",
+    "typ": "Fähigkeit",
+    "stufe": 8,
+    "rueckrufkosten": 2,
+    "kartentext": "Einmal pro langer Rast, wenn du dich in einen Kampf wirfst, darfst du einen mächtigen Schrei ausstoßen, der deine Verbündeten motiviert. Alle Verbündeten, die dich hören können, dürfen 1 Stress löschen und erhalten 1 Hoffnung. Zusätzlich erhalten deine Verbündeten einen Vorteil auf Angriffswürfe bis du oder ein verbündeter Charakter einen Misserfolg mit Furcht erzielt.",
+    "kartennummer": 37
+  },
+  {
+    "domaene": "KLINGE",
+    "domaene_full": "KLINGE-DOMÄNE",
+    "name": "BLUTRAUSCH",
+    "typ": "Fähigkeit",
+    "stufe": 8,
+    "rueckrufkosten": 3,
+    "kartentext": "Einmal pro langer Rast darfst du in einen Blutrausch verfallen, bis keine gegnerischen Kreaturen mehr in Sicht sind.\n\nWährend der Blutrausch anhält, darfst du keine Rüstungsfelder markieren und du erhältst einen Bonus von +10 auf deine Schadenswürfe sowie einen Bonus von +8 auf deine Schwere Schadensschwelle.",
+    "kartennummer": 38
+  },
+  {
+    "domaene": "KLINGE",
+    "domaene_full": "KLINGE-DOMÄNE",
+    "name": "BLUT UND EHRE",
+    "typ": "Fähigkeit",
+    "stufe": 9,
+    "rueckrufkosten": 2,
+    "kartentext": "Wenn du einen kritischen Erfolg bei einem Waffenangriff würfelst, erhältst du 1 zusätzliche Hoffnung oder darfst 1 zusätzlichen Punkt Stress löschen.\n\nAußerdem erhältst du 1 Hoffnung oder darfst 1 Stress löschen, wenn du einem gegnerischen Ziel genug Schaden zufügst, um es zu besiegen.",
+    "kartennummer": 39
+  },
+  {
+    "domaene": "KLINGE",
+    "domaene_full": "KLINGE-DOMÄNE",
+    "name": "GUILLOTINE",
+    "typ": "Fähigkeit",
+    "stufe": 9,
+    "rueckrufkosten": 3,
+    "kartentext": "Einmal pro langer Rast darfst du 1 Hoffnung einsetzen, um einen Angriffswurf durchzuführen. Die SL sagt dir, welche Ziele innerhalb der Waffendistanz du erfolgreich treffen würdest. Wähle eines dieser Ziele aus; es muss 5 TP markieren.",
+    "kartennummer": 40
+  },
+  {
+    "domaene": "KLINGE",
+    "domaene_full": "KLINGE-DOMÄNE",
+    "name": "KAMPFMONSTER",
+    "typ": "Fähigkeit",
+    "stufe": 10,
+    "rueckrufkosten": 0,
+    "kartentext": "Wenn du einen Erfolg bei einem Angriff auf eine gegnerische Kreatur erzielst, darfst du 4 Stress markieren. Das Ziel muss eine Anzahl TP markieren, die der Anzahl deiner aktuell markierten TP entspricht, anstatt Schaden auszuwürfeln.",
+    "kartennummer": 41
+  },
+  {
+    "domaene": "KLINGE",
+    "domaene_full": "KLINGE-DOMÄNE",
+    "name": "SCHLACHTRUF",
+    "typ": "Fähigkeit",
+    "stufe": 10,
+    "rueckrufkosten": 3,
+    "kartentext": "Wenn du einen erfolgreichen Angriff mit einer Waffe durchführst, richtest du niemals Schaden unterhalb der Mittleren Schadensschwelle an (das Ziel muss immer mindestens 2 TP markieren).\n\nZusätzlich darfst du 1 Stress markieren, wenn eine Kreatur innerhalb der Distanz deiner Waffe einem verbündeten Charakter Schaden mit einem Angriff zufügt, der dich nicht betrifft. Die Kreatur muss einen Reaktionswurf (15) durchführen. Bei einem Misserfolg muss die Kreatur 1 TP markieren.",
+    "kartennummer": 42
+  },
+  {
+    "domaene": "KNOCHEN",
+    "domaene_full": "KNOCHEN-DOMÄNE",
+    "name": "FLINKES MANÖVER",
+    "typ": "Fähigkeit",
+    "stufe": 1,
+    "rueckrufkosten": 0,
+    "kartentext": "Einmal pro Rast darfst du 1 Stress markieren, um an einen beliebigen Ort innerhalb weiter Distanz zu sprinten, ohne einen Agilitätswurf ausführen zu müssen.\n\nWenn du am Ende dieser Bewegung in unmittelbarer Distanz zu einem gegnerischen Ziel stehst und sofort einen Angriff gegen es ausführst, erhältst du einen Bonus von +1 auf den Angriffswurf.",
+    "kartennummer": 43
+  },
+  {
+    "domaene": "KNOCHEN",
+    "domaene_full": "KNOCHEN-DOMÄNE",
+    "name": "ICH HABE ES KOMMEN SEHEN",
+    "typ": "Fähigkeit",
+    "stufe": 1,
+    "rueckrufkosten": 1,
+    "kartentext": "Wenn du Ziel eines Angriffs wirst, der außerhalb deiner unmittelbaren Distanz erfolgt, darfst du 1 Stress markieren, um 1W4 zu würfeln und einen Bonus auf deinen Ausweichen-Wert in Höhe des Würfelergebnisses gegen diesen Angriff zu erhalten.",
+    "kartennummer": 44
+  },
+  {
+    "domaene": "KNOCHEN",
+    "domaene_full": "KNOCHEN-DOMÄNE",
+    "name": "UNANTASTBAR",
+    "typ": "Fähigkeit",
+    "stufe": 1,
+    "rueckrufkosten": 1,
+    "kartentext": "Du erhältst einen Bonus auf Ausweichen in Höhe der Hälfte deines Agilitätswertes.",
+    "kartennummer": 45
+  },
+  {
+    "domaene": "KNOCHEN",
+    "domaene_full": "KNOCHEN-DOMÄNE",
+    "name": "HITZE DES GEFECHTS",
+    "typ": "Fähigkeit",
+    "stufe": 2,
+    "rueckrufkosten": 2,
+    "kartentext": "Wenn dein Ziel nach deinem Angriff mindestens 1 TP markieren muss, darfst du 2 Hoffnung einsetzen, um deinen Ausweichen-Wert um die Anzahl der markierten TP zu erhöhen. Dieser Bonus hält an, bis der nächste Angriff gegen dich erfolgt ist.",
+    "kartennummer": 46
+  },
+  {
+    "domaene": "KNOCHEN",
+    "domaene_full": "KNOCHEN-DOMÄNE",
+    "name": "TAKTISCHE ANNÄHERUNG",
+    "typ": "Fähigkeit",
+    "stufe": 2,
+    "rueckrufkosten": 1,
+    "kartentext": "Nach einer langen Rast legst du eine Anzahl an Markern auf diese Karte, die deinem Wissen-Wert entspricht (mindestens 1). Wenn du dich zum ersten Mal in kurze Distanz zu einem gegnerischen Ziel begibst und dieses angreifst, darfst du 1 Marker einsetzen, um eine der folgenden Optionen zu wählen:\n\n• Du erhältst einen Vorteil auf den Angriffswurf.\n\n• Du darfst 1 Stress bei einem verbündeten Charakter löschen, der sich in unmittelbarer Distanz zu deinem Ziel befindet.\n\n• Du erhältst einen Bonus von 1W8 auf deinen Schadenswurf.\n\nBei der nächsten langen Rast werden alle nicht verbrauchten Marker entfernt.",
+    "kartennummer": 47
+  },
+  {
+    "domaene": "KNOCHEN",
+    "domaene_full": "KNOCHEN-DOMÄNE",
+    "name": "WAPPNEN",
+    "typ": "Fähigkeit",
+    "stufe": 3,
+    "rueckrufkosten": 1,
+    "kartentext": "Wenn du ein Rüstungsfeld markierst, um erlittenen Schaden zu reduzieren, darfst du 1 Stress markieren, um ein zusätzliches Rüstungsfeld zu markieren.",
+    "kartennummer": 48
+  },
+  {
+    "domaene": "KNOCHEN",
+    "domaene_full": "KNOCHEN-DOMÄNE",
+    "name": "TAKTIEREN",
+    "typ": "Fähigkeit",
+    "stufe": 3,
+    "rueckrufkosten": 1,
+    "kartentext": "Wenn du einen verbündeten Charakter unterstützt, darf dieser 1 Hoffnung einsetzen, um eine deiner Erfahrungen sowie deinen Vorteilswürfel zu seinem Wurf hinzuzufügen.\n\nWenn ihr einen Teamwurf durchführt, darfst du einen W20 als deinen Hoffnungswürfel verwenden.",
+    "kartennummer": 49
+  },
+  {
+    "domaene": "KNOCHEN",
+    "domaene_full": "KNOCHEN-DOMÄNE",
+    "name": "ABFLUG",
+    "typ": "Fähigkeit",
+    "stufe": 4,
+    "rueckrufkosten": 1,
+    "kartentext": "Markiere 1 Stress, um dich von einem gewillten verbündeten Charakter abzustoßen, in die Luft zu schleudern und einen Luftangriff gegen ein Ziel innerhalb weiter Distanz durchzuführen. Du erhältst einen Vorteil auf den Angriffswurf und darfst dem Schadenswurf 1W10 hinzufügen. Am Ende deiner Aktion landest du in unmittelbarer Distanz des Ziels.",
+    "kartennummer": 50
+  },
+  {
+    "domaene": "KNOCHEN",
+    "domaene_full": "KNOCHEN-DOMÄNE",
+    "name": "UMLENKEN",
+    "typ": "Fähigkeit",
+    "stufe": 4,
+    "rueckrufkosten": 1,
+    "kartentext": "Wenn ein Angriff gegen dich von außerhalb der unmittelbaren Distanz fehlschlägt, darfst du eine Anzahl W6 würfeln, die deiner Übung entspricht. Wenn du eine 6 würfelst, darfst du 1 Stress markieren, um den Angriff stattdessen auf ein gegnerisches Ziel innerhalb sehr kurzer Distanz umzulenken.",
+    "kartennummer": 51
+  },
+  {
+    "domaene": "KNOCHEN",
+    "domaene_full": "KNOCHEN-DOMÄNE",
+    "name": "KENNE DEINE FEINDE",
+    "typ": "Fähigkeit",
+    "stufe": 5,
+    "rueckrufkosten": 1,
+    "kartentext": "Wenn du eine Kreatur beobachtest, darfst du einen Wurf auf Instinkt gegen sie durchführen. Bei einem Erfolg darfst du 1 Hoffnung einsetzen und die SL nach einer der folgenden Informationen über das Ziel fragen:\n\n• Die Anzahl der nicht markierten TP und Stressfelder des Ziels.\n\n• Den Schwierigkeitsgrad und die Schadensschwellen des Ziels.\n\n• Seine Taktik und die Schadenswürfel seines Standard- Angriffs.\n\n• Seine Merkmale/Fähigkeiten und Erfahrungen.\n\nZusätzlich darfst du bei einem Erfolg 1 Stress markieren, um 1 Furcht aus dem Besitz der SL zu entfernen.",
+    "kartennummer": 52
+  },
+  {
+    "domaene": "KNOCHEN",
+    "domaene_full": "KNOCHEN-DOMÄNE",
+    "name": "MARKENZEICHEN",
+    "typ": "Fähigkeit",
+    "stufe": 5,
+    "rueckrufkosten": 1,
+    "kartentext": "Benenne und beschreibe deine typische, individuelle Kampf-Technik. Einmal pro Rast darfst du einen W20 als deinen Hoffnungswürfel verwenden, wenn du diese Technik als Angriffswurf ausführst. Bei einem Erfolg darfst du 1 Stress löschen.",
+    "kartennummer": 53
+  },
+  {
+    "domaene": "KNOCHEN",
+    "domaene_full": "KNOCHEN-DOMÄNE",
+    "name": "FLINKER GEGENSCHLAG",
+    "typ": "Fähigkeit",
+    "stufe": 6,
+    "rueckrufkosten": 0,
+    "kartentext": "Wenn ein Angriff aus unmittelbarer Distanz gegen dich fehlschlägt, darfst du 1 Stress markieren, um die Gelegenheit zu ergreifen und der angreifenden Kreatur den Schadenswert einer deiner aktiven Waffen zuzufügen.",
+    "kartennummer": 54
+  },
+  {
+    "domaene": "KNOCHEN",
+    "domaene_full": "KNOCHEN-DOMÄNE",
+    "name": "ERHOLUNG",
+    "typ": "Fähigkeit",
+    "stufe": 6,
+    "rueckrufkosten": 1,
+    "kartentext": "Du darfst während einer kurzen Rast einen Auszeit-Zug auswählen, der eigentlich in einer langen Rast ausgewählt werden kann. Wenn du 1 Hoffnung einsetzt, darf ein verbündeter Charakter dasselbe tun.",
+    "kartennummer": 55
+  },
+  {
+    "domaene": "KNOCHEN",
+    "domaene_full": "KNOCHEN-DOMÄNE",
+    "name": "SEGEN DER KNOCHEN",
+    "typ": "Fähigkeit",
+    "stufe": 7,
+    "rueckrufkosten": 2,
+    "kartentext": "Wenn 4 oder mehr Domänenkarten in deiner Auslage aus der Knochen-Domäne stammen, erhältst du folgende Vorteile:\n\n• Einen Bonus von +1 auf Agilität.\n\n• Einmal pro Rast darfst du 3 Hoffnung einsetzen, um einen erfolgreichen Angriffswurf gegen dich in einen Misserfolg zu verwandeln.",
+    "kartennummer": 56
+  },
+  {
+    "domaene": "KNOCHEN",
+    "domaene_full": "KNOCHEN-DOMÄNE",
+    "name": "BRUTALE PRÄZISION",
+    "typ": "Fähigkeit",
+    "stufe": 7,
+    "rueckrufkosten": 1,
+    "kartentext": "Wenn du einen erfolgreichen Angriff mit einer Waffe durchführst, erhältst du einen Bonus auf deinen Schadenswurf, der entweder deinem Geschick oder deiner Agilität entspricht.",
+    "kartennummer": 57
+  },
+  {
+    "domaene": "KNOCHEN",
+    "domaene_full": "KNOCHEN-DOMÄNE",
+    "name": "ZERSCHMETTERN",
+    "typ": "Fähigkeit",
+    "stufe": 8,
+    "rueckrufkosten": 3,
+    "kartentext": "Wenn du einen erfolgreichen Angriff durchführst, darfst du 1 Stress markieren, um dem nächsten erfolgreichen Angriff auf dasselbe Ziel zusätzlich 2W12 Schaden hinzuzufügen.",
+    "kartennummer": 58
+  },
+  {
+    "domaene": "KNOCHEN",
+    "domaene_full": "KNOCHEN-DOMÄNE",
+    "name": "RANGELN",
+    "typ": "Fähigkeit",
+    "stufe": 8,
+    "rueckrufkosten": 1,
+    "kartentext": "Führe einen Wurf auf Agilität gegen alle Ziele innerhalb kurzer Distanz durch. Du darfst 1 Hoffnung einsetzen, um Ziele, bei denen du einen Erfolg erzielt hast, sowie alle gewillten Verbündeten innerhalb kurzer Distanz auf eine andere Position innerhalb kurzer Distanz zu bewegen.",
+    "kartennummer": 59
+  },
+  {
+    "domaene": "KNOCHEN",
+    "domaene_full": "KNOCHEN-DOMÄNE",
+    "name": "AM ABGRUND",
+    "typ": "Fähigkeit",
+    "stufe": 9,
+    "rueckrufkosten": 1,
+    "kartentext": "Wenn du 2 oder weniger nicht-markierte TP hast, erleidest du keinen Leichten Schaden.",
+    "kartennummer": 60
+  },
+  {
+    "domaene": "KNOCHEN",
+    "domaene_full": "KNOCHEN-DOMÄNE",
+    "name": "SPLITTERSCHLAG",
+    "typ": "Fähigkeit",
+    "stufe": 9,
+    "rueckrufkosten": 3,
+    "kartentext": "Setze 1 Hoffnung ein und führe einen Angriffswurf gegen alle gegnerischen Ziele innerhalb der Distanz deiner Waffe durch. Einmal pro langer Rast bei einem Erfolg gegen beliebig viele Ziele darfst du den gesamten Schaden, den du damit zugefügt hast, zusammenzählen und diesen Schaden nach Belieben auf die getroffenen Ziele verteilen. Wenn du Schaden auf ein Ziel verteilst, würfle einen zusätzlichen Schadenswürfel und füge dem Schaden dieses Ergebnis hinzu.",
+    "kartennummer": 61
+  },
+  {
+    "domaene": "KNOCHEN",
+    "domaene_full": "KNOCHEN-DOMÄNE",
+    "name": "TODESLAUF",
+    "typ": "Fähigkeit",
+    "stufe": 10,
+    "rueckrufkosten": 1,
+    "kartentext": "Setze 3 Hoffnung ein, um auf geradem Weg das Schlachtfeld bis zu einem Punkt innerhalb weiter Distanz zu durchqueren und einen Angriff gegen alle gegnerischen Ziele auf deinem Weg dorthin durchzuführen, die sich in der Distanz deiner Waffe befinden. Du darfst die Reihenfolge wählen, in der du getroffenen Zielen Schaden zufügst. Für das erste Ziel darfst du deinem Schadenswurf einen Bonus von +1 auf deine Übung hinzufügen. Entferne dann einen der Würfel bei dem Schadenswurf auf das nächste Ziel. Entferne bei den Schadenswürfen auf die nachfolgenden Zielen immer je einen weiteren Würfel, bis du keine Schadenswürfel oder Ziele mehr hast.\n\nDu kannst ein gegnerisches Ziel nur einmal pro Angriff auswählen.",
+    "kartennummer": 62
+  },
+  {
+    "domaene": "KNOCHEN",
+    "domaene_full": "KNOCHEN-DOMÄNE",
+    "name": "SCHNELLER SCHRITT",
+    "typ": "Fähigkeit",
+    "stufe": 10,
+    "rueckrufkosten": 2,
+    "kartentext": "Wenn ein Angriff auf dich fehlschlägt, darfst du 1 Stress löschen. Wenn du keinen Stress-Punkt markiert hast, erhältst du 1 Hoffnung.",
+    "kartennummer": 63
+  },
+  {
+    "domaene": "KODEX",
+    "domaene_full": "KODEX-DOMÄNE",
+    "name": "BUCH VON AVA",
+    "typ": "Zauberbuch",
+    "stufe": 1,
+    "rueckrufkosten": 2,
+    "kartentext": "Kraftstoß: Führe einen Zauberwurf gegen ein Ziel in unmittelbarer Distanz aus. Bei einem Erfolg wird das Ziel in weite Distanz zurückgestoßen und erleidet W10+2 magischen Schaden, abhängig von deiner Übung.\n\nTavas Rüstung: Setze 1 Hoffnung ein, um einem Ziel, das du berühren kannst, einen Bonus von +1 auf seinen Rüstungswert zu gewähren. Der Effekt hält bis zu seiner nächsten Rast an, oder bis du Tavas Rüstung erneut wirkst.\n\nEisstachel: Führe einen Zauberwurf (12) durch, um einen großen Eisstachel in weiter Distanz zu beschwören. Wenn du ihn als Waffe einsetzt, führe den Zauberwurf stattdessen gegen den Schwierigkeitsgrad des Ziels aus. Bei einem Erfolg bewirkst du W6 physischen Schaden, abhängig von deiner Übung.",
+    "kartennummer": 64
+  },
+  {
+    "domaene": "KODEX",
+    "domaene_full": "KODEX-DOMÄNE",
+    "name": "BUCH VON ILLIAT",
+    "typ": "Zauberbuch",
+    "stufe": 1,
+    "rueckrufkosten": 2,
+    "kartentext": "Schlummer: Führe einen Zauberwurf gegen ein Ziel in sehr kurzer Distanz aus. Bei einem Erfolg erhält das Ziel den Zustand Schlaf, bis es Schaden erleidet oder die SL 1 Furcht einsetzt, um den Zustand aufzuheben.\n\nMagisches Kreuzfeuer: Einmal pro Rast darfst du beliebig viel Hoffnung einsetzen, um magische Projektile auf ein Ziel in kurzer Distanz zu werfen. Wirf dazu eine Anzahl W6, die den eingesetzten Punkten Hoffnung entspricht – das Ergebnis entspricht dem magischen Schaden, den das Ziel erleidet.\n\nTelepathie: Setze 1 Hoffnung ein, um eine geistige Verbindung zu einem Ziel herzustellen, das du sehen kannst.\n\nDu kannst mit ihm telepathisch kommunizieren. Die Verbindung hält bis zu deiner nächsten Rast an, oder bis du erneut Telepathie wirkst.",
+    "kartennummer": 65
+  },
+  {
+    "domaene": "KODEX",
+    "domaene_full": "KODEX-DOMÄNE",
+    "name": "BUCH VON TYFAR",
+    "typ": "Zauberbuch",
+    "stufe": 1,
+    "rueckrufkosten": 2,
+    "kartentext": "Wildfeuer: Führe einen Zauberwurf gegen bis zu drei Ziele in unmittelbarer Distanz aus. Flammen brechen aus deinen Händen hervor. Getroffene Ziele erleiden 2W6 magischen Schaden und markieren 1 Stress.\n\nMagische Hand: Beschwöre eine magische Hand innerhalb weiter Distanz, die dieselbe Größe und Kraft wie deine normale Hand hat.\n\nMagischer Nebel: Führe einen Zauberwurf (13) durch, um für einen kurzen Zeitraum in sehr kurzer Distanz einen dichten Nebel heraufzubeschwören, der sich um einen bestimmten Bereich legt. Der Nebel verschleiert diesen Bereich und alles, was sich in ihm befindet.",
+    "kartennummer": 66
+  },
+  {
+    "domaene": "KODEX",
+    "domaene_full": "KODEX-DOMÄNE",
+    "name": "BUCH VON SITIL",
+    "typ": "Zauberbuch",
+    "stufe": 2,
+    "rueckrufkosten": 2,
+    "kartentext": "Aussehen verändern: Du veränderst mithilfe von Magie dein Aussehen und deine Kleidung, um nicht erkannt zu werden.\n\nDoppeltreffer: Setze 2 Hoffnung ein, um diesen Zauber auf dich selbst oder einen verbündeten Charakter innerhalb kurzer Distanz zu wirken. Beim nächsten Angriff des Ziels kann ein zusätzliches Ziel innerhalb der Distanz getroffen werden, gegen das der Angriffswurf ebenfalls erfolgreich wäre. Du kannst diesen Zauber bei jeder Ausführung nur auf einem Ziel aufrechterhalten.\n\nIllusion: Führe einen Zauberwurf (14) durch. Bei einem Erfolg erschaffst du vorübergehend eine optische Illusion innerhalb kurzer Distanz, die nicht größer als du selbst ist und solange besteht, wie du sie ansiehst. Sie hält kritischer Betrachtung stand, bis sich ein beobach­tender Charakter in unmittelbarer Distanz befindet.",
+    "kartennummer": 67
+  },
+  {
+    "domaene": "KODEX",
+    "domaene_full": "KODEX-DOMÄNE",
+    "name": "BUCH VON VAGRAS",
+    "typ": "Zauberbuch",
+    "stufe": 2,
+    "rueckrufkosten": 2,
+    "kartentext": "Runenschloss: Führe einen Zauberwurf (15) auf einen Gegenstand durch, den du berührst und der sich schließen lässt (z. B. Schloss oder Kiste). Einmal pro Rast darfst du bei einem Erfolg den Gegenstand so verschließen, dass er nur von ausgewählten Personen geöffnet werden kann. Ein Charakter mit magischen Fähigkeiten und einer Stunde Zeit zum Verständnis des Zaubers kann diesen brechen.\n\nMagisches Portal: Wenn sich keine gegnerischen Ziele in unmittelbarer Distanz befinden, führe einen Zauberwurf (13) durch. Bei einem Erfolg darfst du 1 Hoffnung einsetzen, um ein Portal zu erschaffen, das von deinem Standort zu einem für dich sichtbaren Punkt innerhalb weiter Distanz führt. Das Portal schließt sich, sobald eine Kreatur hindurchgegangen ist.\n\nEnthüllen: Führe einen Zauberwurf durch. Wenn sich innerhalb kurzer Distanz etwas magisch Verborgenes befindet, wird es enthüllt.",
+    "kartennummer": 68
+  },
+  {
+    "domaene": "KODEX",
+    "domaene_full": "KODEX-DOMÄNE",
+    "name": "BUCH VON KORVAX",
+    "typ": "Zauberbuch",
+    "stufe": 3,
+    "rueckrufkosten": 2,
+    "kartentext": "Levitation: Führe einen Zauberwurf durch, um ein Ziel, das du sehen kannst, vorübergehend in die Luft zu heben und es innerhalb kurzer Distanz zu seiner ursprünglichen Position zu bewegen.\n\nWiderruf: Setze 1 Hoffnung ein, um ein Ziel in unmittelbarer Distanz einen Reaktionswurf (15) durchführen zu lassen.\n\nBei einem Misserfolg vergisst das Ziel die letzte Minute eurer Konversation.\n\nRunenkreis: Markiere 1 Stress, um vorübergehend einen magischen Kreis auf den Boden um dich herum zu erschaffen. Alle gegnerischen Ziele in unmittelbarer Distanz (oder die sich in unmittelbare Distanz bewegen), erleiden 2W12+4 magischen Schaden und werden in sehr kurze Distanz zurückgestoßen.",
+    "kartennummer": 69
+  },
+  {
+    "domaene": "KODEX",
+    "domaene_full": "KODEX-DOMÄNE",
+    "name": "BUCH VON NORAI",
+    "typ": "Zauberbuch",
+    "stufe": 3,
+    "rueckrufkosten": 2,
+    "kartentext": "Mystische Bindung: Führe einen Zauberwurf gegen ein Ziel innerhalb weiter Distanz durch. Bei einem Erfolg ist das Ziel vorübergehend Festgesetzt und muss 1 Stress markieren. Wenn du auf eine fliegende Kreatur zielst, holt der Zauber diese auf den Boden und sie ist vorübergehend Festgesetzt.\n\nFeuerball: Führe einen Zauberwurf gegen ein Ziel innerhalb sehr weiter Distanz durch. Bei einem Erfolg wirfst du einen Feuerball, der beim Aufprall explodiert. Das Ziel und alle Kreaturen innerhalb sehr kurzer Distanz des Ziels müssen einen Reaktionswurf (13) durchführen. Bei einem Misserfolg erleiden Ziele W20+5 magischen Schaden, abhängig von deiner Übung. Bei einem Erfolg erleiden Ziele den halbierten Schaden.",
+    "kartennummer": 70
+  },
+  {
+    "domaene": "KODEX",
+    "domaene_full": "KODEX-DOMÄNE",
+    "name": "BUCH VON EXOTA",
+    "typ": "Zauberbuch",
+    "stufe": 4,
+    "rueckrufkosten": 3,
+    "kartentext": "Zurückweisen: Du kannst einen magischen Effekt während der Ausführung unterbrechen. Führe einen Reaktionswurf mit deinem Zauber-Attribut durch. Einmal pro Rast darfst du bei einem Erfolg den Effekt und sämtliche Konsequenzen verhindern.\n\nKonstrukt erschaffen: Setze 1 Hoffnung ein und wähle einige Gegenstände aus deiner Umgebung aus, um mit ihnen ein belebtes Konstrukt zu erschaffen, das einfachen Kommandos folgt. Führe einen Zauberwurf durch, um das Konstrukt angreifen zu lassen. Das Konstrukt verfügt über denselben Ausweichen-Wert und dieselben Attributs-Werte wie du; seine Angriffe bewirken 2W10+3 physischen Schaden. Du kannst nur ein Konstrukt zur selben Zeit beschwören. Wenn es Schaden erleidet, zerfällt das Konstrukt.",
+    "kartennummer": 71
+  },
+  {
+    "domaene": "KODEX",
+    "domaene_full": "KODEX-DOMÄNE",
+    "name": "BUCH VON GRYNN",
+    "typ": "Zauberbuch",
+    "stufe": 4,
+    "rueckrufkosten": 2,
+    "kartentext": "Magische Abwehr: Einmal pro langer Rast darfst du 1 Hoffnung einsetzen, um den Schaden eines Angriffs aufzuheben, der dich oder einen verbündeten Charakter innerhalb sehr kurzer Distanz treffen würde.\n\nZeitgefängnis: Wähle einen Gegenstand innerhalb weiter Distanz aus. Für diesen Gegenstand wird die Zeit bis zu deiner nächsten Rast angehalten. Wenn eine Kreatur versucht, den Gegenstand zu bewegen, musst du einen Zauberwurf gegen sie durchführen, um den Zauber aufrecht zu erhalten.\n\nFlammenwand: Führe einen Zauberwurf (15) durch. Bei einem Erfolg schaffst du vorübergehend eine Wand aus magischen Flammen zwischen zwei Positionen innerhalb weiter Distanz. Alle Kreaturen, die sich zwischen diesen Positionen befinden, müssen sich entscheiden, auf welcher Seite der Wand sie stehen wollen. Alle Kreaturen, die die Wand danach durchqueren, erleiden 4W10+3 magischen Schaden.",
+    "kartennummer": 72
+  },
+  {
+    "domaene": "KODEX",
+    "domaene_full": "KODEX-DOMÄNE",
+    "name": "WAND BESCHWÖREN",
+    "typ": "Zauber",
+    "stufe": 5,
+    "rueckrufkosten": 2,
+    "kartentext": "Führe einen Zauberwurf (15) durch. Bei einem Erfolg darfst du einmal pro Rast 1 Hoffnung einsetzen, um vorübergehend eine Wand zwischen zwei Positionen innerhalb weiter Distanz zu erschaffen. Die Wand kann bis zu 15 Meter hoch sein und sich auch um Ecken herum manifestieren. Kreaturen und Gegenstände, die sich dort aufalten, werden zu einer Seite der Wand deiner Wahl geschoben. Die Wand bleibt bis zu deiner nächsten Rast bestehen, oder bis du Wand beschwören erneut wirkst.",
+    "kartennummer": 73
+  },
+  {
+    "domaene": "KODEX",
+    "domaene_full": "KODEX-DOMÄNE",
+    "name": "TELEPORT",
+    "typ": "Zauber",
+    "stufe": 5,
+    "rueckrufkosten": 2,
+    "kartentext": "Einmal pro langer Rast darfst du dich und eine beliebige Anzahl gewillter Ziele innerhalb kurzer Distanz zu einem Ort teleportieren, den du bereits kennst. Wähle eine der folgenden Optionen und führe einen Zauberwurf (16) durch:\n\n• Wenn du den Ort sehr gut kennst, erhältst du einen Bonus von +3.\n\n• Wenn du den Ort regelmäßig besucht hast, erhältst du einen Bonus von +1.\n\n• Wenn du den Ort selten besucht hast, erhältst du keinen Bonus.\n\n• Wenn du nur einmal an diesem Ort warst, erhältst du einen Malus von –2.\n\nBei einem Erfolg tauchen du und deine Mitreisenden an dem Ort auf, den du dir vorgestellt hast. Bei einem Misserfolg kommst du vom Kurs ab und ihr taucht abseits des vorgestellten Ortes auf – die Distanz vom Zielort ist von der Höhe des Misserfolgs abhängig.",
+    "kartennummer": 74
+  },
+  {
+    "domaene": "KODEX",
+    "domaene_full": "KODEX-DOMÄNE",
+    "name": "VERBANNEN",
+    "typ": "Zauber",
+    "stufe": 6,
+    "rueckrufkosten": 0,
+    "kartentext": "Führe einen Zauberwurf gegen ein Ziel innerhalb kurzer Distanz durch. Bei einem Erfolg würfelst du eine Anzahl W20, die deinem Zauber-Attribut entspricht. Das Ziel muss einen Reaktionswurf mit deinem höchsten Würfelergebnis als Schwierigkeitsgrad durchführen. Bei einem Erfolg muss das Ziel 1 Stress markieren, ist aber nicht verbannt. Einmal pro Rast bei einem Misserfolg wird das Ziel von dieser Welt verbannt.\n\nWenn die SC mit Furcht würfeln, sinkt der Schwierigkeitsgrad für den Reaktionswurf um 1 und das Ziel darf einen weiteren Reaktionswurf durchführen. Bei einem Erfolg kehrt es aus der Verbannung zurück.",
+    "kartennummer": 75
+  },
+  {
+    "domaene": "KODEX",
+    "domaene_full": "KODEX-DOMÄNE",
+    "name": "SIEGEL DER VERGELTUNG",
+    "typ": "Zauber",
+    "stufe": 6,
+    "rueckrufkosten": 2,
+    "kartentext": "Du belegst ein gegnerisches Ziel innerhalb kurzer Distanz mit einem Siegel der Vergeltung. Die SL erhält 1 Furcht. Wenn das Ziel dir oder deinen Verbündeten Schaden zufügt, lege 1W8 auf diese Karte. Insgesamt darfst du eine Anzahl W8 in Höhe deiner Stufe auf diese Karte legen. Wenn du einen erfolgreichen Angriff gegen das Ziel durchführst, würfle die W8 auf der Karte und füge das Ergebnis deinem Schadenswurf hinzu. Entferne dann die Würfel von der Karte. Der Zauber endet, sobald das Ziel besiegt ist oder du Siegel der Vergeltung erneut wirkst.",
+    "kartennummer": 76
+  },
+  {
+    "domaene": "KODEX",
+    "domaene_full": "KODEX-DOMÄNE",
+    "name": "BUCH VON HOMET",
+    "typ": "Zauberbuch",
+    "stufe": 7,
+    "rueckrufkosten": 0,
+    "kartentext": "Durchschreiten: Führe einen Zauberwurf (13) durch. Bei einem Erfolg dürfen du und alle Kreaturen, die dich berühren, einmal pro Rast durch eine Wand oder Tür innerhalb kurzer Distanz hindurchlaufen. Der Zauber endet, wenn alle betroffenen Kreaturen auf der anderen Seite sind.\n\nWeltentor: Führe einen Zauberwurf (14) durch. Bei einem Erfolg darfst du einmal pro langer Rast eine Passage zu einem Ort in einer anderen Dimension oder Welt öffnen, an dem du bereits warst. Die Passage bleibt bis zu deiner nächsten Rast bestehen.",
+    "kartennummer": 77
+  },
+  {
+    "domaene": "KODEX",
+    "domaene_full": "KODEX-DOMÄNE",
+    "name": "SEGEN DES KODEX",
+    "typ": "Fähigkeit",
+    "stufe": 7,
+    "rueckrufkosten": 2,
+    "kartentext": "Wenn 4 oder mehr Domänenkarten in deiner Auslage aus der Kodex-Domäne stammen, erhältst du folgende Vorteile:\n\n• Du darfst 1 Stress markieren, um deine Übung zu einem Zauberwurf hinzuzufügen.\n\n• Einmal pro Rast darfst du diese Karte mit einer beliebigen anderen Karte aus deiner Reserve tauschen, ohne die Rückruf-Kosten zu bezahlen.",
+    "kartennummer": 78
+  },
+  {
+    "domaene": "KODEX",
+    "domaene_full": "KODEX-DOMÄNE",
+    "name": "BUCH VON VYOLA",
+    "typ": "Zauberbuch",
+    "stufe": 8,
+    "rueckrufkosten": 2,
+    "kartentext": "Erinnerung lesen: Führe einen Zauberwurf gegen ein Ziel innerhalb weiter Distanz durch. Bei einem Erfolg darfst du in die Gedanken des Ziels eintauchen und der SL eine Frage stellen. Die SL beschreibt die Erinnerungen des Ziels, die diese Frage betreffen.\n\nGeteilte Ruhe: Einmal pro langer Rast darfst du 1 Hoffnung einsetzen und zwei gewillte Kreaturen auswählen. Wenn eine von ihnen Stress markieren müsste, dürfen beide Kreaturen untereinander entscheiden, wer von beiden den Stress markiert. Dieser Zauber hält bis zu ihrer nächsten Rast an.",
+    "kartennummer": 79
+  },
+  {
+    "domaene": "KODEX",
+    "domaene_full": "KODEX-DOMÄNE",
+    "name": "SICHERER HAFEN",
+    "typ": "Zauber",
+    "stufe": 8,
+    "rueckrufkosten": 3,
+    "kartentext": "Wenn du ein paar Minuten Zeit hast, um dich zu konzentrieren, darfst du 2 Hoffnung einsetzen, um deinen Sicheren Hafen zu beschwören – ein großes, interdimensionales Zuhause, in dem du und deine Verbündeten zur Ruhe kommen können. Sobald du diesen Zauber wirkst, erscheint eine magische Tür innerhalb kurzer Distanz. Nur Kreaturen deiner Wahl dürfen eintreten. Sobald ihr euch im Inneren befindet, kannst du den Eingang unsichtbar machen. Du und alle anderen im Hafen könnt diesen jederzeit verlassen. Sobald das passiert, musst du die Tür erneut beschwören.\n\nWenn du in deinem eigenen Sicheren Hafen eine Rast einlegst, darfst du einen zusätzlichen Auszeit-Zug auswählen.",
+    "kartennummer": 80
+  },
+  {
+    "domaene": "KODEX",
+    "domaene_full": "KODEX-DOMÄNE",
+    "name": "BUCH VON RONIN",
+    "typ": "Zauberbuch",
+    "stufe": 9,
+    "rueckrufkosten": 4,
+    "kartentext": "Transformieren: Führe einen Zauberwurf (15) durch. Bei einem Erfolg darfst du dich in ein unbelebtes Objekt verwandeln, das nicht größer ist als deine doppelte Körpergröße. Wenn du Schaden erleidest, verwandelst du dich zurück.\n\nEwige Entkräftung: Einmal pro langer Rast darfst du einen Zauberwurf gegen ein Ziel in kurzer Distanz durchführen. Bei einem Erfolg wird das Ziel dauerhaft Verwundbar. Das Ziel kann diesen Zustand niemals entfernen.",
+    "kartennummer": 81
+  },
+  {
+    "domaene": "KODEX",
+    "domaene_full": "KODEX-DOMÄNE",
+    "name": "WOGE DER AUFLÖSUNG",
+    "typ": "Zauber",
+    "stufe": 9,
+    "rueckrufkosten": 4,
+    "kartentext": "Führe einen Zauberwurf (18) durch. Einmal pro langer Rast bei einem Erfolg sagt dir die SL, welche gegnerischen Ziele innerhalb weiter Distanz einen Schwierigkeitsgrad von 18 oder weniger haben. Für jedes dieser Ziele, das du mit diesem Zauber treffen willst, musst du 1 Stress markieren. Diese Ziele sterben und können nicht wiederbelebt werden.",
+    "kartennummer": 82
+  },
+  {
+    "domaene": "KODEX",
+    "domaene_full": "KODEX-DOMÄNE",
+    "name": "BUCH VON YARROW",
+    "typ": "Zauberbuch",
+    "stufe": 10,
+    "rueckrufkosten": 2,
+    "kartentext": "Zeitstau: Führe einen Zauberwurf (18) durch. Bei einem Erfolg bleibt die Zeit für alle innerhalb weiter Distanz außer dir selbst vorübergehend stehen. Wenn du das nächste Mal einen Aktions-wurf auf eine andere Kreatur durchführst, läuft die Zeit weiter.\n\nMagische Immunität: Setze 5 Hoffnung ein, um bis zu deiner nächsten Rast immun gegen magischen Schaden zu sein.",
+    "kartennummer": 83
+  },
+  {
+    "domaene": "KODEX",
+    "domaene_full": "KODEX-DOMÄNE",
+    "name": "VEREINIGUNG",
+    "typ": "Zauber",
+    "stufe": 10,
+    "rueckrufkosten": 1,
+    "kartentext": "Einmal pro langer Rast darfst du 5 Hoffnung einsetzen, um diesen Zauber auf zwei oder mehr gewillte Kreaturen zu wirken. Bis zu deiner nächsten Rast können Kreaturen, die durch diesen Zauber verbunden sind, entscheiden, wer von ihnen Stress oder TP markieren muss, wenn es dazu kommt.",
+    "kartennummer": 84
+  },
+  {
+    "domaene": "ANMUT",
+    "domaene_full": "ANMUT-DOMÄNE",
+    "name": "GESCHICKTE TÄUSCHUNG",
+    "typ": "Fähigkeit",
+    "stufe": 1,
+    "rueckrufkosten": 0,
+    "kartentext": "Setze 1 Hoffnung ein, um einen Vorteil auf einen Wurf zu erhalten, bei dem du einen Charakter täuschst oder ihm eine Lüge auftischst.",
+    "kartennummer": 85
+  },
+  {
+    "domaene": "ANMUT",
+    "domaene_full": "ANMUT-DOMÄNE",
+    "name": "ENTZÜCKEN",
+    "typ": "Zauber",
+    "stufe": 1,
+    "rueckrufkosten": 0,
+    "kartentext": "Führe einen Zauberwurf gegen ein Ziel innerhalb kurzer Distanz durch. Bei einem Erfolg wird das Ziel vorübergehend Entzückt. Solange dieser Zustand anhält, ist die Aufmerksamkeit des Ziels auf dich gerichtet, was sein Sichtfeld und die Wahrnehmung von Geräuschen abseits deiner Stimme einschränkt. Einmal pro Rast darfst du bei einem Erfolg 1 Stress markieren, um das Entzückte Ziel ebenfalls 1 Stress markieren zu lassen.",
+    "kartennummer": 86
+  },
+  {
+    "domaene": "ANMUT",
+    "domaene_full": "ANMUT-DOMÄNE",
+    "name": "INSPIRIERENDE WORTE",
+    "typ": "Fähigkeit",
+    "stufe": 1,
+    "rueckrufkosten": 1,
+    "kartentext": "Deine Worte sind von Macht durchdrungen. Nach einer langen Rast legst du eine Anzahl an Markern auf diese Karte, die deinem Präsenz-Wert entspricht. Wenn du mit einem verbündeten Charakter sprichst, kannst du einen Marker von dieser Karte einsetzen, um ihm einen der folgenden Vorteile zu gewähren:\n\n• Der Charakter löscht 1 Stress.\n\n• Der Charakter löscht 1 Trefferpunkt.\n\n• Der Charakter erhält 1 Hoffnung.\n\nBei der nächsten langen Rast werden alle nicht verbrauchten Marker entfernt.",
+    "kartennummer": 87
+  },
+  {
+    "domaene": "ANMUT",
+    "domaene_full": "ANMUT-DOMÄNE",
+    "name": "KEINE LÜGEN",
+    "typ": "Zauber",
+    "stufe": 2,
+    "rueckrufkosten": 1,
+    "kartentext": "Führe einen Zauberwurf gegen ein Ziel innerhalb sehr kurzer Distanz durch. Bei einem Erfolg kann das Ziel nicht mehr lügen, solange es sich innerhalb kurzer Distanz zu dir befindet, aber es ist nicht gezwungen, zu sprechen. Wenn du dem Ziel eine Frage stellst und es sich weigert zu antworten, muss es 1 Stress markieren und der Zauber endet. Dem Ziel ist in der Regel nicht bewusst, dass es verzaubert wurde, bis es gegen seinen Willen die Wahrheit spricht.",
+    "kartennummer": 88
+  },
+  {
+    "domaene": "ANMUT",
+    "domaene_full": "ANMUT-DOMÄNE",
+    "name": "STUNK MACHEN",
+    "typ": "Fähigkeit",
+    "stufe": 2,
+    "rueckrufkosten": 2,
+    "kartentext": "Führe einen Wurf auf Präsenz gegen ein Ziel innerhalb weiter Distanz aus, das du provozierst oder anlockst. Bei einem Erfolg darfst du einmal pro Rast eine Anzahl W4 würfeln, die deiner Übung entspricht. Das Ziel muss Stress in Höhe des höchsten Würfelergebnisses markieren.",
+    "kartennummer": 89
+  },
+  {
+    "domaene": "ANMUT",
+    "domaene_full": "ANMUT-DOMÄNE",
+    "name": "HYPNOTISCHER SCHIMMER",
+    "typ": "Zauber",
+    "stufe": 3,
+    "rueckrufkosten": 1,
+    "kartentext": "Führe einen Zauberwurf gegen alle gegnerischen Ziele vor dir innerhalb kurzer Distanz durch. Einmal pro Rast erschaffst du für alle Ziele, gegen die du einen Erfolg erzielt hast, eine Illusion bunter Farben und Lichter. Die getroffenen Ziele erhalten vorübergehend den Zustand Schock und müssen 1 Stress markieren. Während der Zustand Schock anhält, können sie keine Aktionen oder Reaktionen ausführen.",
+    "kartennummer": 90
+  },
+  {
+    "domaene": "ANMUT",
+    "domaene_full": "ANMUT-DOMÄNE",
+    "name": "UNSICHTBARKEIT",
+    "typ": "Zauber",
+    "stufe": 3,
+    "rueckrufkosten": 1,
+    "kartentext": "Führe einen Zauberwurf (10) durch. Bei einem Erfolg darfst du 1 Stress markieren, um dir oder einem verbündeten Charakter in unmittelbarer Distanz den Zustand Unsichtbar zu verleihen. Unsichtbare Kreaturen können nur mithilfe von Magie gesehen werden. Angriffswürfe gegen sie werden mit Nachteil durchgeführt. Lege eine Anzahl von Markern auf diese Karte, die deinem Zauber-Attribut entspricht. Setze 1 Marker von dieser Karte ein, nachdem die Unsichtbare Kreatur eine Aktion ausführt. Die Kreatur wir wieder sichtbar, wenn alle Marker auf der Karte eingesetzt wurden.\n\nDu kannst Unsichtbarkeit nur auf eine Kreatur gleichzeitig anwenden.",
+    "kartennummer": 91
+  },
+  {
+    "domaene": "ANMUT",
+    "domaene_full": "ANMUT-DOMÄNE",
+    "name": "LINDERNDE WORTE",
+    "typ": "Fähigkeit",
+    "stufe": 4,
+    "rueckrufkosten": 1,
+    "kartentext": "Während einer kurzen Rast darfst du bei einem Charakter zusätzlich 1 TP löschen, wenn du dir die Zeit nimmst, diesem während des Auszeit-Zugs „Wunden versorgen“ gut zuzureden. Wenn du dies tust, darfst du außerdem bei dir selbst 2 TP löschen.",
+    "kartennummer": 92
+  },
+  {
+    "domaene": "ANMUT",
+    "domaene_full": "ANMUT-DOMÄNE",
+    "name": "DURCH DEINE AUGEN",
+    "typ": "Zauber",
+    "stufe": 4,
+    "rueckrufkosten": 1,
+    "kartentext": "Wähle ein Ziel innerhalb sehr weiter Distanz. Du kannst durch seine Augen sehen und durch seine Ohren hören. Du kannst frei zwischen der Wahrnehmung deiner eigenen Sinne und der des Ziels wechseln, bis du einen anderen Zauber wirkst oder eine Rast einlegst.",
+    "kartennummer": 93
+  },
+  {
+    "domaene": "ANMUT",
+    "domaene_full": "ANMUT-DOMÄNE",
+    "name": "GEDANKENLESEN",
+    "typ": "Zauber",
+    "stufe": 5,
+    "rueckrufkosten": 2,
+    "kartentext": "Du kannst in die Gedanken anderer Wesen blicken. Setze 1 Hoffnung ein, um die oberflächlichen Gedanken eines Ziels innerhalb weiter Distanz zu lesen. Wenn du tiefer verborgene Einblicke wünschst, führe einen Zauberwurf gegen das Ziel durch.\n\nBei einem Ergebnis mit Furcht kann das Ziel – nach Ermessen der SL – mitbekommen, dass du seine Gedanken liest.",
+    "kartennummer": 94
+  },
+  {
+    "domaene": "ANMUT",
+    "domaene_full": "ANMUT-DOMÄNE",
+    "name": "WORTE DER ZWIETRACHT",
+    "typ": "Zauber",
+    "stufe": 5,
+    "rueckrufkosten": 1,
+    "kartentext": "Du flüsterst zwieträchtige Worte in das Ohr eines gegnerischen Charakters in unmittelbarer Distanz. Führe einen Zauberwurf (13) durch. Bei einem Erfolg muss das Ziel 1 Stress markieren und einen Angriff gegen einen anderen gegnerischen Charakter statt gegen dich oder deine Verbündeten ausführen.\n\nSobald dieser Angriff erfolgt ist, versteht das Ziel, was passiert ist. Wenn du das nächste Mal Worte der Zwietracht auf dieses Ziel wirkst, erhältst du einen Malus von –5 auf den Zauberwurf.",
+    "kartennummer": 95
+  },
+  {
+    "domaene": "ANMUT",
+    "domaene_full": "ANMUT-DOMÄNE",
+    "name": "UNÜBERTROFFEN",
+    "typ": "Fähigkeit",
+    "stufe": 6,
+    "rueckrufkosten": 2,
+    "kartentext": "Wenn du 1 oder mehr TP durch einen Angriff markieren musst, darfst du 1 Stress markieren, um eine Anzahl Marker auf diese Karte zu legen, die den markierten TP entspricht. Bei deinem nächsten erfolgreichen Angriff erhältst du einen Bonus von +5 für jeden Marker auf dieser Karte für deinen Schadenswurf. Entferne im Anschluss alle Marker von der Karte.",
+    "kartennummer": 96
+  },
+  {
+    "domaene": "ANMUT",
+    "domaene_full": "ANMUT-DOMÄNE",
+    "name": "GETEILTES LEID",
+    "typ": "Zauber",
+    "stufe": 6,
+    "rueckrufkosten": 0,
+    "kartentext": "Einmal pro Rast darfst du die Stress-Punkte einer gewillten Kreatur in unmittelbarer Distanz auf dich nehmen. Das Ziel beschreibt, welche Gedanken oder Emotionen in diesem Moment telepathisch zwischen euch beiden ausgetauscht werden und euch verbinden. Du darfst beliebig viel Stress, den das Ziel markiert hat, auf dich nehmen. Im Anschluss erhältst du 1 Hoffnung für jeden übernommenen Stress-Punkt.",
+    "kartennummer": 97
+  },
+  {
+    "domaene": "ANMUT",
+    "domaene_full": "ANMUT-DOMÄNE",
+    "name": "MASSLOSER CHARME",
+    "typ": "Zauber",
+    "stufe": 7,
+    "rueckrufkosten": 1,
+    "kartentext": "Du darfst 1 Hoffnung einsetzen, um den Hoffnungs- oder Furchtwürfel nach einem Aktionswurf erneut zu würfeln, wenn du versuchst jemanden zu überreden, anzulügen oder jemandes Gunst zu gewinnen.",
+    "kartennummer": 98
+  },
+  {
+    "domaene": "ANMUT",
+    "domaene_full": "ANMUT-DOMÄNE",
+    "name": "SEGEN DER ANMUT",
+    "typ": "Zauber",
+    "stufe": 7,
+    "rueckrufkosten": 2,
+    "kartentext": "Wenn 4 oder mehr Domänenkarten in deiner Auslage aus der Anmut-Domäne stammen, erhältst du folgende Vorteile:\n\n• Du darfst 1 Rüstungsfeld statt 1 Stress markieren.\n\n• Wenn ein Ziel wegen dir TP markieren müsste, darfst du entscheiden, dass es stattdessen entsprechend viel Stress markiert.",
+    "kartennummer": 99
+  },
+  {
+    "domaene": "ANMUT",
+    "domaene_full": "ANMUT-DOMÄNE",
+    "name": "ASTRALE PROJEKTION",
+    "typ": "Zauber",
+    "stufe": 8,
+    "rueckrufkosten": 0,
+    "kartentext": "Einmal pro langer Rast darfst du 1 Stress markieren, um eine Projektion von dir selbst zu erschaffen, die überall auftauchen kann, wo du bereits gewesen bist.\n\nDu kannst durch die Projektion sehen, hören und mit der Welt interagieren, als wärst du selbst dort. Eine Kreatur, die die Projektion untersucht, kann erkennen, dass sie magisch erzeugt wurde. Der Zauber endet bei deiner nächsten Rast oder wenn die Projektion Schaden erleidet.",
+    "kartennummer": 100
+  },
+  {
+    "domaene": "ANMUT",
+    "domaene_full": "ANMUT-DOMÄNE",
+    "name": "GROSSES ENTZÜCKEN",
+    "typ": "Zauber",
+    "stufe": 8,
+    "rueckrufkosten": 3,
+    "kartentext": "Führe einen Zauberwurf gegen alle Ziele innerhalb weiter Distanz durch. Getroffene Ziele erhalten vorübergehend den Zustand Entzückt. Entzückte Ziele richten ihre Aufmerksamkeit auf dich, was ihr Sichtfeld und ihre Wahrnehmung von Geräuschen außer deiner Stimme ein-schränkt. Du darfst 1 Stress markieren, um alle Entzückten Ziele dazu zu zwingen, 1 Stress zu markieren. Dann endet der Zauber.",
+    "kartennummer": 101
+  },
+  {
+    "domaene": "ANMUT",
+    "domaene_full": "ANMUT-DOMÄNE",
+    "name": "MIMIKRY",
+    "typ": "Zauber",
+    "stufe": 9,
+    "rueckrufkosten": 3,
+    "kartentext": "Einmal pro langer Rast darfst du mit dieser Karte die Fähigkeiten einer anderen Domänenkarte der Stufe 8 oder niedriger kopieren, die eine andere Person aus der Spielrunde in ihrer Auslage hat. Um die Fähigkeit der Karte nutzen zu können, musst du eine Anzahl Hoffnung einsetzen, die der Hälfte der Kartenstufe entspricht. Du darfst diese Karte bis zu deiner nächsten Rast nutzen oder bis die Person die Karte in ihre Reserve legt.",
+    "kartennummer": 102
+  },
+  {
+    "domaene": "ANMUT",
+    "domaene_full": "ANMUT-DOMÄNE",
+    "name": "MEISTER MEINES FACHS",
+    "typ": "Zauber",
+    "stufe": 9,
+    "rueckrufkosten": 0,
+    "kartentext": "Du erhältst einen permanenten Bonus von +2 auf zwei deiner Erfahrungen, oder einen permanenten Bonus von +3 auf eine Erfahrung. Lege diese Karte im Anschluss dauerhaft in deine Reserve.",
+    "kartennummer": 103
+  },
+  {
+    "domaene": "ANMUT",
+    "domaene_full": "ANMUT-DOMÄNE",
+    "name": "ZUGABE",
+    "typ": "Zauber",
+    "stufe": 10,
+    "rueckrufkosten": 1,
+    "kartentext": "Wenn ein verbündeter Charakter innerhalb kurzer Distanz einem gegnerischen Ziel Schaden zufügt, darfst du einen Zauberwurf gegen dasselbe Ziel durchführen. Bei einem Erfolg fügst du dem Ziel denselben Schadenswert wie der verbündete Charakter zu. Wenn du bei dem Zauberwurf einen Erfolg mit Furcht erzielst, lege diese Karte in deine Reserve.",
+    "kartennummer": 104
+  },
+  {
+    "domaene": "ANMUT",
+    "domaene_full": "ANMUT-DOMÄNE",
+    "name": "WELTBEKANNT",
+    "typ": "Fähigkeit",
+    "stufe": 10,
+    "rueckrufkosten": 0,
+    "kartentext": "Man kennt dich und deine Taten, und du erfährst deshalb eine besondere Behandlung. Wenn du deine Bekanntheit nutzt, um deinen Willen zu bekommen, darfst du vor deinem Aktionswurf 1 Stress markieren, um einen Bonus von +10 auf das Ergebnis zu erhalten. Du erhältst überall kostenlose Verpflegung und Getränke und alle anderen Handelswaren werden für dich im Preis um 1 Beutel Gold reduziert (bis zu einem Minimalpreis von 1 Handvoll).\n\nDiese Karte zählt nicht zu deinem Auslage-Maximum von 5 Domänenkarten dazu und kann nicht in die Reserve gelegt werden.",
+    "kartennummer": 105
+  },
+  {
+    "domaene": "MITTERNACHT",
+    "domaene_full": "MITTERNACHT-DOMÄNE",
+    "name": "LANGFINGER",
+    "typ": "Fähigkeit",
+    "stufe": 1,
+    "rueckrufkosten": 0,
+    "kartentext": "Du hast einen Vorteil auf Aktionswürfe, wenn du nichtmagische Schlösser knackst, nichtmagische Fallen entschärfst oder Diebstahl begehst (egal ob heimlich oder gewaltsam).",
+    "kartennummer": 106
+  },
+  {
+    "domaene": "MITTERNACHT",
+    "domaene_full": "MITTERNACHT-DOMÄNE",
+    "name": "KLINGENREGEN",
+    "typ": "Zauber",
+    "stufe": 1,
+    "rueckrufkosten": 1,
+    "kartentext": "Setze 1 Hoffnung ein, um einen Zauberwurf durchzuführen und Wurflingen zu beschwören, die alle Ziele in sehr kurzer Distanz treffen. Ziele, bei denen dir der Wurf gelingt, erleiden W8+2 magischen Schaden, abhängig von deiner Übung.\n\nWenn ein getroffenes Ziel Verwundbar ist, erleidet es zusätzlich 1W8 Schaden.",
+    "kartennummer": 107
+  },
+  {
+    "domaene": "MITTERNACHT",
+    "domaene_full": "MITTERNACHT-DOMÄNE",
+    "name": "FANTASTISCHE FASSADE",
+    "typ": "Zauber",
+    "stufe": 1,
+    "rueckrufkosten": 0,
+    "kartentext": "Wenn du ein paar Minuten zur Vorbereitung hast, darfst du 1 Stress markieren, um das Aussehen eines beliebigen Humanoiden anzunehmen, den du dir klar vor deinem inneren Auge vorstellen kannst. Während du verwandelt bist, erhältst du einen Vorteil bei Würfen auf Präsenz, um einer genauen Prüfung zu entgehen.\n\nLege eine Anzahl an Markern auf diese Karte, die deinem Zauber-Attribut entspricht. Wenn du verwandelt eine Aktion durchführst, setze einen Marker von dieser Karte ein. Nach der Aktion, für die du den letzten Marker verwendest, verwandelst du dich zurück.",
+    "kartennummer": 108
+  },
+  {
+    "domaene": "MITTERNACHT",
+    "domaene_full": "MITTERNACHT-DOMÄNE",
+    "name": "MITTERNACHTSGEIST",
+    "typ": "Zauber",
+    "stufe": 2,
+    "rueckrufkosten": 1,
+    "kartentext": "Setze 1 Hoffnung ein, um einen Geist in der Größe eines Humanoiden zu beschwören, der sich bewegen und Gegenstände für dich transportieren kann, bis du deine nächste Rast einlegst.\n\nDu kannst ihm befehlen, ein gegnerisches Ziel anzugreifen. Führe in diesem Fall einen Zauberwurf gegen ein Ziel innerhalb sehr weiter Distanz aus. Bei einem Erfolg bewegt sich der Geist in unmittelbare Distanz zum Ziel. Würfle eine Anzahl W6, die deinem Zauber-Attribut entspricht und füge dem Ziel entsprechend viel magischen Schaden zu. Danach verschwindet der Geist. Du kannst immer nur einen Geist gleichzeitig beschwören.",
+    "kartennummer": 109
+  },
+  {
+    "domaene": "MITTERNACHT",
+    "domaene_full": "MITTERNACHT-DOMÄNE",
+    "name": "SCHATTENBINDUNG",
+    "typ": "Zauber",
+    "stufe": 2,
+    "rueckrufkosten": 0,
+    "kartentext": "Führe einen Zauberwurf gegen alle gegnerischen Ziele innerhalb sehr kurzer Distanz durch. Jedes Ziel, gegen das du einen Erfolg erzielst, wird von seinem eigenen Schatten an Ort und Stelle gefesselt und erhält vorübergehend den Zustand Festgesetzt.",
+    "kartennummer": 110
+  },
+  {
+    "domaene": "MITTERNACHT",
+    "domaene_full": "MITTERNACHT-DOMÄNE",
+    "name": "WÜRGEGRIFF",
+    "typ": "Fähigkeit",
+    "stufe": 3,
+    "rueckrufkosten": 1,
+    "kartentext": "Wenn du dich hinter einer Kreatur positionierst, die in etwa deine Körpergröße hat, darfst du 1 Stress markieren, um sie in den Würgegriff zu nehmen. Dies verleiht ihr vorübergehend den Zustand Verwundbar.\n\nWenn eine Kreatur das Verwundbare Ziel angreift, richtet ihr Angriff zusätzlich 2W6 Schaden an.",
+    "kartennummer": 111
+  },
+  {
+    "domaene": "MITTERNACHT",
+    "domaene_full": "MITTERNACHT-DOMÄNE",
+    "name": "SCHLEIER DER NACHT",
+    "typ": "Zauber",
+    "stufe": 3,
+    "rueckrufkosten": 1,
+    "kartentext": "Führe einen Zauberwurf (13) durch. Bei einem Erfolg erschaffst du vorübergehend einen dunklen Schleier zwischen zwei Positionen innerhalb weiter Distanz. Nur du kannst durch diese Dunkelheit sehen. Für gegnerische Kreaturen auf der anderen Seite des Schleiers erhältst du den Zustand Versteckt. Du erhältst außerdem einen Vorteil auf Angriffswürfe, die du durch diese Dunkelheit hindurch ausführst. Der Schleier bleibt bestehen, bis du einen anderen Zauber ausführst.",
+    "kartennummer": 112
+  },
+  {
+    "domaene": "MITTERNACHT",
+    "domaene_full": "MITTERNACHT-DOMÄNE",
+    "name": "TARNUNGSEXPERTISE",
+    "typ": "Fähigkeit",
+    "stufe": 4,
+    "rueckrufkosten": 0,
+    "kartentext": "Wenn du mit Furcht würfelst, während du versuchst, dich unbemerkt durch ein gefährliches Gebiet zu bewegen, darfst du 1 Stress markieren, um stattdessen mit Hoffnung zu würfeln.\n\nWenn ein verbündeter Charakter innerhalb kurzer Distanz ebenfalls versucht, sich unbemerkt zu bewegen und mit Furcht würfelt, darfst du 1 Stress markieren, um das Ergebnis zu einem Wurf mit Hoffnung zu ändern.",
+    "kartennummer": 113
+  },
+  {
+    "domaene": "MITTERNACHT",
+    "domaene_full": "MITTERNACHT-DOMÄNE",
+    "name": "GLYPHE DER NACHT",
+    "typ": "Zauber",
+    "stufe": 4,
+    "rueckrufkosten": 1,
+    "kartentext": "Führe einen Zauberwurf gegen ein Ziel innerhalb sehr kurzer Distanz durch. Bei einem Erfolg darfst du 1 Hoffnung einsetzen, um eine dunkle Glyphe auf dem Körper des Ziels zu erschaffen, die seine Schwachpunkte offenlegt. Der Schwierigkeitsgrad des Ziels wird vorübergehend um deinen Wissen-Wert reduziert (mindestens 1).",
+    "kartennummer": 114
+  },
+  {
+    "domaene": "MITTERNACHT",
+    "domaene_full": "MITTERNACHT-DOMÄNE",
+    "name": "STILLE",
+    "typ": "Zauber",
+    "stufe": 5,
+    "rueckrufkosten": 1,
+    "kartentext": "Führe einen Zauberwurf gegen ein Ziel innerhalb kurzer Distanz durch. Bei einem Erfolg darfst du 1 Hoffnung einsetzen, um ein magisches, geräuschunterdrückendes Feld um das Ziel zu beschwören, das alles innerhalb sehr kurzer Distanz einschließt und sich mit dem Ziel bewegt.\n\nDas Ziel und alles im Wirkungsbereich des Zaubers erhält den Zustand Still, bis die SL Furcht einsetzt, um ihn aufzuheben, du Stille erneut wirkst oder du mittleren Schaden erleidest. Stille Ziele erzeugen keine Geräusche und können keine Zauber wirken.",
+    "kartennummer": 115
+  },
+  {
+    "domaene": "MITTERNACHT",
+    "domaene_full": "MITTERNACHT-DOMÄNE",
+    "name": "PHANTOM-RÜCKZUG",
+    "typ": "Zauber",
+    "stufe": 5,
+    "rueckrufkosten": 2,
+    "kartentext": "Setze 1 Hoffnung ein, um Phantom-Rückzug an deiner aktuellen Position zu aktivieren. Setze 1 weitere Hoffnung ein, um jederzeit vor deiner nächsten Rast zu verschwinden und an der Position wieder aufzutauchen, wo du Phantom- Rückzug aktiviert hast. Der Zauber endet, sobald du wieder auftauchst.",
+    "kartennummer": 116
+  },
+  {
+    "domaene": "MITTERNACHT",
+    "domaene_full": "MITTERNACHT-DOMÄNE",
+    "name": "FLÜSTERN AUS DEM DUNKEL",
+    "typ": "Zauber",
+    "stufe": 6,
+    "rueckrufkosten": 0,
+    "kartentext": "Du kannst eine direkte Gedankenverbindung zu einer beliebigen Person herstellen, mit der du physischen Kontakt hattest, und auf diese Weise zu ihr sprechen. Sobald du die Verbindung hergestellt hast, kann die Person auf dieselbe Weise antworten. Zusätzlich darfst du 1 Stress markieren, um einen Zauberwurf gegen sie durchzuführen. Bei einem Erfolg darfst du der SL eine der folgenden Fragen stellen, die diese wahrheitsgemäß beantwortet:\n\n• Wo befindet sich die Person?\n\n• Was tut die Person gerade?\n\n• Wovor hat die Person Angst?\n\n• Was bedeutet dieser Person am meisten?",
+    "kartennummer": 117
+  },
+  {
+    "domaene": "MITTERNACHT",
+    "domaene_full": "MITTERNACHT-DOMÄNE",
+    "name": "GRUPPEN-VERWANDLUNG",
+    "typ": "Zauber",
+    "stufe": 6,
+    "rueckrufkosten": 0,
+    "kartentext": "Wenn du ein paar Minuten Zeit hast, um dich in Ruhe zu konzentrieren, darfst du 1 Stress markieren, um die Erscheinung aller gewillten Kreaturen innerhalb kurzer Distanz zu verändern. Ihr neues Aussehen muss in etwa denselben Körpertyp und dieselbe Körpergröße haben. Es kann sich um ein vollkommen neues Aussehen handeln oder um das einer dir bekannten Person. Verwandelte Kreaturen erhalten bei Würfen auf Präsenz gegen Enttarnung einen Vorteil.\n\nStarte einen Countdown (8). Die SL kann den Countdown als Konsequenz vorantreiben. Wenn er abgelaufen ist, verwandeln sich die Ziele zurück.",
+    "kartennummer": 118
+  },
+  {
+    "domaene": "MITTERNACHT",
+    "domaene_full": "MITTERNACHT-DOMÄNE",
+    "name": "SEGEN DER MITTERNACHT",
+    "typ": "Fähigkeit",
+    "stufe": 7,
+    "rueckrufkosten": 2,
+    "kartentext": "Wenn 4 oder mehr Domänenkarten in deiner Auslage aus der Mitternacht-Domäne stammen, erhältst du folgende Vorteile:\n\n• Einmal pro Rast darfst du, wenn du 0 Hoffnung hast und die SL Furcht erhalten würde, stattdessen 1 Hoffnung erhalten.\n\n• Wenn du einen erfolgreichen Angriff durchführst, darfst du 1 Stress markieren, um dem Schadenswurf das Ergebnis deines Furchtwürfels hinzuzufügen.",
+    "kartennummer": 119
+  },
+  {
+    "domaene": "MITTERNACHT",
+    "domaene_full": "MITTERNACHT-DOMÄNE",
+    "name": "IN DIE SCHATTEN AUSWEICHEN",
+    "typ": "Zauber",
+    "stufe": 7,
+    "rueckrufkosten": 1,
+    "kartentext": "Wenn ein physischer Angriff gegen dich fehlschlägt, darfst du 1 Hoffnung einsetzen, um dich in Schatten zu hüllen, den Zustand Versteckt zu erhalten und dich an eine Position innerhalb kurzer Distanz der angreifenden Kreatur zu teleportieren. Du bleibst Versteckt, bis du das nächste Mal einen Angriffswurf durchführst.",
+    "kartennummer": 120
+  },
+  {
+    "domaene": "MITTERNACHT",
+    "domaene_full": "MITTERNACHT-DOMÄNE",
+    "name": "AUGE DER SCHATTEN",
+    "typ": "Zauber",
+    "stufe": 8,
+    "rueckrufkosten": 2,
+    "kartentext": "Der Mantel der Schatten gibt dir Kraft. Während du dich in Dunkelheit oder spärlichem Licht befindest, erhältst du einen Bonus von +1 auf Ausweichen und einen Vorteil auf Angriffswürfe.",
+    "kartennummer": 121
+  },
+  {
+    "domaene": "MITTERNACHT",
+    "domaene_full": "MITTERNACHT-DOMÄNE",
+    "name": "ZAUBER AUFLADEN",
+    "typ": "Zauber",
+    "stufe": 8,
+    "rueckrufkosten": 1,
+    "kartentext": "Wenn du magischen Schaden erleidest, darfst du eine Anzahl Marker auf diese Karten legen, die deinen aktuell markierten TP entspricht. Du darfst auf diese Weise maximal eine Anzahl Marker in Höhe deines Zauber-Attributs ansammeln.\n\nWenn du einen erfolgreichen Angriff gegen ein Ziel durchführst, darfst du eine beliebige Anzahl Marker einsetzen, um für jeden eingesetzten Marker 1W6 zu deinem Schadenswurf hinzuzufügen.",
+    "kartennummer": 122
+  },
+  {
+    "domaene": "MITTERNACHT",
+    "domaene_full": "MITTERNACHT-DOMÄNE",
+    "name": "NACHTSCHRECKEN",
+    "typ": "Zauber",
+    "stufe": 9,
+    "rueckrufkosten": 2,
+    "kartentext": "Einmal pro langer Rast darfst du beliebig viele Ziele innerhalb sehr kurzer Distanz auswählen, die dich als albtraumhafte Schreckensgestalt wahrnehmen. Die Ziele müssen einen Reaktionswurf (16) durchführen. Bei einem Misserfolg erhalten sie vorübergehend den Zustand Furcht. Während sie Furcht haben, sind sie Verwundbar. Du darfst der SL eine Anzahl an Furcht- Punkten wegnehmen, die der Anzahl der Ziele mit Furcht entspricht (maximal so viele Punkte, wie die SL aktuell besitzt). Würfle eine Anzahl W6, die den gestohlenen Furcht-Punkten entspricht. Füge das Gesamtergebnis des Wurfs allen Zielen mit Furcht als Schaden zu. Danach legst du diese Furcht-Punkte ab.",
+    "kartennummer": 123
+  },
+  {
+    "domaene": "MITTERNACHT",
+    "domaene_full": "MITTERNACHT-DOMÄNE",
+    "name": "ZOLL DES ZWIELICHTS",
+    "typ": "Fähigkeit",
+    "stufe": 9,
+    "rueckrufkosten": 1,
+    "kartentext": "Wähle ein Ziel innerhalb weiter Distanz aus. Wenn du bei einem Aktionswurf gegen das Ziel einen Erfolg erzielst, der keinen Schadenswurf nach sich ziehen würde, darfst du 1 Marker auf diese Karte legen. Wenn du diesem Ziel Schaden zufügst, darfst du beliebig viele Marker einsetzen, um pro eingesetztem Marker 1W12 zu deinem Schadenswurf hinzuzufügen. Du kannst Zoll des Zwielichts nur auf eine Kreatur gleichzeitig anwenden.\n\nEntferne alle Marker von dieser Karte, wenn du ein neues Ziel wählst oder eine Rast einlegst.",
+    "kartennummer": 124
+  },
+  {
+    "domaene": "MITTERNACHT",
+    "domaene_full": "MITTERNACHT-DOMÄNE",
+    "name": "FINSTERNIS",
+    "typ": "Zauber",
+    "stufe": 10,
+    "rueckrufkosten": 2,
+    "kartentext": "Führe einen Zauberwurf (16) durch. Einmal pro langer Rast bei einem Erfolg darfst du die gesamte Umgebung innerhalb weiter Distanz in absolute Finsternis hüllen, in der nur du und deine Verbündeten sehen könnt. Angriffswürfe gegen dich oder deine Verbündeten erhalten innerhalb der Finsternis einen Nachteil.\n\nZusätzlich müssen gegnerische Ziele innerhalb der Finsternis 1 Stress markieren, wenn du oder ein verbündeter Charakter einen Erfolg mit Hoffnung gegen sie erzielen.\n\nDieser Zauber endet, wenn die SL in ihrem Zug 1 Furcht einsetzt, um den Effekt zu beenden, oder wenn du Schweren Schaden erleidest.",
+    "kartennummer": 125
+  },
+  {
+    "domaene": "MITTERNACHT",
+    "domaene_full": "MITTERNACHT-DOMÄNE",
+    "name": "SCHEMEN DER NACHT",
+    "typ": "Zauber",
+    "stufe": 10,
+    "rueckrufkosten": 1,
+    "kartentext": "Markiere 1 Stress, um bis zu deinem nächsten Aktionswurf auf eine andere Kreatur den Zustand Schemen zu erhalten. Während du ein Schemen bist, bist du immun gegen physischen Schaden, kannst schweben und feste Materie durchqueren. Andere Kreaturen können dich in dieser Form immer noch sehen.",
+    "kartennummer": 126
+  },
+  {
+    "domaene": "NATUR",
+    "domaene_full": "NATUR-DOMÄNE",
+    "name": "SPURENSUCHE",
+    "typ": "Fähigkeiten",
+    "stufe": 1,
+    "rueckrufkosten": 0,
+    "kartentext": "Wenn du eine bestimmte Kreatur oder eine Gruppe von Kreaturen anhand ihrer Spuren verfolgst, darfst du beliebig viel Hoffnung einsetzen und der SL entsprechend viele Fragen aus der folgenden Liste stellen:\n\n• In welche Richtung bewegt sich das Ziel?\n\n• Wie lange ist es her, dass das Ziel hier vorbeikam?\n\n• Was hat das Ziel an diesem Ort getan?\n\n• Wie viele Wesen waren hier?\n\nWenn du auf die Kreatur(en) triffst, die du auf diese Weise verfolgt hast, erhältst du einen Bonus von +1 auf deinen Ausweichen-Wert gegen sie.",
+    "kartennummer": 127
+  },
+  {
+    "domaene": "NATUR",
+    "domaene_full": "NATUR-DOMÄNE",
+    "name": "SPRACHE DER NATUR",
+    "typ": "Fähigkeiten",
+    "stufe": 1,
+    "rueckrufkosten": 0,
+    "kartentext": "Du sprichst die Sprache der Wildnis. Wenn du mit den Pflanzen und Tieren in deiner Umgebung sprechen möchtest, führe einen Wurf auf Instinkt (12) durch. Bei einem Erfolg teilen sie ihr Wissen mit dir. Bei einem Ergebnis mit Furcht kann ihr Wissen begrenzt sein oder es hat einen Preis.\n\nZusätzlich darfst du 1 Hoffnung einsetzen, bevor du in einer natürlichen Umgebung einen Zauberwurf durchführst, um einen Bonus von +2 auf den Wurf zu erhalten.",
+    "kartennummer": 128
+  },
+  {
+    "domaene": "NATUR",
+    "domaene_full": "NATUR-DOMÄNE",
+    "name": "WILDE FESSEL",
+    "typ": "Zauber",
+    "stufe": 1,
+    "rueckrufkosten": 1,
+    "kartentext": "Führe einen Zauberwurf gegen ein Ziel in weiter Distanz aus. Bei einem Erfolg schnellen Wurzeln und Ranken aus dem Boden hervor, fügen dem Ziel 1W8+1 physischen Schaden zu und verleihen ihm vorübergehend den Zustand Festgesetzt.\n\nZusätzlich darfst du bei einem Erfolg 1 Hoffnung einsetzen, um ein weiteres Ziel in sehr kurzer Distanz des ursprünglichen Ziels vorübergehend zu fesseln und ihm so den Zustand Festgesetzt zu verleihen.",
+    "kartennummer": 129
+  },
+  {
+    "domaene": "NATUR",
+    "domaene_full": "NATUR-DOMÄNE",
+    "name": "SCHWARM BESCHWÖREN",
+    "typ": "Zauber",
+    "stufe": 2,
+    "rueckrufkosten": 1,
+    "kartentext": "Tekaira-Panzerkäfer: Markiere 1 Stress, um gepanzerte Käfer zu beschwören, die dich umkreisen. Wenn du das nächste Mal Schaden erleidest, wird die Schwere um eine Schadensschwelle reduziert. Du darfst 1 Hoffnung einsetzen, um die Beschwörung nach dem Schaden aufrechtzuerhalten.\n\nLeuchtkäfer: Führe einen Zauberwurf gegen alle gegnerischen Ziele innerhalb kurzer Distanz durch. Setze 1 Hoffnung ein, um 2W8+3 magischen Schaden bei allen Zielen zu verursachen, gegen die du einen Erfolg erzielt hast.",
+    "kartennummer": 130
+  },
+  {
+    "domaene": "NATUR",
+    "domaene_full": "NATUR-DOMÄNE",
+    "name": "VERTRAUTER NATURGEIST",
+    "typ": "Zauber",
+    "stufe": 2,
+    "rueckrufkosten": 1,
+    "kartentext": "Setze 1 Hoffnung ein, um einen kleinen Naturgeist oder Waldbewohner zu beschwören – bis zur nächsten Rast, bis du Vertrauter Naturgeist erneut wirkst oder bis er Ziel eines Angriffs wird. Wenn du zusätzlich 1 Hoffnung einsetzt, kann dein vertrauter Naturgeist fliegen. Du kannst mit ihm kommunizieren, einen Zauberwurf durchführen, um ihm einfache Aufgaben zu befehlen, und 1 Stress markieren, um durch seine Augen zu sehen.\n\nWenn du einem gegnerischen Ziel in unmittelbarer Distanz deines vertrauten Naturgeists Schaden zufügst, erhältst du bei deinem Schadenswurf einen Bonus von 1W6.",
+    "kartennummer": 131
+  },
+  {
+    "domaene": "NATUR",
+    "domaene_full": "NATUR-DOMÄNE",
+    "name": "SÄURE-SCHUSS",
+    "typ": "Zauber",
+    "stufe": 3,
+    "rueckrufkosten": 1,
+    "kartentext": "Führe einen Zauberwurf gegen ein Ziel innerhalb weiter Distanz durch. Bei einem Erfolg fügst du dem Ziel W6+4 magischen Schaden zu, abhängig von deiner Übung. Zusätzlich darfst du 2 oder mehr Stress markieren, um dem Ziel permanent den Zustand Verätzt zuzufügen. Verätzte Ziele erhalten für je 2 eingesetzte Punkte Stress einen Malus von –1 auf ihren Schwierigkeitsgrad. Der Effekt dieses Zustands kann mehrfach auf eine Kreatur angewendet werden.",
+    "kartennummer": 132
+  },
+  {
+    "domaene": "NATUR",
+    "domaene_full": "NATUR-DOMÄNE",
+    "name": "GEWALTIGE RANKE",
+    "typ": "Zauber",
+    "stufe": 3,
+    "rueckrufkosten": 1,
+    "kartentext": "Einmal pro Rast kannst du eine massive, geschwungene Ranke in unmittelbarer Distanz beschwören, die leicht erklommen werden kann. Sie kann bis in weite Distanz in die Höhe sprießen.\n\nMarkiere 1 Stress, um diesen Zauber als Angriff zu nutzen. Führe einen Zauberwurf gegen ein oder mehr gegnerische Ziele innerhalb kurzer Distanz durch. Die hervorbrechende Ranke hebt getroffene Ziele in die Luft und lässt sie zu Boden fallen. Sie erleiden W8 physischen Schaden, abhängig von deiner Übung.",
+    "kartennummer": 133
+  },
+  {
+    "domaene": "NATUR",
+    "domaene_full": "NATUR-DOMÄNE",
+    "name": "TODESGRIFF",
+    "typ": "Zauber",
+    "stufe": 4,
+    "rueckrufkosten": 1,
+    "kartentext": "Führe einen Zauberwurf gegen ein Ziel innerhalb kurzer Distanz durch und wähle eine der folgenden Optionen:\n\n• Du ziehst das Ziel in deine unmittelbare Distanz oder ziehst dich selbst in unmittelbare Distanz zum Ziel.\n\n• Du fesselst das Ziel an Ort und Stelle. Es muss 2 Stress markieren.\n\n• Alle gegnerischen Kreaturen zwischen dir und dem Ziel müssen einen Reaktionswurf (13) durchführen. Getroffene Kreaturen werden von Ranken erwischt und erleiden 3W6+2 physischen Schaden.\n\nBei einem Erfolg entspringen Ranken deinen Händen, lösen den gewählten Effekt aus und fügen dem Ziel vorübergehend den Zustand Festgesetzt zu.",
+    "kartennummer": 134
+  },
+  {
+    "domaene": "NATUR",
+    "domaene_full": "NATUR-DOMÄNE",
+    "name": "HEILENDES FELD",
+    "typ": "Zauber",
+    "stufe": 4,
+    "rueckrufkosten": 2,
+    "kartentext": "Einmal pro langer Rast kannst du ein Feld aus heilenden Pflanzen um dich herum beschwören. Innerhalb kurzer Distanz erwacht deine Umgebung zu blühendem Leben, wodurch du und alle Verbündeten in diesem Bereich je 1 TP löschen dürfen.\n\nSetze 2 Hoffnung ein, damit du und deine Verbündeten stattdessen 2 TP löschen dürfen.",
+    "kartennummer": 135
+  },
+  {
+    "domaene": "NATUR",
+    "domaene_full": "NATUR-DOMÄNE",
+    "name": "DORNENHAUT",
+    "typ": "Zauber",
+    "stufe": 5,
+    "rueckrufkosten": 1,
+    "kartentext": "Einmal pro Rast darfst du 1 Hoffnung einsetzen, um Dornen aus deinem gesamten Körper wachsen zu lassen. Lege eine Anzahl Marker auf diese Karte, die deinem Zauber-Attribut entspricht. Wenn du Schaden erleidest, darfst du eine beliebige Anzahl Marker einsetzen und entsprechend viele W6 würfeln. Du darfst den erlittenen Schaden um das Gesamtergebnis dieses Würfelwurfs reduzieren. Wenn du dich in unmittelbarer Distanz zum angreifenden Charakter befindest, fügst du ihm dieses Gesamtergebnis als Schaden zu.\n\nNimm alle übrigen Marker von dieser Karte, sobald du deine nächste Rast einlegst.",
+    "kartennummer": 136
+  },
+  {
+    "domaene": "NATUR",
+    "domaene_full": "NATUR-DOMÄNE",
+    "name": "RANKENDOM",
+    "typ": "Zauber",
+    "stufe": 5,
+    "rueckrufkosten": 1,
+    "kartentext": "Führe einen Zauberwurf (13) durch. Bei einem Erfolg darfst du 2 Hoffnung einsetzen, um eine natürliche Barrikade in Form einer Kuppel wachsen zu lassen, in die du und ein weiterer Charakter sich zurückziehen können. Kreaturen im Inneren der Kuppel können nicht angegriffen werden oder selbst Angriffe ausführen. Angriffe auf die Kuppel gelingen automatisch. Die Kuppel hat folgende Schadensschwellen und bleibt bestehen, bis sie 3 TP markiert hat. Lege drei Marker zur Darstellung der TP auf diese Karte.\n\nSchwellen: 15/30",
+    "kartennummer": 137
+  },
+  {
+    "domaene": "NATUR",
+    "domaene_full": "NATUR-DOMÄNE",
+    "name": "BESCHWÖRE REITTIERE",
+    "typ": "Zauber",
+    "stufe": 6,
+    "rueckrufkosten": 0,
+    "kartentext": "Setze beliebig viel Hoffnung ein, um entsprechend viele magische Reittiere zu beschwören (z.B. Pferde, Kamele oder Elefanten), auf denen du und deine Verbündeten reiten können, bis ihr eure nächste lange Rast einlegt oder die Reittiere Schaden erleiden. Die Tiere verdoppeln eure Reisegeschwindigkeit, wenn ihr Überland reist. Wenn ihr in Gefahr seid, dürft ihr euch mit den Reittieren innerhalb weiter Distanz bewegen, ohne würfeln zu müssen. Wer sich auf einem Reittier befindet, erhält einen Malus von –2 auf Angriffswürfe und einen Bonus von +2 auf Schadenswürfe.",
+    "kartennummer": 138
+  },
+  {
+    "domaene": "NATUR",
+    "domaene_full": "NATUR-DOMÄNE",
+    "name": "SAMMELN",
+    "typ": "Fähigkeit",
+    "stufe": 6,
+    "rueckrufkosten": 1,
+    "kartentext": "Du darfst als Auszeit-Zug einen W6 zu würfeln, um Gegenstände sammeln zu gehen. Sprich deine Vorgehensweise mit der SL ab und füge den gefundenen Gegenstand deinem Inventar als Verbrauchsgut hinzu. Deine Gruppe kann insgesamt fünf auf diese Weise gesammelte Verbrauchsgüter gleichzeitig tragen.\n\n1. Ein besonderes Nahrungsmittel (Lösche 2 Stress)\n\n2. Ein schönes Relikt (Erhalte 2 Hoffnung)\n\n3. Eine magische Rune (+2 auf einen Zauberwurf)\n\n4. Ein Heilmittel (Lösche 2 TP)\n\n5. Ein Glücksbringer (Würfle einen beliebigen Würfel neu)\n\n6. Wähle eine der obenstehenden Optionen.",
+    "kartennummer": 139
+  },
+  {
+    "domaene": "NATUR",
+    "domaene_full": "NATUR-DOMÄNE",
+    "name": "SEGEN DER NATUR",
+    "typ": "Fähigkeit",
+    "stufe": 7,
+    "rueckrufkosten": 2,
+    "kartentext": "Wenn 4 oder mehr Domänenkarten in deiner Auslage aus der Natur-Domäne stammen, erhältst du folgende Vorteile:\n\n• Einen Bonus von +2 auf Zauberwürfe, wenn du dich in einer natürlichen Umgebung befindest.\n\n• Einmal pro Rast darfst du deinen Wert in Agilität oder Instinkt verdoppeln, wenn du einen entsprechenden Aktionswurf durchführst. Du musst diesen Vorteil wählen, bevor du den Wurf durchführst.",
+    "kartennummer": 140
+  },
+  {
+    "domaene": "NATUR",
+    "domaene_full": "NATUR-DOMÄNE",
+    "name": "WILDE WOGE",
+    "typ": "Zauber",
+    "stufe": 7,
+    "rueckrufkosten": 2,
+    "kartentext": "Einmal pro langer Rast darfst du 1 Stress markieren, um die Kräfte der Natur um dich herum zu sammeln und dich so zu verstärken. Beschreibe, wie sich dein Aussehen verändert, und lege einen W6 mit der 1 nach oben auf diese Karte.\n\nWährend Wilde Woge aktiv ist, fügst du den Wert des Würfels jedem deiner Aktionswürfe hinzu. Nachdem du den Wert einem Aktionswurf hinzugefügt hast, erhöhst du den Wert des Würfels um 1. Wenn der Wert 6 übersteigen würde oder du eine Rast einlegst, klingt die Wilde Woge ab und du musst zusätzlich 1 Stress markieren.",
+    "kartennummer": 141
+  },
+  {
+    "domaene": "NATUR",
+    "domaene_full": "NATUR-DOMÄNE",
+    "name": "WALDGEISTER",
+    "typ": "Zauber",
+    "stufe": 8,
+    "rueckrufkosten": 2,
+    "kartentext": "Führe einen Zauberwurf (13) durch. Bei einem Erfolg darfst du beliebig viel Hoffnung einsetzen, um entsprechend viele kleine Waldgeister zu beschwören, die an Positionen deiner Wahl innerhalb weiter Distanz auftauchen. Die Waldgeister bieten folgende Vorteile:\n\n• Deine Verbündeten erhalten einen Bonus von +3 auf Angriffswürfe gegen Ziele in unmittelbarer Distanz zu einem Waldgeist.\n\n• Ein verbündeter Charakter, der ein Rüstungsfeld markiert, während er sich in unmittelbarer Distanz zu einem Waldgeist befindet, darf ein zusätzliches Rüstungsfeld markieren.\n\nEin Waldgeist verschwindet, nachdem er einen dieser Vorteile gewährt hat oder er Schaden erleidet.",
+    "kartennummer": 142
+  },
+  {
+    "domaene": "NATUR",
+    "domaene_full": "NATUR-DOMÄNE",
+    "name": "BARRIERE DER LINDERUNG",
+    "typ": "Zauber",
+    "stufe": 8,
+    "rueckrufkosten": 1,
+    "kartentext": "Führe einen Zauberwurf (15) durch. Einmal pro Rast bei einem Erfolg erschaffst du vorübergehend eine Barriere aus schützender Energie in sehr kurzer Distanz um dich herum. Du und alle Verbündeten, die sich beim Erschaffen der Barriere im Inneren befinden, dürfen 1W4 TP löschen. Während die Barriere besteht, erhalten du und alle Verbündeten im Inneren Resistenz gegen physischen Schaden, der von außerhalb der Barriere kommt.\n\nWenn du dich bewegst, bewegt sich die Barriere mit dir mit.",
+    "kartennummer": 143
+  },
+  {
+    "domaene": "NATUR",
+    "domaene_full": "NATUR-DOMÄNE",
+    "name": "HEILIGTUM DER WILDNIS",
+    "typ": "Fähigkeit",
+    "stufe": 9,
+    "rueckrufkosten": 2,
+    "kartentext": "Lege nach einer langen Rast eine Anzahl Marker auf diese Karte, die der Anzahl der Natur-Domänenkarten in deiner Auslage und deiner Reserve entspricht. Wenn du einen Zauberwurf durchführst, darfst du beliebig viele Marker nach dem Wurf einsetzen, um pro eingesetztem Marker einen Bonus von +1 auf den Wurf zu erhalten.\n\nDu erhältst einen zusätzlichen Marker, wenn du einen kritischen Erfolg bei einem Zauber der Natur- Domäne erzielst.\n\nEntferne alle Marker von dieser Karte, wenn du eine lange Rast einlegst.",
+    "kartennummer": 144
+  },
+  {
+    "domaene": "NATUR",
+    "domaene_full": "NATUR-DOMÄNE",
+    "name": "FLORA BEHERRSCHEN",
+    "typ": "Zauber",
+    "stufe": 9,
+    "rueckrufkosten": 1,
+    "kartentext": "Führe einen Zauberwurf (18) durch. Bei einem Erfolg darfst du einmal pro langer Rast deine natürliche Umgebung und damit alle Pflanzen und Gewächse innerhalb weiter Distanz nach deiner Vorstellung umgestalten. Beispielsweise kannst du Bäume wachsen lassen, dir einen Weg durch dichtes Gestrüpp und Ranken erschaffen oder vor dir einen Wall aus Wurzeln beschwören.",
+    "kartennummer": 145
+  },
+  {
+    "domaene": "NATUR",
+    "domaene_full": "NATUR-DOMÄNE",
+    "name": "KRAFT DER NATUR",
+    "typ": "Zauber",
+    "stufe": 10,
+    "rueckrufkosten": 2,
+    "kartentext": "Markiere 1 Stress, um dich in einen mächtigen Natur-geist zu verwandeln, was dir folgende Vorteile gewährt:\n\n• Wenn du bei einem Angriffs- oder Zauberwurf einen Erfolg erzielst, erhältst du einen Bonus von +10 auf den Schadenswurf.\n\n• Wenn du einer Kreatur innerhalb kurzer Distanz genug Schaden zufügst, um sie zu besiegen, absorbierst du sie und darfst 1 Rüstungsfeld löschen.\n\n• Du bist immun gegen den Zustand Festgesetzt.\n\nDu musst 1 Hoffnung einsetzen, bevor du einen Angriffswurf durchführst. Wenn du keine Hoffnung einsetzen kannst, verwandelst du dich zurück.",
+    "kartennummer": 146
+  },
+  {
+    "domaene": "NATUR",
+    "domaene_full": "NATUR-DOMÄNE",
+    "name": "STURM",
+    "typ": "Zauber",
+    "stufe": 10,
+    "rueckrufkosten": 2,
+    "kartentext": "Wähle einen der folgenden Stürme und führe einen Zauberwurf gegen alle Ziele innerhalb weiter Distanz durch. Getroffene Ziele sind von den Auswirkungen des Sturms betroffen, bis die SL in ihrem Zug 1 Furcht einsetzt, um den Zauber zu beenden.\n\n• Schneesturm: Getroffene Ziele erleiden 2W20+8 magischen Schaden und werden vorübergehend Verwundbar.\n\n• Orkan: Getroffene Ziele erleiden 3W10+10 magischen Schaden und können sich nicht gegen Windrichtung bewegen. Du entscheidest, in welche Richtung der Orkan weht.\n\n• Sandsturm: Getroffene Ziele erleiden 5W6+9 magischen Schaden. Angriffe von außerhalb unmittelbarer Distanz werden mit Nachteil gewürfelt.",
+    "kartennummer": 147
+  },
+  {
+    "domaene": "LEBEN",
+    "domaene_full": "LEBEN-DOMÄNE",
+    "name": "LEUCHTFEUER",
+    "typ": "Zauber",
+    "stufe": 1,
+    "rueckrufkosten": 1,
+    "kartentext": "Führe einen Zauberwurf gegen ein Ziel innerhalb weiter Distanz durch. Bei einem Erfolg darfst du 1 Hoffnung einsetzen, um eine schimmernd leuchtende Kugel auf das Ziel zu schleudern, die W8+2 magischen Schaden verursacht, abhängig von deiner Übung. Das Ziel wird vorübergehend Verwundbar und leuchtet hell, bis dieser Zustand beendet ist.",
+    "kartennummer": 148
+  },
+  {
+    "domaene": "LEBEN",
+    "domaene_full": "LEBEN-DOMÄNE",
+    "name": "SANFTE BERÜHRUNG",
+    "typ": "Zauber",
+    "stufe": 1,
+    "rueckrufkosten": 1,
+    "kartentext": "Du legst deine Hände auf ein Ziel und wirkst heilende Magie, um dessen Wunden zu schließen. Wenn du dir ein paar Minuten Zeit nimmst, um dich auf dein Ziel zu konzentrieren, darfst du 2 Hoffnung einsetzen, um bei ihm 1 TP oder 1 Stress zu löschen.\n\nEinmal pro langer Rast darfst du stattdessen 2 TP oder 2 Stress des Ziels heilen, wenn du während der Heilung etwas Neues über das Ziel erfährst oder etwas über dich selbst offenbarst.",
+    "kartennummer": 149
+  },
+  {
+    "domaene": "LEBEN",
+    "domaene_full": "LEBEN-DOMÄNE",
+    "name": "ZUSPRUCH",
+    "typ": "Fähigkeit",
+    "stufe": 1,
+    "rueckrufkosten": 0,
+    "kartentext": "Einmal pro Rast darfst du einem verbündeten Charakter Unterstützung oder aufmunternde Worte anbieten, nachdem er einen Aktionswurf durchgeführt hat, aber bevor die Konsequenzen eintreten. Wenn",
+    "kartennummer": 150
+  },
+  {
+    "domaene": "LEBEN",
+    "domaene_full": "LEBEN-DOMÄNE",
+    "name": "LETZTE WORTE",
+    "typ": "Zauber",
+    "stufe": 2,
+    "rueckrufkosten": 1,
+    "kartentext": "Du kannst einem Leichnam für einen Moment Leben einhauchen, um mit ihm zu sprechen. Führe einen Zauberwurf (13) durch. Bei einem Erfolg mit Hoffnung beantwortet der Leichnam bis zu drei Fragen. Bei einem Erfolg mit Furcht beantwortet er eine Frage. Der Leichnam antwortet wahrheitsgemäß, kann jedoch nur Informationen teilen, die er zu Lebzeiten besaß. Bei einem Misserfolg – oder nachdem der Leichnam deine Fragen beantwortet hat – zerfällt der Körper zu Staub.",
+    "kartennummer": 151
+  },
+  {
+    "domaene": "LEBEN",
+    "domaene_full": "LEBEN-DOMÄNE",
+    "name": "HEILENE HÄNDE",
+    "typ": "Zauber",
+    "stufe": 2,
+    "rueckrufkosten": 1,
+    "kartentext": "Führe einen Zauberwurf (13) durch und wähle ein Ziel außer dir selbst in unmittelbarer Distanz. Bei einem Erfolg darfst du 1 Stress markieren, um 2 TP oder 2 Stress des Ziels zu löschen. Bei einem Misserfolg darfst du 1 Stress markieren, um das Ziel um 1 TP oder 1 Stress zu heilen. Du kannst dieselbe Kreatur erst nach deiner nächsten langen Rast erneut heilen",
+    "kartennummer": 152
+  },
+  {
+    "domaene": "LEBEN",
+    "domaene_full": "LEBEN-DOMÄNE",
+    "name": "ENERGIESCHUB",
+    "typ": "Fähigkeit",
+    "stufe": 3,
+    "rueckrufkosten": 2,
+    "kartentext": "Einmal pro Rast darfst du 3 Stress oder 1 TP bei dir löschen, wenn du einen erfolgreichen Angriff gegen eine gegnerische Kreatur durchführst. Bei einem Erfolg mit Hoffnung darfst du zusätzlich 3 Stress oder 1 TP bei einem verbündeten Charakter innerhalb kurzer Distanz zu dir löschen.",
+    "kartennummer": 153
+  },
+  {
+    "domaene": "LEBEN",
+    "domaene_full": "LEBEN-DOMÄNE",
+    "name": "STIMME DER VERNUNFT",
+    "typ": "Fähigkeit",
+    "stufe": 3,
+    "rueckrufkosten": 1,
+    "kartentext": "Du sprichst mit einnehmender Autorität und Nachdruck. Du erhältst einen Vorteil auf Aktionswürfe, um angespannte Situationen zu deeskalieren oder jemanden zu überreden, deinem Kommando zu folgen.\n\nZusätzlich wirst du in belastenden Momenten ermutigt. Wenn du alle Stressfelder markiert hast, erhältst du einen Bonus von +1 auf deine Übung für Schadenswürfe.",
+    "kartennummer": 154
+  },
+  {
+    "domaene": "LEBEN",
+    "domaene_full": "LEBEN-DOMÄNE",
+    "name": "WEISSAGUNG",
+    "typ": "Zauber",
+    "stufe": 4,
+    "rueckrufkosten": 1,
+    "kartentext": "Einmal pro langer Rast darfst du 3 Hoffnung einsetzen, um jenseitige Kräfte anzurufen und ihnen eine Frage über ein Ereignis, eine Person, einen Ort oder eine Situation in naher Zukunft zu stellen, die mit Ja oder Nein beantwortet werden kann. Für einen Moment verschwimmt die Gegenwart vor deinen Augen und du siehst die Antwort deutlich vor dir.",
+    "kartennummer": 155
+  },
+  {
+    "domaene": "LEBEN",
+    "domaene_full": "LEBEN-DOMÄNE",
+    "name": "SCHUTZ DES LEBENS",
+    "typ": "Zauber",
+    "stufe": 4,
+    "rueckrufkosten": 1,
+    "kartentext": "Setze 3 Hoffnung ein und wähle einen verbündeten Charakter innerhalb kurzer Distanz. Auf diesem erscheint ein leuchtendes Schutzsiegel. Wenn der Charakter einen Todeszug ausführen müsste, darf er stattdessen 1 TP löschen.\n\nDieser Effekt hält so lange an, bis er das Ziel vor einem Todeszug schützt, bis du Schutz des Lebens auf ein anderes Ziel wirkst oder du eine lange Rast einlegst.",
+    "kartennummer": 156
+  },
+  {
+    "domaene": "LEBEN",
+    "domaene_full": "LEBEN-DOMÄNE",
+    "name": "MATERIAL FORMEN",
+    "typ": "Zauber",
+    "stufe": 5,
+    "rueckrufkosten": 1,
+    "kartentext": "Setze 1 Hoffnung ein, um ein Stück eines natürlichen Materials (z.B. Gestein, Eis, Holz), das du berühren kannst, zu deinem Zweck umzuformen. Der Umfang des Materials darf nicht größer sein als du selbst. Beispielsweise kannst du ein zerbrechliches Werkzeug oder eine Tür erschaffen.\n\nDieser Zauber betrifft nur Material, das sich innerhalb kurzer Distanz zu dem Punkt befindet, den du berührst.",
+    "kartennummer": 157
+  },
+  {
+    "domaene": "LEBEN",
+    "domaene_full": "LEBEN-DOMÄNE",
+    "name": "PEINIGUNG",
+    "typ": "Zauber",
+    "stufe": 5,
+    "rueckrufkosten": 2,
+    "kartentext": "Einmal pro Rast darfst du 3 Hoffnung einsetzen, um einen mächtigen Angriff der Peinigung aufzuladen. Dein nächster erfolgreicher Angriff mit einer Waffe verursacht das doppelte Ergebnis deines Schadenswurfs. Dieser Angriff bewirkt unabhängig vom Schadenstyp der Waffe magischen Schaden.",
+    "kartennummer": 158
+  },
+  {
+    "domaene": "LEBEN",
+    "domaene_full": "LEBEN-DOMÄNE",
+    "name": "WIEDERHERSTELLUNG",
+    "typ": "Zauber",
+    "stufe": 6,
+    "rueckrufkosten": 2,
+    "kartentext": "Lege nach einer langen Rast eine Anzahl Marker auf diese Karte, die deinem Zauber-Attribut entspricht. Wenn du eine Kreatur berührst, darfst du beliebig viele Marker einsetzen, um pro Marker 2 TP oder 2 Stress bei dieser Kreatur zu löschen.\n\nFür einen Marker kannst du auch den Zustand Verwundbar sowie ein physisches oder magisches Gebrechen bei einer Kreatur heilen (die SL darf je nach Schwere des Gebrechens auch mehr Marker verlangen).\n\nEntferne alle Marker von dieser Karte, wenn du eine lange Rast einlegst.",
+    "kartennummer": 159
+  },
+  {
+    "domaene": "LEBEN",
+    "domaene_full": "LEBEN-DOMÄNE",
+    "name": "SCHUTZZONE",
+    "typ": "Zauber",
+    "stufe": 6,
+    "rueckrufkosten": 2,
+    "kartentext": "Führe einen Zauberwurf (16) durch. Einmal pro langer Rast darfst du bei einem Erfolg einen Punkt innerhalb weiter Distanz auswählen und dort eine sichtbare Schutzzone für alle Verbündeten in sehr kurzer Distanz zu diesem Punkt errichten. Lege dann einen W6 mit der 1 nach oben auf diese Karte. Wenn ein verbündeter Charakter in dieser Zone Schaden erleidet, wird der Schaden um die Zahl auf dem Würfel verringert. Dann erhöhst du den Wert des Würfels um 1. Wenn die Zahl auf dem Würfel 6 übersteigen würde, endet der Zauber.",
+    "kartennummer": 160
+  },
+  {
+    "domaene": "LEBEN",
+    "domaene_full": "LEBEN-DOMÄNE",
+    "name": "HEILEDER SCHLAG",
+    "typ": "Zauber",
+    "stufe": 7,
+    "rueckrufkosten": 1,
+    "kartentext": "Wenn du einem gegnerischen Ziel Schaden zufügst, darfst du 2 Hoffnung einsetzen, um bei einem verbündeten Charakter innerhalb kurzer Distanz 1 TP zu löschen.",
+    "kartennummer": 161
+  },
+  {
+    "domaene": "LEBEN",
+    "domaene_full": "LEBEN-DOMÄNE",
+    "name": "SEGEN DES LEBENS",
+    "typ": "Fähigkeit",
+    "stufe": 7,
+    "rueckrufkosten": 2,
+    "kartentext": "Wenn 4 oder mehr Domänenkarten in deiner Auslage aus der Leben-Domäne stammen, erhältst du folgende Vorteile: • Einen Bonus von +3 auf deine Schwere Schadensschwelle. • Einmal pro langer Rast, wenn du durch Schaden TP markieren müsstest, darfst du dich entscheiden, stattdessen entsprechend viel Stress zu markieren oder Hoffnung einzusetzen.",
+    "kartennummer": 162
+  },
+  {
+    "domaene": "LEBEN",
+    "domaene_full": "LEBEN-DOMÄNE",
+    "name": "SCHILD-AURA",
+    "typ": "Zauber",
+    "stufe": 8,
+    "rueckrufkosten": 2,
+    "kartentext": "Du darfst 1 Stress markieren, um eine schützende Aura auf ein Ziel innerhalb sehr kurzer Distanz zu wirken. Wenn das Ziel ein Rüstungsfeld markiert, wird die Schwere des Schadens um eine zusätzliche Schwelle reduziert. Wenn dieser Zauber bewirkt, dass eine Kreatur, die Schaden erleiden würde, stattdessen keine TP markieren muss, endet der Zauber.\n\nDu darfst Schild-Aura nur auf eine Kreatur zur selben Zeit wirken.",
+    "kartennummer": 163
+  },
+  {
+    "domaene": "LEBEN",
+    "domaene_full": "LEBEN-DOMÄNE",
+    "name": "SONNENLICHT-SCHOCK",
+    "typ": "Zauber",
+    "stufe": 8,
+    "rueckrufkosten": 2,
+    "kartentext": "Führe einen Zauberwurf durch, um mächtige, brennende Sonnenstrahlen auf alle gegnerischen Ziele vor dir innerhalb weiter Distanz abzufeuern. Bei einem Erfolg darfst du beliebig viel Hoffnung einsetzen, um entsprechend viele getroffene Ziele zu einem Reaktionswurf (14) zu zwingen.\n\nZiele, die einen Erfolg erzielen, erleiden 3W20+3 magischen Schaden. Ziele, die einen Misserfolg erzielen, erleiden 4W20+5 magischen Schaden und erhalten vorübergehend den Zustand Schock. Solange Schock anhält, dürfen die Ziele keine Aktionen oder Reaktionen ausführen.",
+    "kartennummer": 164
+  },
+  {
+    "domaene": "LEBEN",
+    "domaene_full": "LEBEN-DOMÄNE",
+    "name": "ÜBERWÄLTIGENDE AURA",
+    "typ": "Zauber",
+    "stufe": 9,
+    "rueckrufkosten": 2,
+    "kartentext": "Führe einen Zauberwurf (15) durch, um deine Aura magisch zu verstärken. Bei einem Erfolg darfst du 2 Hoffnung einsetzen, um deinen Präsenz-Wert bis zu deiner nächsten langen Rast deinem Zauber-Attribut anzugleichen.\n\nSolange dieser Zauber aktiv ist, müssen gegnerische Ziele 1 Stress markieren, wenn sie dich angreifen.",
+    "kartennummer": 165
+  },
+  {
+    "domaene": "LEBEN",
+    "domaene_full": "LEBEN-DOMÄNE",
+    "name": "STRAHL DER ERLÖSUNG",
+    "typ": "Zauber",
+    "stufe": 9,
+    "rueckrufkosten": 2,
+    "kartentext": "Führe einen Zauberwurf (16) durch. Bei einem Erfolg darfst du beliebig viel Stress markieren, um Verbündete in einer geraden Linie innerhalb weiter Distanz auszuwählen. Du darfst bei den Zielen TP in Höhe der markierten Stress-Punkte löschen; die Verteilung der gelöschten TP darfst du beliebig wählen.",
+    "kartennummer": 166
+  },
+  {
+    "domaene": "LEBEN",
+    "domaene_full": "LEBEN-DOMÄNE",
+    "name": "KRÄFTIGEN",
+    "typ": "Zauber",
+    "stufe": 10,
+    "rueckrufkosten": 3,
+    "kartentext": "Wenn du oder ein verbündeter Charakter innerhalb kurzer Distanz eine Fähigkeit nutzen, die ein bestimmtes Limit hat (z.B. Einmal pro Rast oder Einmal pro Sitzung), darfst du beliebig viel Hoffnung einsetzen, um entsprechend viele W6 zu würfeln. Wenn du auf mindestens einem davon eine 6 würfelst, kann die Fähigkeit erneut eingesetzt werden.",
+    "kartennummer": 167
+  },
+  {
+    "domaene": "LEBEN",
+    "domaene_full": "LEBEN-DOMÄNE",
+    "name": "WIEDERBELEBEN",
+    "typ": "Zauber",
+    "stufe": 10,
+    "rueckrufkosten": 2,
+    "kartentext": "Führe einen Zauberwurf (20) durch. Bei einem Erfolg darfst du eine Kreatur, die nicht länger als 100 Jahre tot war, zu voller Gesundheit wiederbeleben. Würfle dann einen W6. Bei einer 5 oder weniger musst du diese Karte permanent in deine Reserve legen.\n\nBei einem Misserfolg musst du 1 Woche warten, bis du Wiederbeleben erneut wirken darfst.",
+    "kartennummer": 168
+  },
+  {
+    "domaene": "MUT",
+    "domaene_full": "MUT-DOMÄNE",
+    "name": "WER BRAUCHT SCHON RÜSTUNG?",
+    "typ": "Fähigkeit",
+    "stufe": 1,
+    "rueckrufkosten": 0,
+    "kartentext": "Wenn du dich entscheidest, keine Rüstung zu tragen, beträgt dein Rüstungswert 3 + deinen Wert in Stärke. Verwende die folgenden Grundwerte für deine Schadensschwellen:\n\n• Rang 1: 9/19\n\n• Rang 2: 11/24\n\n• Rang 3: 13/31\n\n• Rang 4: 15/38",
+    "kartennummer": 169
+  },
+  {
+    "domaene": "MUT",
+    "domaene_full": "MUT-DOMÄNE",
+    "name": "MÄCHTIGER STOSS",
+    "typ": "Fähigkeit",
+    "stufe": 1,
+    "rueckrufkosten": 0,
+    "kartentext": "Führe einen Angriff mit deiner Primärwaffe gegen ein Ziel in unmittelbarer Distanz aus. Bei einem Erfolg verursachst du normalen Schaden und stößt das Ziel in kurze Distanz zurück. Bei einem Erfolg mit Hoffnung fügst du deinem Schadenswurf zusätzlich 1W6 hinzu.\n\nAußerdem darfst du 1 Hoffnung einsetzen, um das Ziel vorübergehend Verwundbar zu machen.",
+    "kartennummer": 170
+  },
+  {
+    "domaene": "MUT",
+    "domaene_full": "MUT-DOMÄNE",
+    "name": "ICH BIN DEIN SCHILD",
+    "typ": "Fähigkeit",
+    "stufe": 1,
+    "rueckrufkosten": 1,
+    "kartentext": "Wenn ein verbündeter Charakter in sehr kurzer Distanz Schaden erleiden würde, darfst du 1 Stress markieren, um dazwischenzugehen und stattdessen zum Ziel des Angriffs zu werden. Wenn du durch diesen Angriff Schaden erleidest, darfst du beliebig viele Rüstungsfelder markieren.",
+    "kartennummer": 171
+  },
+  {
+    "domaene": "MUT",
+    "domaene_full": "MUT-DOMÄNE",
+    "name": "KÖRPEREINSATZ",
+    "typ": "Fähigkeit",
+    "stufe": 2,
+    "rueckrufkosten": 1,
+    "kartentext": "Du kämpfst mit vollen Körpereinsatz. Nach einem erfolgreichen Angriff mit einer Waffe mit unmittelbarer Distanz erhältst du einen Bonus in Höhe deines Stärke-Wertes auf deinen Schadenswurf.",
+    "kartennummer": 172
+  },
+  {
+    "domaene": "MUT",
+    "domaene_full": "MUT-DOMÄNE",
+    "name": "MÄCHTIGE PRÄSENZ",
+    "typ": "Fähigkeit",
+    "stufe": 2,
+    "rueckrufkosten": 0,
+    "kartentext": "Wenn du einen Wurf auf Präsenz ausführst, darfst du 1 Hoffnung einsetzen, um deinen Stärke- Wert zum Würfelergebnis hinzuzufügen.\n\nZusätzlich darfst du einmal pro Rast, wenn du einen Zustand erleiden würdest, beschreiben, wie deine mächtige Präsenz in der Situation dazu beiträgt, dass du diesen Zustand nicht erhältst.",
+    "kartennummer": 173
+  },
+  {
+    "domaene": "MUT",
+    "domaene_full": "MUT-DOMÄNE",
+    "name": "MÄCHTIGE INSPIRATION",
+    "typ": "Fähigkeit",
+    "stufe": 3,
+    "rueckrufkosten": 1,
+    "kartentext": "Einmal pro Rast dürfen alle verbündeten Charaktere innerhalb sehr kurzer Distanz 1 Stress löschen oder 1 Hoffnung erhalten, wenn du einen kritischen Erfolg bei einem Angriffswurf erzielst.",
+    "kartennummer": 174
+  },
+  {
+    "domaene": "MUT",
+    "domaene_full": "MUT-DOMÄNE",
+    "name": "ICH BIN FÜR DICH DA",
+    "typ": "Fähigkeit",
+    "stufe": 3,
+    "rueckrufkosten": 1,
+    "kartentext": "Einmal pro langer Rast dürfen du und ein verbündeter Charakter je 2 Stress löschen, wenn du diesen nach einem Misserfolg auf einen Angriffswurf tröstest oder inspirierst.",
+    "kartennummer": 175
+  },
+  {
+    "domaene": "MUT",
+    "domaene_full": "MUT-DOMÄNE",
+    "name": "ANSTACHELN",
+    "typ": "Fähigkeit",
+    "stufe": 4,
+    "rueckrufkosten": 1,
+    "kartentext": "Beschreibe, wie du ein Ziel innerhalb kurzer Distanz provozierst und führe dann einen Wurf auf Präsenz gegen das Ziel durch. Bei einem Erfolg muss das Ziel 1 Stress markieren, und wenn die SL das Ziel das nächste Mal in den Fokus rückt, muss es einen Angriff mit Nachteil gegen dich durchführen.",
+    "kartennummer": 176
+  },
+  {
+    "domaene": "MUT",
+    "domaene_full": "MUT-DOMÄNE",
+    "name": "UNTERSTÜTZENDE FRONT",
+    "typ": "Fähigkeit",
+    "stufe": 4,
+    "rueckrufkosten": 2,
+    "kartentext": "Wenn ein verbündeter Charakter innerhalb kurzer Distanz einen Misserfolg würfelt, darfst du 2 Hoffnung einsetzen, um dem Charakter zu ermöglichen, seinen Hoffnungs- oder Furchtwürfel erneut zu würfeln.",
+    "kartennummer": 177
+  },
+  {
+    "domaene": "MUT",
+    "domaene_full": "MUT-DOMÄNE",
+    "name": "RÜSTUNGSSCHMIEDE",
+    "typ": "Fähigkeit",
+    "stufe": 5,
+    "rueckrufkosten": 1,
+    "kartentext": "Du erhältst einen Bonus von +1 auf deinen Rüstungswert, wenn du Rüstung trägst.\n\nWenn du während einer Rast als Auszeit- Zug deine Rüstung reparierst, dürfen deine Verbündeten ebenfalls ein Rüstungsfeld löschen.",
+    "kartennummer": 178
+  },
+  {
+    "domaene": "MUT",
+    "domaene_full": "MUT-DOMÄNE",
+    "name": "WECKRUF",
+    "typ": "Fähigkeit",
+    "stufe": 5,
+    "rueckrufkosten": 1,
+    "kartentext": "Einmal pro Rast dürfen du und alle Verbündeten, die dich sehen oder hören können, 1 TP oder 1W4 Stress löschen, wenn du einen kritischen Erfolg bei einem Angriffswurf erzielst.",
+    "kartennummer": 179
+  },
+  {
+    "domaene": "MUT",
+    "domaene_full": "MUT-DOMÄNE",
+    "name": "UNAUSWEICHLICH",
+    "typ": "Fähigkeit",
+    "stufe": 6,
+    "rueckrufkosten": 1,
+    "kartentext": "Wenn du einen Misserfolg bei einem Aktionswurf erzielst, erhältst du einen Vorteil auf deinen nächsten Aktionswurf.",
+    "kartennummer": 180
+  },
+  {
+    "domaene": "MUT",
+    "domaene_full": "MUT-DOMÄNE",
+    "name": "ERHEBEN",
+    "typ": "Fähigkeit",
+    "stufe": 6,
+    "rueckrufkosten": 2,
+    "kartentext": "Du erhältst einen Bonus auf deine Schwere Schadensschwelle, die deiner Übung entspricht.\n\nWenn du nach einem Angriff 1 oder mehr TP markieren musst, darfst du 1 Stress löschen.",
+    "kartennummer": 181
+  },
+  {
+    "domaene": "MUT",
+    "domaene_full": "MUT-DOMÄNE",
+    "name": "VERSCHMERZEN",
+    "typ": "Fähigkeit",
+    "stufe": 7,
+    "rueckrufkosten": 1,
+    "kartentext": "Wenn du Schaden erleiden würdest, darfst du 1 Stress markieren, um die Schwere des Schadens um 1 Schwelle zu reduzieren. Würfle dann 1W6. Bei einem Ergebnis von 3 oder weniger musst du diese Karte in deine Reserve legen.",
+    "kartennummer": 182
+  },
+  {
+    "domaene": "MUT",
+    "domaene_full": "MUT-DOMÄNE",
+    "name": "SEGEN DES MUTES",
+    "typ": "Fähigkeit",
+    "stufe": 7,
+    "rueckrufkosten": 1,
+    "kartentext": "Wenn 4 oder mehr Domänenkarten in deiner Auslage aus der Mut-Domäne stammen, erhältst du folgende Vorteile:\n\n• Einen Bonus von +1 auf deinen Rüstungswert.\n\n• Wenn du 1 oder mehr TP markierst ohne ein Rüstungsfeld zu markieren, darfst du 1 Rüstungsfeld löschen.",
+    "kartennummer": 183
+  },
+  {
+    "domaene": "MUT",
+    "domaene_full": "MUT-DOMÄNE",
+    "name": "VOLLE POWER",
+    "typ": "Fähigkeit",
+    "stufe": 8,
+    "rueckrufkosten": 1,
+    "kartentext": "Einmal pro langer Rast darfst du 3 Stress markieren, um deinen Körper an seine Grenzen zu bringen. Bis zu deiner nächsten Rast erhältst du einen Bonus von +2 auf alle Attributswerte.",
+    "kartennummer": 184
+  },
+  {
+    "domaene": "MUT",
+    "domaene_full": "MUT-DOMÄNE",
+    "name": "ERDBEBENSCHLAG",
+    "typ": "Fähigkeit",
+    "stufe": 8,
+    "rueckrufkosten": 2,
+    "kartentext": "Setze 2 Hoffnung ein, um den Boden unter dir mit einem mächtigen Schlag aufzurütteln, und führe einen Wurf auf Stärke gegen alle Ziele innerhalb sehr kurzer Distanz durch. Getroffene Ziele werden in weite Distanz zurückgeschleudert und müssen einen Reaktionswurf (17) durchführen. Ziele, die einen Misserfolg erzielen, erleiden 4W10+8 Schaden. Ziele, die einen Erfolg erzielen, erleiden den halben Schaden.",
+    "kartennummer": 185
+  },
+  {
+    "domaene": "MUT",
+    "domaene_full": "MUT-DOMÄNE",
+    "name": "STELLUNG HALTEN",
+    "typ": "Fähigkeit",
+    "stufe": 9,
+    "rueckrufkosten": 1,
+    "kartentext": "Beschreibe, welche Abwehrhaltung du einnimmst, und setze 1 Hoffnung ein. Wenn eine gegnerische Kreatur sich in sehr kurze Distanz zu dir bewegt, wird sie in unmittelbare Distanz gezogen und erhält den Zustand Festgesetzt.\n\nDieser Zustand bleibt bestehen, bis du dich bewegst, einen Misserfolg mit Furcht würfelst oder bis die SL in ihrem Zug 2 Furcht einsetzt, um den Zustand zu löschen.",
+    "kartennummer": 186
+  },
+  {
+    "domaene": "MUT",
+    "domaene_full": "MUT-DOMÄNE",
+    "name": "VORBILDFUNKTION",
+    "typ": "Fähigkeit",
+    "stufe": 9,
+    "rueckrufkosten": 3,
+    "kartentext": "Wenn du einem gegnerischen Ziel Schaden zufügst, darfst du 1 Stress markieren und beschreiben, wie du deine Verbündeten ermutigst. Der nächste SC, der dieses Ziel angreift, darf 1 Stress löschen oder erhält 1 Hoffnung.",
+    "kartennummer": 187
+  },
+  {
+    "domaene": "MUT",
+    "domaene_full": "MUT-DOMÄNE",
+    "name": "UNBEZWINGBAR",
+    "typ": "Fähigkeit",
+    "stufe": 10,
+    "rueckrufkosten": 4,
+    "kartentext": "Wenn du deinen letzten TP markierst, darfst du einen W6 würfeln und eine Anzahl TP löschen, die dem Ergebnis entspricht, statt einen Todeszug auszuführen. Lege diese Karte im Anschluss in deine Reserve.",
+    "kartennummer": 188
+  },
+  {
+    "domaene": "MUT",
+    "domaene_full": "MUT-DOMÄNE",
+    "name": "UNZERSTÖRBARE RÜSTUNG",
+    "typ": "Fähigkeit",
+    "stufe": 10,
+    "rueckrufkosten": 1,
+    "kartentext": "Wenn du ein Rüstungsfeld markieren würdest, darfst du eine Anzahl W6 würfeln, die deiner Übung entspricht. Wenn du mindestens eine 6 erzielst, darfst du die Schwere des Schadens um eine Schwelle reduzieren, ohne ein Rüstungsfeld zu markieren.",
+    "kartennummer": 189
+  }
+]

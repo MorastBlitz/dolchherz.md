@@ -1,336 +1,310 @@
-import { Editor, Plugin, setTooltip, Menu, Notice, type TFolder, debounce, type Debouncer } from 'obsidian';
-import { SettingTab, type PluginSettings, DEFAULT_SETTINGS } from './settings';
-import { ADV_LIBRARY, ENV_LIBRARY, ADV_TEMPLATE, ENV_TEMPLATE, walkFolder, tryParseYaml } from './utils';
-import { AdversaryCard, AdversaryModal, type RawAdversary } from './ui';
+import {
+	type Debouncer,
+	type Editor,
+	type MarkdownPostProcessorContext,
+	Menu,
+	Notice,
+	Plugin,
+	debounce,
+	parseYaml,
+	setTooltip,
+} from 'obsidian';
+import { registriereKarten } from './cards';
+import { t } from './i18n';
+import { CODEMARKEN, baueBibliothek, eingebauteDaten, leseOrdner, type Bibliothekseintrag } from './model/library';
+import { slug, uebersetzeSchluessel } from './model/keys';
+import { Kartenregister, type Kartendefinition } from './registry';
+import { type Begegnungsposten, berechneKampfpunkte, budget } from './regeln/kampfpunkte';
+import { DhOrakelSettingTab, STANDARDEINSTELLUNGEN } from './settings';
+import { Zustandsspeicher } from './state';
+import type { Einstellungen, Karte, PluginState, Roh } from './types';
+import { Kartenhost, type AufgeloesteKarte } from './ui/cardHost';
+import { Kartenmodal } from './ui/picker';
 
-export type PluginState = {
-    settings: PluginSettings;
-    cards: {
-        [id: string]: {
-            color?: string;
-            count?: number;
-            [index: number]: {
-                hp?: number;
-                stress?: number;
-                uses?: { [key: string]: number };
-                countdown?: { [key: string]: number }
-            };
-        };
-    };
-};
-
-export default class BeastVault extends Plugin {
-    activeBlocks: Map<AdversaryCard, string> = new Map();
-    state: PluginState;
-    saveTimer?: number;
-    saving?: Promise<void>;
-    battlePoints: HTMLElement;
-    library: RawAdversary[] = [];
-    updateState: Debouncer<[], Promise<void>>;
-
-    updateStatusBar() {
-        const file = this.app.workspace.getActiveFile();
-        if (file) {
-            const bp = Math.ceil(this.calculateBattlePoints(file?.path));
-            const pcs = this.state.settings.numberOfPCs;
-            if (bp > 0) {
-                this.battlePoints.setText(`${bp} battle points`);
-                setTooltip(this.battlePoints, `${bp} / ${pcs * 3 + 2} for ${pcs} PCs`, { delay: 500, placement: 'top' });;
-                return;
-            }
-        }
-        this.battlePoints.setText('');
-    }
-
-    calculateBattlePoints(filePath: string): number {
-        let totalBP = 0;
-        const bpPerType: Record<string, number> = {
-            'solo': 5,
-            'bruiser': 4,
-            'leader': 3,
-            'horde': 2,
-            'skulk': 2,
-            'ranged': 2,
-            'standard': 2,
-            'support': 1,
-            'social': 1,
-            'minion': 1 / this.state.settings.numberOfPCs,
-        }
-        for (const [block, path] of this.activeBlocks) {
-            if (path !== filePath) continue;
-            if (!block.adv.hp && !block.adv.stress) continue; // is an env
-            const type = block.adv.type?.trim().toLowerCase();
-            if (type?.startsWith('horde')) totalBP += bpPerType['horde'] * block.count;
-            if (type && bpPerType[type]) totalBP += bpPerType[type] * block.count;
-        }
-        return totalBP;
-    }
-
-    async scanLibrary(notFoundNotice: boolean, loadedNotice: 'yes' | 'no' | 'conditional') {
-        const folderPath = this.state.settings.libraryFolder;
-        let folder: TFolder | null;
-        if (!folderPath || !(folder = this.app.vault.getFolderByPath(folderPath))) {
-            this.library = [];
-            if (notFoundNotice) {
-                new Notice('Library folder does not exist in the vault');
-            }
-            return;
-        }
-        const newLibrary: RawAdversary[] = [];
-        await walkFolder(folder, async (file) => {
-            let content: RawAdversary | RawAdversary[];
-
-            if (file.extension == 'json') {
-                try {
-                    content = JSON.parse(await this.app.vault.read(file));
-                } catch (e) {
-                    console.error(`Failed to parse ${file.path}:\n`, e);
-                    return;
-                }
-            } else if (file.extension == 'yml' || file.extension == 'yaml') {
-                content = tryParseYaml(await this.app.vault.read(file));
-            } else if (file.extension == 'md') {
-                const metadata = this.app.metadataCache.getFileCache(file)
-                const codeblocks = metadata?.sections?.filter(sec => sec.type == 'code') ?? [];
-                if (codeblocks.length == 0) return;
-                const lines = (await this.app.vault.read(file)).split('\n');
-                content = codeblocks
-                    .filter(sec => lines[sec.position.start.line].trim() === '```daggerheart')
-                    .map(sec => {
-                        const targetLines = lines.slice(sec.position.start.line + 1, sec.position.end.line).join("\n");
-                        return { raw: targetLines, ...tryParseYaml(targetLines) };
-                    });
-                // Also scan FSB-compatible statblocks
-                if (this.state.settings.compatibleWithFSB) {
-                    const fsb: RawAdversary[] = codeblocks
-                        .filter(sec => lines[sec.position.start.line].trim() === '```statblock')
-                        .map(sec => {
-                            const targetLines = lines.slice(sec.position.start.line + 1, sec.position.end.line).join("\n");
-                            const statblock = tryParseYaml(targetLines);
-                            const isDaggerheart = statblock.layout && typeof statblock.layout == 'string' && /daggerheart\s+(environment|adversary)/i.test(statblock.layout);
-                            if (!isDaggerheart) return null;
-                            return {
-                                name: statblock.name,
-                                tier: statblock.tier,
-                                type: statblock.type,
-                                desc: statblock.description,
-                                difficulty: statblock.difficulty,
-
-                                hp: statblock.hp,
-                                stress: statblock.stress,
-                                thresholds: statblock.thresholds,
-                                motives: statblock.motives_and_tactics,
-                                xp: statblock.experience,
-                                attack: statblock.atk,
-
-                                weapon: statblock.attack,
-                                range: statblock.range,
-                                damage: statblock.damage,
-
-                                impulses: statblock.impulses,
-                                adversaries: statblock.potential_adversaries,
-
-                                features: statblock.feats?.map((f?: { name?: string, text?: string }) => ({
-                                    name: f?.name,
-                                    desc: f?.text
-                                })),
-
-                                source: statblock.source,
-                            } as RawAdversary;
-                        })
-                        .filter((s: RawAdversary | null) => s != null);
-                    content = content.concat(fsb);
-                }
-            } else {
-                return;
-            }
-
-            if (!Array.isArray(content)) content = [content];
-            for (const item of content) {
-                if (item && typeof item == 'object' && typeof item.name == 'string') {
-                    newLibrary.push({ source: 'homebrew', ...item });
-                }
-            }
-        })
-
-        if (this.state.settings.ignoreDuplicateNames) {
-            this.library = [];
-            for (const adv of newLibrary) {
-                if (ADV_LIBRARY.find(a => a.name == adv.name)
-                    || ENV_LIBRARY.find(a => a.name == adv.name)
-                    || this.library.find(a => a.name == adv.name)) {
-                    adv.id = 'duplicate';
-                    continue;
-                }
-                this.library.push(adv);
-            }
-        } else {
-            this.library = newLibrary;
-        }
-
-        const length = this.library.length;
-        if (loadedNotice === 'yes' || loadedNotice === 'conditional' && length > 0) {
-            if (length == 0) {
-                new Notice(`No valid stat blocks found in ${this.state.settings.libraryFolder}`);
-            } else {
-                // TODO: message about duplicates?
-                new Notice(`Loaded ${length} stat block${length != 1 ? 's' : ''}`)
-            }
-        }
-
-        return newLibrary;
-    }
-
-    allAdversaries(): RawAdversary[] {
-        return this.library.filter(adv => (adv.hp && adv.hp > 0) || (adv.stress && adv.stress > 0)).concat(ADV_LIBRARY);
-    }
-
-    allEnvironments(): RawAdversary[] {
-        return this.library.filter(adv => (!adv.hp || adv.hp == 0) && (!adv.stress || adv.stress == 0)).concat(ENV_LIBRARY);
-    }
-
-    async onload() {
-        this.state = Object.assign({}, { settings: {}, cards: {} }, await this.loadData());
-        this.state.settings = Object.assign({}, DEFAULT_SETTINGS, this.state.settings);
-        this.battlePoints = this.addStatusBarItem();
-        this.registerEvent(this.app.workspace.on('active-leaf-change', () => this.updateStatusBar()));
-        this.app.workspace.onLayoutReady(() => this.scanLibrary(false, 'no'));
-        this.updateState = debounce(() => this.saveData(this.state), 1000, true);
-
-        this.registerMarkdownCodeBlockProcessor("daggerheart", (src, el, ctx) => {
-            const child = new AdversaryCard(el, tryParseYaml(src, false), this);
-            ctx.addChild(child);
-            child.render();
-            // Track it so we can refresh on settings change:
-            this.activeBlocks.set(child, this.app.workspace.getActiveFile()?.path ?? ctx.sourcePath);
-            this.updateStatusBar();
-            // Ensure we stop tracking when the block is removed:
-            child.register(() => {
-                this.activeBlocks.delete(child);
-                this.updateStatusBar();
-            });
-        });
-
-        this.addSettingTab(new SettingTab(this.app, this));
-
-        this.addCommand({
-            id: 'insert-adversary-template',
-            name: 'Insert adversary template',
-            editorCallback: (editor: Editor) => {
-                editor.replaceRange(ADV_TEMPLATE.trim(), editor.getCursor());
-            },
-        })
-        this.addCommand({
-            id: 'insert-environment-template',
-            name: 'Insert environment template',
-            editorCallback: (editor: Editor) => {
-                editor.replaceRange(ENV_TEMPLATE.trim(), editor.getCursor());
-            },
-        })
-        this.addCommand({
-            id: 'clear-card-state',
-            name: 'Clear all card state',
-            callback: () => {
-                this.state.cards = {};
-                this.updateState();
-                this.renderAll();
-            }
-        })
-        this.addCommand({
-            id: 'insert-adversary-from-library',
-            name: 'Insert adversary from library',
-            editorCallback: (editor: Editor) => {
-                new AdversaryModal(this.app, editor, this.allAdversaries()).open();
-            },
-        });
-        this.addCommand({
-            id: 'insert-environment-from-library',
-            name: 'Insert environment from library',
-            editorCallback: (editor: Editor) => {
-                new AdversaryModal(this.app, editor, this.allEnvironments()).open();
-            },
-        });
-        this.addCommand({
-            id: 'refresh-library',
-            name: 'Refresh library',
-            callback: () => this.scanLibrary(true, 'yes')
-        })
-
-        this.addRibbonIcon('swords', 'BeastVault menu', (event) => {
-            const menu = new Menu();
-            const onClick = (callback: (editor: Editor) => void) => () => {
-                const editor = this.app.workspace.activeEditor?.editor;
-                if (!editor) {
-                    new Notice('No active editor');
-                } else {
-                    callback(editor);
-                }
-            }
-
-            menu.addItem((item) => item
-                .setTitle('Insert adversary from library')
-                .setIcon('book-copy')
-                .onClick(onClick((editor) => new AdversaryModal(this.app, editor, this.allAdversaries()).open())));
-
-            menu.addItem((item) => item
-                .setTitle('Insert adversary template')
-                .setIcon('book-dashed')
-                .onClick(onClick((editor) => editor.replaceRange(ADV_TEMPLATE.trim(), editor.getCursor()))));
-
-            menu.addSeparator();
-
-            menu.addItem((item) => item
-                .setTitle('Insert environment from library')
-                .setIcon('book-copy')
-                .onClick(onClick((editor) => new AdversaryModal(this.app, editor, this.allEnvironments()).open())));
-
-            menu.addItem((item) => item
-                .setTitle('Insert environment template')
-                .setIcon('book-dashed')
-                .onClick(onClick((editor) => editor.replaceRange(ENV_TEMPLATE.trim(), editor.getCursor()))));
-
-            menu.addSeparator();
-
-            menu.addItem((item) => item
-                .setTitle('Refresh library')
-                .setIcon('refresh-cw')
-                .onClick(() => this.scanLibrary(true, 'yes')));
-
-            menu.showAtMouseEvent(event);
-        });
-    }
-
-    onunload() {
-        void this.updateState.run();
-    }
-
-    renderAll() {
-        for (const [block] of this.activeBlocks) {
-            block.render();
-        }
-    }
-
-    updateCard(keys: (string | number)[], value: string | number) {
-        type Data = { [key: string]: Data | number | string };
-        let data: Data = this.state.cards;
-        const keysCopy = [...keys];
-        const lastKey = keysCopy.pop()!;
-        for (const key of keysCopy) {
-            if (!data[key]) data[key] = {};
-            data = data[key] as Data;
-        }
-        data[lastKey] = value;
-        this.updateState();
-    }
-
-    getCardState(keys: (string | number)[]): number | undefined {
-        type Data = { [key: string]: Data | string | number }
-        let data: Data = this.state.cards;
-        for (const [i, key] of keys.entries()) {
-            if (!data[key]) return undefined;
-            if (i === keys.length - 1) return data[key] as number;
-            data = data[key] as Data;
-        }
-    }
+/** Liest den Codeblock als YAML; Fehler werden gemeldet und führen zu einer leeren Karte. */
+function liesYaml(quelle: string): Roh {
+	try {
+		const daten: unknown = parseYaml(quelle);
+		if (typeof daten === 'object' && daten !== null && !Array.isArray(daten)) {
+			return daten as Roh;
+		}
+		return {};
+	} catch (fehler) {
+		console.error('Dolchherz Orakel: Codeblock ist kein gültiges YAML.', fehler);
+		new Notice(t('meldung.yamlFehler'));
+		return {};
+	}
 }
 
+export default class DolchherzOrakel extends Plugin {
+	state!: PluginState;
+	zustand!: Zustandsspeicher;
+
+	readonly kartenregister = new Kartenregister();
+	bibliothek: Bibliothekseintrag[] = [];
+
+	private readonly aktiveKarten = new Map<Kartenhost, string>();
+	private kampfpunkteAnzeige!: HTMLElement;
+	private sichernDebounced!: Debouncer<[], Promise<void>>;
+
+	get einstellungen(): Einstellungen {
+		return this.state.einstellungen;
+	}
+
+	async onload(): Promise<void> {
+		const gespeichert = (await this.loadData()) as Partial<PluginState> | null;
+		this.state = {
+			einstellungen: { ...STANDARDEINSTELLUNGEN, ...(gespeichert?.einstellungen ?? {}) },
+			karten: gespeichert?.karten ?? {},
+		};
+
+		this.sichernDebounced = debounce(() => this.saveData(this.state), 1000, true);
+		this.zustand = new Zustandsspeicher(this.state, () => void this.sichernDebounced());
+
+		registriereKarten(this.kartenregister);
+
+		this.kampfpunkteAnzeige = this.addStatusBarItem();
+		this.registerEvent(
+			this.app.workspace.on('active-leaf-change', () => this.aktualisiereKampfpunkte())
+		);
+		this.app.workspace.onLayoutReady(() => void this.ladeBibliothek(false));
+
+		const prozessor = (
+			quelle: string,
+			el: HTMLElement,
+			ctx: MarkdownPostProcessorContext
+		): void => {
+			const roh = uebersetzeSchluessel(liesYaml(quelle));
+
+			// Ein leerer Block entsteht beim Tippen; dort ist kein Fehlerhinweis nötig.
+			if (Object.keys(roh).length === 0) return;
+			const host = new Kartenhost(
+				el,
+				this,
+				ctx,
+				ctx.sourcePath,
+				this.loeseKarte(roh, ctx.sourcePath)
+			);
+			ctx.addChild(host);
+			host.rendern();
+
+			this.aktiveKarten.set(host, ctx.sourcePath);
+			this.aktualisiereKampfpunkte();
+
+			host.register(() => {
+				this.aktiveKarten.delete(host);
+				this.aktualisiereKampfpunkte();
+			});
+		};
+
+		for (const marke of CODEMARKEN) {
+			this.registerMarkdownCodeBlockProcessor(marke, prozessor);
+		}
+
+		this.registriereBefehle();
+		this.addSettingTab(new DhOrakelSettingTab(this.app, this));
+	}
+
+	onunload(): void {
+		void this.saveData(this.state);
+	}
+
+	// --- Karten auflösen -----------------------------------------------------
+
+	/** Macht aus Rohdaten eine Karte samt Laufzeit-ID. */
+	private loeseKarte(roh: Roh, filePath: string): AufgeloesteKarte | undefined {
+		const gelesen = this.kartenregister.lese(roh);
+		if (!gelesen) return undefined;
+
+		const ausBlock = typeof roh.id === 'string' ? roh.id.trim() : '';
+		const id = ausBlock !== '' ? ausBlock : `${filePath}::${gelesen.rumpf.name}`;
+
+		const karte = {
+			...gelesen.rumpf,
+			schluessel: slug(gelesen.rumpf.name),
+			herkunft: 'vault' as const,
+			roh,
+		} as Karte;
+
+		return { definition: gelesen.definition, karte, id };
+	}
+
+	/** Zeichnet alle sichtbaren Wertekasten neu. */
+	neuzeichnen(): void {
+		for (const [host] of this.aktiveKarten) host.rendern();
+		this.aktualisiereKampfpunkte();
+	}
+
+	// --- Bibliothek ----------------------------------------------------------
+
+	async ladeBibliothek(mitMeldung: boolean): Promise<void> {
+		const quellen = eingebauteDaten();
+		const ordnerPfad = this.einstellungen.bibliotheksOrdner.trim();
+		const ordner = await leseOrdner(this.app, ordnerPfad);
+
+		if (!ordner.vorhanden && ordnerPfad !== '' && mitMeldung) {
+			new Notice(t('meldung.ordnerFehlt'));
+		}
+		if (ordner.fehler.length > 0) {
+			new Notice(t('meldung.dateiFehler', { pfad: ordner.fehler[0] }));
+		}
+
+		quellen.push(...ordner.eintraege);
+		this.bibliothek = baueBibliothek(
+			quellen,
+			this.kartenregister,
+			this.einstellungen.duplikateIgnorieren
+		);
+
+		if (!mitMeldung) return;
+		if (this.bibliothek.length === 0) {
+			new Notice(t('meldung.bibliothekLeer', { ordner: ordnerPfad }));
+		} else {
+			new Notice(t('meldung.bibliothekGeladen', { anzahl: this.bibliothek.length }));
+		}
+	}
+
+	// --- Statusleiste --------------------------------------------------------
+
+	private aktualisiereKampfpunkte(): void {
+		const datei = this.app.workspace.getActiveFile();
+		if (!datei) {
+			this.kampfpunkteAnzeige.setText('');
+			return;
+		}
+
+		const posten: Begegnungsposten[] = [];
+		for (const [host, pfad] of this.aktiveKarten) {
+			if (pfad !== datei.path) continue;
+			const typ = host.kampfpunkttyp;
+			if (typ === undefined) continue;
+			posten.push({ typ, anzahl: host.anzahl });
+		}
+
+		if (posten.length === 0) {
+			this.kampfpunkteAnzeige.setText('');
+			return;
+		}
+
+		const anzahlSC = this.einstellungen.anzahlSC;
+		const { punkte, lakaien } = berechneKampfpunkte(posten, anzahlSC);
+		const ziel = budget(anzahlSC, this.einstellungen.kampfpunkteAnpassungen);
+
+		this.kampfpunkteAnzeige.setText(`${punkte} ${t('status.kampfpunkte')}`);
+
+		const zeilen = [t('status.kampfpunkteTooltip', { punkte, budget: ziel, anzahlSC })];
+		if (lakaien > 0) {
+			zeilen.push(
+				t('status.lakaien', { gruppen: Math.ceil(lakaien / Math.max(1, anzahlSC)) })
+			);
+		}
+		setTooltip(this.kampfpunkteAnzeige, zeilen.join(' · '), { delay: 500, placement: 'top' });
+	}
+
+	// --- Befehle und Menü ----------------------------------------------------
+
+	private oeffneSuchdialog(editor: Editor, definition: Kartendefinition<any>): void {
+		const eintraege = this.bibliothek.filter(
+			(eintrag) => eintrag.definition.art === definition.art
+		);
+		new Kartenmodal(this.app, editor, eintraege).open();
+	}
+
+	/**
+	 * Befehle und Menüeinträge entstehen aus dem Register. Ein neuer Kartentyp
+	 * erhält dadurch automatisch seine Einfüge- und Vorlagenbefehle.
+	 */
+	private registriereBefehle(): void {
+		for (const definition of this.kartenregister.alle()) {
+			const vorlage = definition.vorlage?.bind(definition);
+			if (vorlage) {
+				this.addCommand({
+					id: `vorlage-${definition.art}`,
+					name: t('befehl.vorlage', { typ: definition.bezeichnung() }),
+					editorCallback: (editor: Editor) => {
+						editor.replaceRange(vorlage().trim(), editor.getCursor());
+					},
+				});
+			}
+
+			this.addCommand({
+				id: `einfuegen-${definition.art}`,
+				name: t('befehl.einfuegen', { typ: definition.bezeichnung() }),
+				editorCallback: (editor: Editor) => this.oeffneSuchdialog(editor, definition),
+			});
+		}
+
+		this.addCommand({
+			id: 'bibliothek-aktualisieren',
+			name: t('befehl.bibliothekAktualisieren'),
+			callback: () => void this.ladeBibliothek(true),
+		});
+
+		this.addCommand({
+			id: 'kartenzustand-zuruecksetzen',
+			name: t('befehl.kartenzustandZuruecksetzen'),
+			callback: () => {
+				this.zustand.allesZuruecksetzen();
+				this.neuzeichnen();
+				new Notice(t('meldung.kartenZurueckgesetzt'));
+			},
+		});
+
+		this.addRibbonIcon('swords', t('band.menue'), (ereignis) => {
+			const menue = new Menu();
+
+			const imEditor = (aktion: (editor: Editor) => void) => () => {
+				const editor = this.app.workspace.activeEditor?.editor;
+				if (!editor) {
+					new Notice(t('meldung.keinEditor'));
+					return;
+				}
+				aktion(editor);
+			};
+
+			for (const definition of this.kartenregister.alle()) {
+				menue.addItem((eintrag) =>
+					eintrag
+						.setTitle(t('befehl.einfuegen', { typ: definition.bezeichnung() }))
+						.setIcon('book-copy')
+						.onClick(imEditor((editor) => this.oeffneSuchdialog(editor, definition)))
+				);
+
+				const vorlage = definition.vorlage?.bind(definition);
+				if (vorlage) {
+					menue.addItem((eintrag) =>
+						eintrag
+							.setTitle(t('befehl.vorlage', { typ: definition.bezeichnung() }))
+							.setIcon('book-dashed')
+							.onClick(
+								imEditor((editor) =>
+									editor.replaceRange(vorlage().trim(), editor.getCursor())
+								)
+							)
+					);
+				}
+
+				menue.addSeparator();
+			}
+
+			menue.addItem((eintrag) =>
+				eintrag
+					.setTitle(t('befehl.bibliothekAktualisieren'))
+					.setIcon('refresh-cw')
+					.onClick(() => void this.ladeBibliothek(true))
+			);
+
+			menue.addItem((eintrag) =>
+				eintrag
+					.setTitle(t('befehl.kartenzustandZuruecksetzen'))
+					.setIcon('eraser')
+					.onClick(() => {
+						this.zustand.allesZuruecksetzen();
+						this.neuzeichnen();
+					})
+			);
+
+			menue.showAtMouseEvent(ereignis);
+		});
+	}
+}

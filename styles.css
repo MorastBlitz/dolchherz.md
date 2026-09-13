@@ -1,88 +1,233 @@
+/* dolchherz.md */
 
-.bv-statblock {
-    font-family: monospace;
-    position: relative
+.dho-karte {
+	font-family: monospace;
+	position: relative;
 }
 
-input[type=checkbox].bv-slot {
-    vertical-align: middle;
-    top: -0.1em;
+.dho-karte hr {
+	margin: 0;
 }
 
-.bv-smaller {
-    font-size: smaller;
+.dho-karte ul,
+.dho-karte ol {
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
 }
 
-.bv-larger {
-    font-size: larger;
-    text-transform: uppercase;
+.dho-verteilt {
+	display: flex;
+	justify-content: space-between;
+	align-items: baseline;
 }
 
-.bv-spreadout {
-    display: flex;
-    justify-content: space-between;
+.dho-groesser {
+	font-size: larger;
+	text-transform: uppercase;
 }
 
-.bv-muted {
-    color: var(--text-muted)
+.dho-kleiner {
+	font-size: smaller;
 }
 
-.bv-thresholds {
-    text-align: center;
-    margin-bottom: 0.2em !important;
+.dho-klein {
+	font-size: smaller;
 }
 
-.bv-rollable {
-    cursor: pointer;
-    font-weight: bold;
+.dho-gedaempft {
+	color: var(--text-muted);
 }
 
-.bv-rollable:hover {
-    color: var(--bv-color)
+.dho-rand {
+	padding-right: 2em;
 }
 
-.bv-statblock hr {
-    margin: 0
+.dho-marke {
+	font-size: smaller;
+	color: var(--text-muted);
 }
 
-.bv-statblock ul, .bv-statblock ol {
-    margin-top: 0.5em;
-    margin-bottom: 0.5em;
+.dho-frage {
+	margin-top: 0.15em;
 }
 
-.bv-padded {
-    padding-right: 2em;
+/* Trefferpunkt- und Stressfelder */
+
+input[type='checkbox'].dho-feld {
+	vertical-align: middle;
+	top: -0.1em;
 }
 
-.bv-bottom-corner {
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  margin: 0.5em;
+.dho-schwellen {
+	text-align: center;
+	display: block;
+	margin-bottom: 0.2em !important;
 }
 
-.bv-top-corner {
-    position: absolute;
-    top: var(--size-2-2);
-    right: var(--size-2-2);
+/* Ein Block je Exemplar: Werte und Zustände bleiben beieinander */
+
+.dho-instanz + .dho-instanz {
+	margin-top: 0.3em;
 }
 
-.bv-lower-1 {
-    top: 30px;
+.dho-instanz hr {
+	margin: 0.4em 0;
 }
 
-.bv-lower-2 {
-    top: 56px;
+/* Fähigkeiten */
+
+.dho-faehigkeit p {
+	margin: 0 !important;
 }
 
-.bv-invisible {
-    display: none;
+.dho-faehigkeit {
+	font-size: smaller;
 }
 
-.bv-feature p {
-    margin: 0 !important;
+/* Würfel */
+
+.dho-wuerfelbar {
+	cursor: pointer;
+	font-weight: bold;
 }
 
+.dho-wuerfelbar:hover {
+	color: var(--dho-farbe);
+}
+
+/* Zustände */
+
+.dho-zustaende {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	gap: 0.25em;
+	margin-top: 0.35em;
+	font-size: smaller;
+}
+
+.dho-zustand,
+.dho-kennzeichen,
+.dho-hinzufuegen {
+	font-size: smaller;
+	padding: 0 0.4em;
+	border-radius: var(--radius-s);
+	cursor: pointer;
+	background: transparent;
+	border: 1px solid var(--background-modifier-border);
+	color: var(--text-muted);
+	box-shadow: none;
+	height: auto;
+	line-height: 1.6;
+}
+
+.dho-kennzeichen,
+.dho-hinzufuegen {
+	padding: 0 0.3em;
+}
+
+.dho-zustand:hover,
+.dho-kennzeichen:hover,
+.dho-hinzufuegen:hover {
+	color: var(--text-normal);
+	border-color: var(--text-muted);
+}
+
+.dho-zustand-aktiv,
+.dho-kennzeichen.dho-zustand-aktiv {
+	background: var(--dho-farbe);
+	border-color: var(--dho-farbe);
+	color: var(--text-on-accent);
+}
+
+.dho-zustandseingabe {
+	font-size: smaller;
+	width: 9em;
+	height: auto;
+}
+
+/* Fußzeile */
+
+.dho-fuss {
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	gap: 0.6em;
+	margin-top: 0.4em;
+	opacity: 0.5;
+	transition: opacity 120ms ease-in-out;
+}
+
+.dho-karte:hover .dho-fuss {
+	opacity: 1;
+}
+
+.dho-anzahl,
+.dho-aktionen {
+	display: flex;
+	align-items: center;
+	gap: 0.2em;
+}
+
+.dho-anzahlwert {
+	min-width: 1.1em;
+	text-align: center;
+	font-size: smaller;
+	color: var(--text-muted);
+}
+
+.dho-knopf {
+	background: none;
+	border: none;
+	box-shadow: none;
+	padding: 0 0.2em;
+	height: auto;
+	cursor: pointer;
+	color: var(--text-muted);
+}
+
+.dho-knopf:hover {
+	color: var(--text-normal);
+}
+
+.dho-farbwahl {
+	width: 2em;
+	height: 1.4em;
+	padding: 0;
+	border: none;
+	background: none;
+	cursor: pointer;
+}
+
+/* Hinweise und Fehler */
+
+.dho-hinweis {
+	color: var(--text-warning);
+	margin-bottom: 0;
+}
+
+.dho-fehler {
+	color: var(--text-error);
+	font-size: smaller;
+	padding: 0.5em;
+	border-left: 3px solid var(--text-error);
+	background: var(--background-secondary);
+}
+
+/* Vorbereitete Bausteine für weitere Kartentypen */
+
+.dho-textblock {
+	font-size: smaller;
+}
+
+.dho-tabelle {
+	font-size: smaller;
+	width: 100%;
+}
+
+/* Codeblock-Sprachen */
+
+.block-language-dolchherz + .edit-block-button,
 .block-language-daggerheart + .edit-block-button {
-    opacity: var(--icon-opacity) !important;
+	opacity: var(--icon-opacity) !important;
 }

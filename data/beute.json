@@ -1,0 +1,309 @@
+{
+    "meta": {
+        "description": "Dolchherz Beute",
+        "total": 60,
+        "generated": "2026-08-05T09:18:49Z"
+    },
+    "items": [
+        {
+            "wurf": "01",
+            "name": "Hochwertiges Bettzeug",
+            "beschreibung": "Während einer Auszeit löschst du automatisch 1 Stress."
+        },
+        {
+            "wurf": "02",
+            "name": "Trillerpfeife",
+            "beschreibung": "Diese handgefertigte Pfeife hat einen durchdringenden Ton und ist innerhalb eines Radius von 1,5 Kilometern zu hören."
+        },
+        {
+            "wurf": "03",
+            "name": "Angriffsköcher",
+            "beschreibung": "Wenn du mit einem Pfeil, der in diesem Köcher verwahrt wurde, bei einem Angriff erfolgreich bist, erhältst du einen Bonus auf den Schadenswurf in Höhe deines aktuellen Ranges."
+        },
+        {
+            "wurf": "04",
+            "name": "Alistairs Fackel",
+            "beschreibung": "Du kannst diese magische Fackel nach Belieben entfachen. Das Licht der Flamme erstreckt sich ungewöhnlich weit und kann eine Höhle taghell erleuchten."
+        },
+        {
+            "wurf": "05",
+            "name": "Sprechkugeln",
+            "beschreibung": "Ein Paar Kugeln, die es zwei Personen ermöglichen, über beliebige Entfernungen zu kommunizieren."
+        },
+        {
+            "wurf": "06",
+            "name": "Handfesseln",
+            "beschreibung": "Ein Paar Handschellen mit Schlüssel."
+        },
+        {
+            "wurf": "07",
+            "name": "Arkaner Umhang",
+            "beschreibung": "Wenn ein Charakter mit einem Zauberattribut diesen Umhang trägt, kann er seine Farbe, Beschaffenheit und Größe nach Belieben ändern."
+        },
+        {
+            "wurf": "08",
+            "name": "Gewebtes Netz",
+            "beschreibung": "Mit einem Wurf auf Geschick kannst du dieses Netz dazu verwenden, eine kleine Kreatur einzufangen. Die gefangene Kreatur kann sich mit einem erfolgreichen Angriffswurf (16) befreien."
+        },
+        {
+            "wurf": "09",
+            "name": "Feuergefäß",
+            "beschreibung": "Du kannst den seltsamen flüssigen Inhalt dieses Gefäßes ausgießen, um einen augenblicklich ein Feuer zu erzeugen. Der Inhalt regeneriert sich, wenn du eine lange Rast einlegst."
+        },
+        {
+            "wurf": "10",
+            "name": "Schwebender Stab",
+            "beschreibung": "Diese flache Stab ist mit Runen beschriftet. Wenn du ihn aktivierst, verbleibt er sofort unverrückbar an der Stelle, an der er sich befindet. Bis er wieder deaktiviert wird, kann er nicht bewegt werden, unterliegt nicht den Gesetzen der Schwerkraft und verändert nicht seine Position."
+        },
+        {
+            "wurf": "11",
+            "name": "Wandelstein",
+            "beschreibung": "Aktiviere diesen kieselgroßen Stein, um das Erscheinungsbild einer Person, die du sehen kannst, zu speichern. Wenn du 1 Hoffnung einsetzt, kannst du eine magische Illusion wirken, die dir das Aussehen dieser Person verschafft."
+        },
+        {
+            "wurf": "12",
+            "name": "Leere Kiste",
+            "beschreibung": "Diese magische Kiste scheint leer zu sein. Wenn du ein bestimmtes Wort ausprichst oder eine bestimmte Aktion ausführst und dann die Kiste öffnest, kannst du die darin verwahrten Gegenstände sehen."
+        },
+        {
+            "wurf": "13",
+            "name": "Seelentierdose",
+            "beschreibung": "Diese Dose bietet Platz für ein kleines Seelentier. Während sich das Seelentier darin befindet, sind Tier und Dose immun gegen jeden Schaden und schädliche Effekte."
+        },
+        {
+            "wurf": "14",
+            "name": "Mörderpfeile",
+            "beschreibung": "Dreimal pro Rast kannst du, wenn du mit einem dieser Pfeile einen erfolgreichen Angriff ausführst, deine Übung zum Schadenswurf hinzuaddieren."
+        },
+        {
+            "wurf": "15",
+            "name": "Mutstein",
+            "beschreibung": "Du kannst diesen Stein an einer Rüstung befestigen, die kein Merkmal besitzt. Die Rüstung erlangt folgendes Merkmal: Widerstandsfähig: Bevor du dein letztes Rüstungsfeld markierst, würfle einen W6. Bei einer 6: Senke die Schwere des Schadens um eine Schwelle, ohne ein Rüstungsfeld zu markieren."
+        },
+        {
+            "wurf": "16",
+            "name": "Skelettschlüssel",
+            "beschreibung": "Wenn du mit diesem Schlüssel eine verschlossene Tür zu öffnen versuchst, erhältst du einen Vorteil für den Wurf auf Geschick."
+        },
+        {
+            "wurf": "17",
+            "name": "Arkane Prisma",
+            "beschreibung": "Platziere dieses Prisma an einem Ort deiner Wahl und aktiviere es. Alle verbündeten Charaktere innerhalb kurzer Distanz erhalten einen +1 Bonus auf ihre Zauberwürfe. Solange das Prisma aktiviert ist, kann es nicht bewegt werden. Nachdem es deaktiviert wurde, kann es erst nach deiner nächsten langen Rast wieder aktiviert werden."
+        },
+        {
+            "wurf": "18",
+            "name": "Rezept für kleinen Ausdauertrank",
+            "beschreibung": "Als Auszeit-Zug kannst du den Knochen einer Kreatur benutzen, um einen kleinen Ausdauertrank zu brauen."
+        },
+        {
+            "wurf": "19",
+            "name": "Rezept für kleinen Lebenstrank",
+            "beschreibung": "Als Auszeit-Zug kannst du eine Phiole Blut benutzen, um einen kleinen Lebenstrank zu brauen."
+        },
+        {
+            "wurf": "20",
+            "name": "Gepaarte Kompasse",
+            "beschreibung": "Diese beiden Kompasse zeigen immer auf den jeweils anderen, egal wie weit sie auseinander sind."
+        },
+        {
+            "wurf": "21",
+            "name": "Taktikgeist",
+            "beschreibung": "Diese winzige Geist sitzt in deinem Gehörgang und flüstert dir während eines Kampfes nützliche Ratschläge zu. Einmal pro kurzer Rast kannst du bei einem Angriffswurf einen Vorteil erhalten."
+        },
+        {
+            "wurf": "22",
+            "name": "Geckohandschuhe",
+            "beschreibung": "Du kannst dich an senkrechten Oberflächen und an Raumdecken bewegen."
+        },
+        {
+            "wurf": "23",
+            "name": "Bestienkladde",
+            "beschreibung": "Du kannst die Namen und Beschreibungen dreier feindlicher Kreaturen in diesem Buch verzeichnen. Du erhältst einen +1 Bonus auf Aktionswürfe gegen diese Kreaturen."
+        },
+        {
+            "wurf": "24",
+            "name": "Rezept für Phiole mit Dunkelrauch",
+            "beschreibung": "Als Auszeit-Zug kannst du 1 Stress markieren, um eine Phiole mit Dunkelrauch zu brauen."
+        },
+        {
+            "wurf": "25",
+            "name": "Blutstein",
+            "beschreibung": "Du kannst diesen Stein an einer Waffe befestigen, die kein Merkmal besitzt. Die Waffe erhält das folgende Merkmal: Brutal: Wenn du auf einem Schadenswürfel die höchstmögliche Zahl würfelst, würfle einen zusätzlichen Schadenswürfel."
+        },
+        {
+            "wurf": "26",
+            "name": "Machtstein",
+            "beschreibung": "Du kannst diesen Stein an einer Waffe befestigen, die kein Merkmal besitzt. Die Waffe erhält das folgende Merkmal: Mächtig: Würfle bei einem erfolgreichen Angriff einen zusätzlichen Schadenswürfel und sortiere das niedrigste Ergebnis aus."
+        },
+        {
+            "wurf": "27",
+            "name": "Gleiter",
+            "beschreibung": "Wenn du fällst, kannst du während des Falls 1 Stress markieren, um diesen kleinen Fallschirm zu entfalten und sicher zu Boden zu gleiten."
+        },
+        {
+            "wurf": "28",
+            "name": "Ring der Stille",
+            "beschreibung": "Setze 1 Hoffnung ein, um einen Ring zu aktivieren. Deine Schritte sind bis zu deiner nächsten Rast unhörbar."
+        },
+        {
+            "wurf": "29",
+            "name": "Beruhigungsamulett",
+            "beschreibung": "Wenn du deinen letzten Stresspunkt markieren musst, würfle einen W6. Bei einer 5 oder 6 brauchst du ihn nicht zu markieren."
+        },
+        {
+            "wurf": "30",
+            "name": "Doppelflasche",
+            "beschreibung": "Diese kleine Flasche kann zwei verschiedene Flüssigkeiten enthalten. Mittels eines kleinen Hebels an der Seite der Flasche kannst du zwischen ihnen wechseln."
+        },
+        {
+            "wurf": "31",
+            "name": "Beutel Wankelsand",
+            "beschreibung": "Mit einem erfolgreichen Präsenzwurf (10) kannst du diesen kleinen Beutel Sand überreden, sich sehr schnell oder leichter zu werden. Außerdem kannst du mit einem erfolgreichen Geschickwurf (10) etwas Sand in die Augen einer gegnerischen Kreatur blasen, um diese vorübergehend Verwandbar zu machen."
+        },
+        {
+            "wurf": "32",
+            "name": "Ring des Widerstands",
+            "beschreibung": "Einmal pro langer Rast kannst du diesen Ring nach einem erfolgreichen Angriff gegen dich aktivieren, um den Schaden zu halbieren."
+        },
+        {
+            "wurf": "33",
+            "name": "Phönixfeder",
+            "beschreibung": "Wenn du eine Phönixfeder bei dir, wenn du bewusstlos wirst, erhältst du einen Bonus von +2 für den Wurf zur Bestimmung, ob du eine Narbe davonträgst."
+        },
+        {
+            "wurf": "34",
+            "name": "Wunderkästchen",
+            "beschreibung": "Einmal pro langer Rast kannst du diesen kleinen Kästchen öffnen und einen W12 würfeln. Bei einem Ergebnis von 1–6 ist es leer. Bei 7–10 enthält es ein zufälliges gewöhnliches Verbrauchsgut. Bei 11–12 enthält es zwei zufällige gewöhnliche Verbrauchsgüter."
+        },
+        {
+            "wurf": "35",
+            "name": "Reichweitentalisman",
+            "beschreibung": "Du kannst diesen Talisman an einer Waffe befestigen, deren Distanz unmittelbar ist. Dreimal pro Rast kannst du den Talisman aktivieren und ein Ziel innerhalb kurzer Distanz angreifen."
+        },
+        {
+            "wurf": "36",
+            "name": "Portalsaat",
+            "beschreibung": "Du kannst diese Saat in den Boden stecken, um an der Stelle ein Portal wachsen zu lassen. Das Portal ist nach 24 Stunden einsatzbereit. Du kannst durch dieses Portal zu einem anderen Ort reisen, an dem du eine Portalsaat gepflanzt hast. Es kann zerstört werden, indem ihm magischer Schaden zugefügt wird."
+        },
+        {
+            "wurf": "37",
+            "name": "Herzblutkette",
+            "beschreibung": "Als Auszeit-Zug kannst du über ein Ideal oder Prinzip meditieren, das dir sehr am Herzen liegt, und denen Willen auf diese Kette fokussieren. Einmal pro langer Rast kannst du 1 Hoffnung einsetzen, um bei einem Wurf, der direkt mit diesem Ideal oder Prinzip zusammenhängt, einen W20 als Hoffnungswürfel zu verwenden."
+        },
+        {
+            "wurf": "38",
+            "name": "Unsichtbarkeitsamulett",
+            "beschreibung": "Einmal pro langer Rast kannst du dieses Amulett aktivieren, um Versteckt zu sein, bis du dich bewegst. Solange du auf diese Weise Versteckt bist, kannst du auch dann nicht gesehen werden, wenn ein gegnerischer Charakter eine Aktion beendet, von der aus er dich normalerweise sehen müsste."
+        },
+        {
+            "wurf": "39",
+            "name": "Hoffnungsmedaillon",
+            "beschreibung": "Während einer langen Rast kannst du, wenn du 6 Hoffnung hast, 1 Hoffnung einsetzen, um dieses Medaillon mit deiner überbordenden Entschlossenheit zu erfüllen. Wenn du irgendwann 0 Hoffnung hast, kannst du dieses Medaillon verwenden, um sofort 1 Hoffnung zu erhalten. Anschließend muss das Medaillon wieder neu aufgeladen werden."
+        },
+        {
+            "wurf": "40",
+            "name": "Bodenloser Beutel",
+            "beschreibung": "Wenn du Gegenstände in diesem Beutel verwahrst, werden sie in eine Nebendimension gelagert, die ein unendliches Fassungsvermögen hat. Du kannst die Gegenstände jederzeit herausholen."
+        },
+        {
+            "wurf": "41",
+            "name": "Reliquie der Gewandtheit",
+            "beschreibung": "Du erhältst einen Bonus von +1 auf deine Agilität. Du kannst nur eine Reliquie gleichzeitig bei dir haben."
+        },
+        {
+            "wurf": "42",
+            "name": "Reliquie der Stärkung",
+            "beschreibung": "Du erhältst einen Bonus von +1 auf deine Stärke. Du kannst nur eine Reliquie gleichzeitig bei dir haben."
+        },
+        {
+            "wurf": "43",
+            "name": "Reliquie der Kontrolle",
+            "beschreibung": "Du erhältst einen Bonus von +1 auf dein Geschick. Du kannst nur eine Reliquie gleichzeitig bei dir haben."
+        },
+        {
+            "wurf": "44",
+            "name": "Reliquie der Einstimmung",
+            "beschreibung": "Du erhältst einen Bonus von +1 auf deinen Instinkt. Du kannst nur eine Reliquie gleichzeitig bei dir haben."
+        },
+        {
+            "wurf": "45",
+            "name": "Reliquie des Charmes",
+            "beschreibung": "Du erhältst einen Bonus von +1 auf deine Präsenz. Du kannst nur eine Reliquie gleichzeitig bei dir haben."
+        },
+        {
+            "wurf": "46",
+            "name": "Reliquie der Erleuchtung",
+            "beschreibung": "Du erhältst einen Bonus von +1 auf dein Wissen. Du kannst nur eine Reliquie gleichzeitig bei dir haben."
+        },
+        {
+            "wurf": "47",
+            "name": "Reliquie der Verfeinerung",
+            "beschreibung": "Du erhältst einen Bonus von +1 auf eine Erfahrung deiner Wahl. Du kannst nur eine Reliquie gleichzeitig bei dir haben."
+        },
+        {
+            "wurf": "48",
+            "name": "Libellenanhänger",
+            "beschreibung": "Wenn du diesen Anhänger trägst, sind deine Waffen mit unmittelbarer Distanz, die physischen Schaden zufügen, mit einem hauchdünnen Schimmer überzogen und können Ziele innerhalb sehr kurzer Distanz angreifen."
+        },
+        {
+            "wurf": "49",
+            "name": "Wasserwanderstiefel",
+            "beschreibung": "Du kannst auf einer Wasseroberfläche gehen, als wäre es ein weicher, sandartiger Boden."
+        },
+        {
+            "wurf": "50",
+            "name": "Tönernes Seelentier",
+            "beschreibung": "Wenn du diese Tonkugel zu einem tönernen Seelentier formst, verhält es sich genau wie das entsprechende Tier. Zum Beispiel kann eine Tospinne tönernen Netze spinnen und ein Tonvogel kann fliegen. Das tönere Seelentier behält seine Erinnerungen und seine Identität auch in unterschiedlichen Formen, kann aber mit jeder neuen Form andere Verhaltensweisen annehmen."
+        },
+        {
+            "wurf": "51",
+            "name": "Rezept für Mythischen Staub",
+            "beschreibung": "Als Auszeit-Zug kannst du eine Handvoll feinen Goldstaub verwenden, um Mythischen Staub herzustellen."
+        },
+        {
+            "wurf": "52",
+            "name": "Scherbe der Erinnerung",
+            "beschreibung": "Einmal pro langer Rast kannst du eine Domänenkarte aus deiner Reserve zurückrufen, indem du 2 Hoffnung einsetzt, statt die Rückrufkosten der Karte zu bezahlen."
+        },
+        {
+            "wurf": "53",
+            "name": "Juwel der Schnelligkeit",
+            "beschreibung": "Wenn du dieses Juwel an einer Waffe anbringst, kannst du bei einem Angriff mit dieser Waffe deine Agilität verwenden."
+        },
+        {
+            "wurf": "54",
+            "name": "Juwel der Kraft",
+            "beschreibung": "Wenn du dieses Juwel an einer Waffe anbringst, kannst du bei einem Angriff mit dieser Waffe deine Stärke verwenden."
+        },
+        {
+            "wurf": "55",
+            "name": "Juwel der Präzision",
+            "beschreibung": "Wenn du dieses Juwel an einer Waffe anbringst, kannst du bei einem Angriff mit dieser Waffe dein Geschick verwenden."
+        },
+        {
+            "wurf": "56",
+            "name": "Juwel der Einsicht",
+            "beschreibung": "Wenn du dieses Juwel an einer Waffe anbringst, kannst du bei einem Angriff mit dieser Waffe deinen Instinkt verwenden."
+        },
+        {
+            "wurf": "57",
+            "name": "Juwel der Verwegenheit",
+            "beschreibung": "Wenn du dieses Juwel an einer Waffe anbringst, kannst du bei einem Angriff mit dieser Waffe deine Präsenz verwenden."
+        },
+        {
+            "wurf": "58",
+            "name": "Juwel der Klugheit",
+            "beschreibung": "Wenn du dieses Juwel an einer Waffe anbringst, kannst du bei einem Angriff mit dieser Waffe dein Wissen verwenden."
+        },
+        {
+            "wurf": "59",
+            "name": "Ring der unumstößlichen Entschlossenheit",
+            "beschreibung": "Einmal pro Spielsitzung kannst du, wenn die SL 1 Furcht einsetzt, 4 Hoffnung einsetzen, um die Wirkung der eingesetzten Furcht zu neutralisieren."
+        },
+        {
+            "wurf": "60",
+            "name": "Gürtel der Einigkeit",
+            "beschreibung": "Einmal pro Spielsitzung kannst du 5 Hoffnung einsetzen, um einen Teamwurf mit drei statt zwei SC durchzuführen."
+        }
+    ]
+}
