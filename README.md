@@ -13,15 +13,49 @@ Die Unterschiede zum Original fasst der Abschnitt *Unterschiede zu BeastVault* z
 ## Funktionen
 
 - Wertekästen für Gegner\*innen und Schauplätze als Codeblock `dolchherz`
+- Liest zusätzlich `daggerheart`-Codeblöcke und englische Feldnamen, damit
+  Wertekästen aus der englischen Vorlage weiter funktionieren
 - Bibliothek mit 129 Gegner\*innen und 19 Schauplätzen aus dem SRD
+- Erkennt Gegnertypen in deutschen und englischen Schreibvarianten
 - Suchdialog und Vorlagenbefehle, erzeugt aus dem Kartenregister
 - Trefferpunkte, Stress, Schwellen, Anwendungen und Countdowns per Klick
 - Schadensschwellen-Knöpfe: Klick markiert TP, Alt+Klick löscht sie wieder
 - Würfeln per Klick auf Angriffsmodifikator oder Schadenswürfel
 - Zustände, inklusive der drei Standardzustände mit Kurzregel
+- Weist Furchtfähigkeiten und die Größe von Horden aus
 - Kampfpunkte in der Statusleiste, samt Budget und den Anpassungen aus dem SRD
 - Anzahlsteuerung und Farbwahl je Karte
-- Funktioniert auch in Canvas
+
+## Geplant
+
+In [`data/`](data) liegen weitere Bestände der deutschen SRD-Übersetzung, die noch
+nicht als Kartentyp angebunden sind:
+
+| Kartentyp | Datei | Einträge | Rohdaten |
+| --- | --- | --- | --- |
+| Abstammung | [`data/abstammungen.json`](data/abstammungen.json) | 18 | Titel, Kategorie, Kartentext |
+| Gemeinschaft | [`data/gemeinschaften.json`](data/gemeinschaften.json) | 9 | Titel, Kategorie, Kartentext |
+| Domänenkarte | [`data/domaenen.json`](data/domaenen.json) | 189 | Domäne, Stufe, Rückrufkosten, Kartentext |
+| Klasse | [`data/klassen.json`](data/klassen.json) | 9 | Domänen, Ausweichen, Trefferpunkte, Hoffnungsfähigkeit, Klassenfähigkeiten |
+| Subklasse | [`data/subklassen.json`](data/subklassen.json) | 54 | Klasse, Grad, Kartentext |
+| Waffe | [`data/waffen.json`](data/waffen.json) | 192 | Attribut, Distanz, Schaden, Führung, Merkmal, Rang |
+| Rüstung | [`data/ruestungen.json`](data/ruestungen.json) | 34 | Basiswert, Basisschwellen, Merkmal, Rang |
+| Verbrauchsgut | [`data/verbrauchsgueter.json`](data/verbrauchsgueter.json) | 60 | Wurf, Bezeichnung, Beschreibung |
+| Beute | [`data/beute.json`](data/beute.json) | 60 | Wurf, Bezeichnung, Beschreibung |
+
+Nur Gegner\*innen und Schauplätze liegen derzeit als fertiger Wertekasten vor. Die
+übrigen Bestände sind Kartentexte beziehungsweise Tabellenwerte; beim Anbinden sind
+sie auf das Kartenmodell aus [`src/types.ts`](src/types.ts) abzubilden.
+
+Jeder Typ folgt dem Weg aus *Neuen Kartentyp ergänzen*: eine Datei in
+[`src/cards/`](src/cards) und eine Zeile in [`src/cards/index.ts`](src/cards/index.ts:14).
+Sollen die Daten mit dem Plugin ausgeliefert werden, kommt der Bestand in
+[`src/model/library.ts`](src/model/library.ts:23) hinzu; dort werden die eingebauten
+Karten zusammengeführt.
+
+Der Prüflauf `npm run pruefen` liest derzeit nur [`data/gegner.json`](data/gegner.json)
+und [`data/schauplaetze.json`](data/schauplaetze.json) und ist beim Anbinden weiterer
+Bestände entsprechend zu erweitern.
 
 ## Installation
 
@@ -34,14 +68,6 @@ Die Unterschiede zum Original fasst der Abschnitt *Unterschiede zu BeastVault* z
 3. Obsidian neu starten, falls es geöffnet war
 4. In Obsidian unter *Einstellungen → Community-Plugins* aktivieren
 
-### Automatisch über BRAT
-
-1. Das Plugin [BRAT](obsidian://show-plugin?id=obsidian42-brat) installieren
-2. In den BRAT-Einstellungen *Add beta plugin* wählen
-3. `MorastBlitz/dolchherz.md` eintragen und *Add plugin* wählen
-
-Entwicklungsstand: `npm run build` erzeugt `main.js` im Projektordner.
-
 ## Verwendung
 
 ### Wertekasten einfügen
@@ -49,6 +75,11 @@ Entwicklungsstand: `npm run build` erzeugt `main.js` im Projektordner.
 `Strg/Cmd+P` → *Einfügen aus Bibliothek: Gegner\*in* bzw. *Schauplatz*.
 Alternativ das Menüband-Symbol **dolchherz.md**. Für schnellen Zugriff lohnt
 sich eine Tastenkombination auf diese Befehle.
+
+Weitere Befehle stehen im Menüband-Menü und in der Befehlspalette:
+*Bibliothek aktualisieren* liest den Ordner für eigene Wertekästen neu ein,
+*Markierten Kartenzustand zurücksetzen* verwirft alle gespeicherten Werte,
+einschließlich Anzahl und Farbe.
 
 ### Wertekasten von Hand schreiben
 
@@ -86,7 +117,8 @@ Ein leeres Gerüst liefern die Befehle *Vorlage einfügen: …*.
 
 ### Fußzeile
 
-Am unteren Rand jedes Wertekastens erscheinen beim Überfahren die Bedienelemente:
+Am unteren Rand jedes Wertekastens stehen die Bedienelemente, die beim Überfahren
+hervorgehoben werden:
 
 | Symbol | Wirkung |
 | --- | --- |
@@ -97,13 +129,13 @@ Am unteren Rand jedes Wertekastens erscheinen beim Überfahren die Bedienelement
 
 **Kopieren** vergibt eine neue `id`. Die Kopie startet ohne markierte Werte, damit
 zwei Wertekästen nie denselben Fortschritt teilen. Das Ergebnis ist ein vollständiger
-Codeblock und lässt sich in jede Notiz oder auf ein Canvas einfügen.
+Codeblock und lässt sich in jede Notiz einfügen.
 
 **Löschen** arbeitet auf der Notiz, in der der Codeblock steht: Er wird samt Zäunen
 entfernt. Vor dem Schreiben prüft das Plugin, ob der Zeilenbereich wirklich einen
 eigenen Wertekasten umschließt, damit bei verschobenen Zeilen kein fremder Text
-verloren geht. In einem Canvas gibt es keine Codeblockposition; dort meldet die
-Funktion, dass sie nicht verfügbar ist.
+verloren geht. Lässt sich der Codeblock keiner Position in der Notiz zuordnen,
+meldet die Funktion, dass sie nicht verfügbar ist.
 
 ### Felder
 
@@ -127,6 +159,10 @@ Funktion, dass sie nicht verfügbar ist.
 `angriff` hat die Felder `bonus`, `waffe`, `distanz`, `schaden` und `schadenstyp`.
 Schaden und Schadensart werden zusammengeführt, sofern die Art nicht schon im
 Schadenstext steht.
+
+Steht in `typ` eine Größenangabe wie `Horde (2/TP)`, zeigt der Wertekasten die
+verbleibende Hordengröße an; sie richtet sich nach den markierten
+Trefferpunkten.
 
 **Schauplätze** (SRD: Wertekästen von Schauplätzen)
 
@@ -154,18 +190,25 @@ Kampfpunkte.
 
 Steht in `art` eine Countdown-Angabe, wird sie abgetrennt:
 `Reaktion: Countdown (Schleife 1W6)` ergibt die Art `Reaktion`, einen Countdown
-der Größe 6 mit zufälligem Startwert und die Schleifeneigenschaft.
+der Größe 6 sowie die Kennzeichnungen *zufälliger Startwert* und *Schleife*.
+Das Plugin weist diese Eigenschaften nur aus; den Startwert zu würfeln und die
+Schleife zurückzusetzen, bleibt der Spielleitung überlassen.
+
+Fähigkeiten, die Furcht kosten, kennzeichnet das Plugin selbst, sobald der Text
+einen entsprechenden Hinweis enthält oder Art beziehungsweise Name
+*Furchtfähigkeit* nennen.
 
 Kursiv gesetzte Passagen mit Fragezeichen — im SRD die *Merkmal-Fragen* — werden
 als Erzählteil abgetrennt und unter der Beschreibung kursiv dargestellt.
 
 ### Zustände
 
-Unter jedem Wertekasten stehen die drei Standardzustände **Versteckt**,
-**Festgesetzt** und **Verwundbar** als Schaltflächen; ein Kurztext erscheint beim
-Überfahren. Über `+` lassen sich beliebige weitere Zustände eintragen, etwa
-`Brand` oder `Abgelenkt`. Das Symbol daneben markiert einen Zustand als
-*vorübergehend*, den das Ziel mit einem Zug löschen kann.
+Unter jedem Wertekasten für Gegner\*innen stehen die drei Standardzustände
+**Versteckt**, **Festgesetzt** und **Verwundbar** als Schaltflächen; ein Kurztext
+erscheint beim Überfahren. Über `+` lassen sich beliebige weitere Zustände
+eintragen, etwa `Brand` oder `Abgelenkt`. Das Symbol daneben markiert einen
+Zustand als *vorübergehend*, den das Ziel mit einem Zug löschen kann.
+Schauplätze haben keine Zustandsleiste.
 
 Zustände gelten je platziertem Exemplar und werden mit dem Vault gespeichert.
 
@@ -190,21 +233,27 @@ die sechs Anpassungen des SRD verschieben.
 ### Eigene Wertekästen
 
 In den Einstellungen einen Ordner angeben. Alle `.json`-, `.yml`- und
-`.yaml`-Dateien darin werden gelesen, ebenso `dolchherz`-Codeblöcke in
-`.md`-Dateien. Ein Eintrag ohne `hp` und `stress` gilt als Schauplatz.
+`.yaml`-Dateien darin werden gelesen, ebenso `dolchherz`- und
+`daggerheart`-Codeblöcke in `.md`-Dateien. Englische Feldnamen wie `tier`,
+`hp`, `features` oder `xp` werden auf die deutschen Felder abgebildet.
+
+Der Kartentyp ergibt sich aus `art`. Fehlt das Feld, wird er erraten: Ein
+Eintrag ohne Trefferpunkte, Stress, `angriff` und `ziele_taktiken` gilt als
+Schauplatz, sofern er `anregungen` oder `moegliche_gegner` enthält oder unter
+`typ` einen gültigen Schauplatztyp führt.
 
 ## Einstellungen
 
-| Einstellung | Wirkung |
-| --- | --- |
-| Standardfarbe | Farbe neuer Wertekästen |
-| Farbwahl je Karte anzeigen | Farbwähler in der Fußzeile |
-| "Massiv"-Schwelle anzeigen | Optionale Regel *Massive Schäden*, vierter Knopf |
-| Anzahl der Spielcharaktere | Budget und Größe von Lakaiengruppen |
-| Anpassungen des Budgets | Die sechs Verschiebungen aus dem SRD |
-| Ordner für eigene Wertekästen | Zusätzliche Datenquelle |
-| Duplikate ignorieren | Bei gleichem Namen gewinnt der eingebaute Wertekasten |
-| Abweichungen von Richtwerten melden | Hinweis, wenn Werte vom Rang-Richtwert abweichen |
+| Einstellung | Standard | Wirkung |
+| --- | --- | --- |
+| Standardfarbe | `#8A5CF5` | Farbe neuer Wertekästen |
+| Farbwahl je Karte anzeigen | an | Farbwähler in der Fußzeile |
+| "Massiv"-Schwelle anzeigen | aus | Optionale Regel *Massive Schäden*, vierter Knopf |
+| Anzahl der Spielcharaktere | `4` (Regler 0–10) | Budget und Größe von Lakaiengruppen |
+| Anpassungen des Budgets | keine | Die sechs Verschiebungen aus dem SRD |
+| Ordner für eigene Wertekästen | leer | Zusätzliche Datenquelle |
+| Duplikate ignorieren | an | Bei gleichem Namen gewinnt der eingebaute Wertekasten |
+| Abweichungen von Richtwerten melden | aus | Hinweis, wenn Werte vom Rang-Richtwert abweichen |
 
 ## Entwicklung
 
@@ -215,9 +264,10 @@ npm run build    # Typprüfung und Produktionsbuild
 npm run pruefen  # Datenprüfung gegen den echten Bestand
 ```
 
-`npm run pruefen` führt `data/*.json` durch Kartenerkennung, Normalisierung,
-Kampfpunkte und Würfelauswertung und schlägt bei jeder Abweichung fehl. Der
-Prüflauf ersetzt das Obsidian-Modul durch eine Attrappe
+`npm run pruefen` führt `data/gegner.json` und `data/schauplaetze.json` durch
+Kartenerkennung, Normalisierung, Kampfpunkte und Würfelauswertung und schlägt
+bei jeder Abweichung fehl. Beim Anbinden weiterer Bestände ist der Prüflauf
+entsprechend zu erweitern. Er ersetzt das Obsidian-Modul durch eine Attrappe
 ([`scripts/obsidian-stub.ts`](scripts/obsidian-stub.ts)) und läuft daher ohne
 laufende Oberfläche.
 
@@ -225,6 +275,7 @@ laufende Oberfläche.
 
 Die Architektur ist darauf ausgelegt, dass ein weiterer Kartentyp — etwa
 Abstammung, Gemeinschaft, Domäne oder Waffe — eine Datei und eine Zeile kostet.
+Welche Bestände noch anstehen, listet der Abschnitt *Geplant*.
 
 1. **Typ anlegen** in `src/types.ts`, abgeleitet von den gemeinsamen Feldern.
 2. **Karte schreiben** in `src/cards/`, indem [`Kartendefinition`](src/registry.ts)
@@ -233,6 +284,8 @@ Abstammung, Gemeinschaft, Domäne oder Waffe — eine Datei und eine Zeile koste
    bereit — `kopfzeile`, `faehigkeiten`, `statusleiste`, `zustandsleiste`,
    `textblock`, `tabelle`.
 3. **Registrieren** in [`src/cards/index.ts`](src/cards/index.ts) mit einer Zeile.
+4. **Datenbestand einbinden**, wenn die Karten mit dem Plugin ausgeliefert werden
+   sollen: Import in [`src/model/library.ts`](src/model/library.ts:23) ergänzen.
 
 Damit erscheinen automatisch die Einfüge- und Vorlagenbefehle, der Eintrag im
 Suchdialog und im Menüband. Optionale Methoden steuern Zusatzverhalten:
@@ -245,14 +298,15 @@ Suchdialog und im Menüband. Optionale Methoden steuern Zusatzverhalten:
 | Bereich | BeastVault | dolchherz.md |
 | --- | --- | --- |
 | Sprache | Englisch | Deutsch — Oberfläche, Befehle und Feldnamen |
-| Codeblock | `daggerheart` | `dolchherz` |
+| Codeblock | `daggerheart` | `dolchherz`; `daggerheart` bleibt lesbar |
 | Datenbestand | englisches SRD | deutsche SRD-Übersetzung mit 129 Gegner\*innen und 19 Schauplätzen |
 | Felder | `tier`, `type`, `desc`, `difficulty`, `weapon`, `range`, `damage`, `hp`, `stress`, `thresholds`, `attack`, `xp`, `motives`, `features` | `rang`, `typ`, `beschreibung`, `schwierigkeitsgrad`, `angriff`, `tp`, `stress`, `schwellen`, `erfahrung`, `ziele_taktiken`, `faehigkeiten` |
+| Fremde Daten | – | englische Feldnamen und Typ-Aliase werden beim Einlesen auf die deutschen Felder abgebildet |
 | Zustände | als geplant vermerkt | die drei Standardzustände plus eigene Zustände, als *vorübergehend* markierbar |
 | Kampfpunkte | Anzeige in der Statusleiste | zusätzlich Budget `3 × Anzahl SC + 2` und die sechs Anpassungen des SRD |
 | Richtwerte | – | Hinweis, wenn Kartenwerte vom Richtwert des Rangs abweichen |
 | Fantasy Statblocks | optionale Kompatibilität | bewusst nicht enthalten, damit fremde Blöcke keine Meldung erzeugen |
-| Datenprüfung | – | `npm run pruefen` prüft den echten Bestand |
+| Datenprüfung | – | `npm run pruefen` prüft Gegner- und Schauplatzbestand |
 | Paketverwaltung | pnpm | npm |
 
 ## Herkunft der Daten
