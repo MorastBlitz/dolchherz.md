@@ -4,14 +4,14 @@ on:
   push:
     branches: '**'
   pull_request:
+  workflow_dispatch:
 
 jobs:
-  typos:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v5
-      - uses: crate-ci/typos@v1.39.0
-
+  # Der typos-Job aus BeastVault prüft Rechtschreibung mit englischem
+  # Wörterbuch. Dieses Projekt ist durchgehend deutschsprachig, und typos
+  # kennt keine deutsche Sprache (locale akzeptiert nur en, en-us, en-gb,
+  # en-ca, en-au). Der Job entfällt daher und wird durch die Datenprüfung
+  # ersetzt.
   pruefen:
     runs-on: ubuntu-latest
     steps:
